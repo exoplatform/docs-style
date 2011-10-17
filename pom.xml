@@ -13,5 +13,10 @@
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>eXo documentation common style</name>
-  
+
+  <properties>
+      <version.release.plugin>2.2.1</version.release.plugin>
+      <version.buildnumber.plugin>1.0</version.buildnumber.plugin>
+  </properties>
+
 </project>
