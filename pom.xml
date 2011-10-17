@@ -14,6 +14,17 @@
   <version>1.0-SNAPSHOT</version>
   <name>eXo documentation common style</name>
 
+   <scm>
+      <connection>scm:git:https://git.exoplatform.org/public/tools/doc-style</connection>
+      <url>https://git.exoplatform.org/public/tools/doc-style</url>
+      <developerConnection>scm:git:https://git.exoplatform.org/public/tools/doc-style</developerConnection>
+   </scm>
+
+  <ciManagement>
+    <system>hudson</system>
+    <url>https://ci.exoplatform.org/job/doc-style-master-ci/</url>
+  </ciManagement>
+
   <properties>
       <version.release.plugin>2.2.1</version.release.plugin>
       <version.buildnumber.plugin>1.0</version.buildnumber.plugin>
