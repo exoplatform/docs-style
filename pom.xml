@@ -28,6 +28,7 @@
   <properties>
       <version.release.plugin>2.2.1</version.release.plugin>
       <version.buildnumber.plugin>1.0</version.buildnumber.plugin>
+      <pushChanges>false</pushChanges>
   </properties>
 
 </project>
