@@ -115,7 +115,7 @@
 set toc
 book toc
 article toc
-chapter
+chapter nop
 qandadiv toc
 qandaset toc
 sect1 nop

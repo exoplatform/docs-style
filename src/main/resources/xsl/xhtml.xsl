@@ -180,4 +180,22 @@ Version:
 	</xsl:if>
 </xsl:template>
 
+<!--
+Remove the numbers in front of each table
+http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered
+-->
+<xsl:param name="local.l10n.xml" select="document('')"/>
+<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
+  <l:l10n language="en">
+    <l:context name="title">
+      <l:template name="table" text=" "/><!-- leave the space here -->
+    </l:context>
+    <l:context name="xref-number-and-title">
+      <l:template name="table" text=" "/><!-- leave the space here -->
+    </l:context>
+  </l:l10n>
+</l:i18n>
+
+<xsl:template match="table" mode="label.markup"/>
+
 </xsl:stylesheet>
