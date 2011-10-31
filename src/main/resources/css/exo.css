@@ -485,7 +485,6 @@ margin: 4px 0px 0px 19px;
 }
 
 .chapter .section .titlepage .itemizedlist ul {
-	background:transparent url(../background/ListBG.gif) no-repeat left 4px;
 	padding-left: 13px;
 }
 
@@ -500,7 +499,6 @@ margin: 4px 0px 0px 19px;
 
 
 .chapter .section .titlepage .itemizedlist ul li{
-	list-style: none;
 }
 
 .chapter .section .titlepage .informaltable table{
@@ -605,9 +603,6 @@ td {
 }
 
 .chapter ol li{
-	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
-	list-style: none;
-	padding-left: 20px;
 	font-size: 12px;
 	color: black;
 	font-weight: normal;
