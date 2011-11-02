@@ -4,6 +4,7 @@ body {
 	font-size:14px;
 	margin:0;
 	padding:0px;
+	text-align: justify;
 }
 
 .UIPageBody {	
@@ -591,6 +592,10 @@ td {
 	color: black;
 	font-weight: normal;
 }
+.docnav li{
+	background:none!important;
+	padding:0;
+}
 
 .chapter .itemizedlist ul li ul li{
 	background:transparent url(../background/LIIcon.png) no-repeat scroll left 5px;
@@ -603,11 +608,13 @@ td {
 }
 
 .chapter ol li{
-	font-size: 12px;
+	font-size: 14px;
 	color: black;
+	font-weight: bold;
+}
+.chapter ol li a,.chapter ol li p{
 	font-weight: normal;
 }
-
 
 /* N0te */	
 
@@ -640,9 +647,9 @@ td {
     padding: 0px 10px 0 0px;}
 
 .chapter .note p {
-    border-left:1px solid #A3A3A3;
-    margin: 5px 0 0 86px;
-    padding-left: 12px;
+    margin: 0 0 0 86px;
+	border-left: 1px solid #A3A3A3;
+    padding: 5px 0 0 12px;
     *padding: 0px 0px 12px 12px;
 }
 
@@ -731,3 +738,29 @@ td {
 .code {
 	font-size: 15px;
 
+}
+.partintro {
+	padding: 20px;
+	background: #eee;
+}
+
+.partintro a,.partintro a:visisted {
+	color:#16968e;
+}
+
+.prompt span {
+	color:#888;
+	font-family: Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+.citetitle span {
+	color:#a30000;
+}
+.citetitle span {
+  color: #0c46bc;
+    font-style: normal;
+}
+.procedure {
+margin-left: 40px;
+}
