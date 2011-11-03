@@ -166,7 +166,7 @@ h4   {
 }
 
 h3  {
-	font-size: 20px ;
+	font-size: 25px ;
 	color: #FCB837;
 	border-top: 1px dashed #E9E9D8;
 	padding-top:10px;
@@ -174,7 +174,7 @@ h3  {
 }
 
 .note h3 {
-font-size: 14px !important;
+font-size: 16px !important;
 color: black !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
@@ -183,7 +183,7 @@ text-shadow: 0 1px 1px white;
 }
 
 .warning h3 {
-font-size: 14px !important;
+font-size: 16px !important;
 color: black !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
@@ -192,7 +192,7 @@ text-shadow: 0 1px 1px white;
 }
 
 .tip h3 {
-font-size: 14px !important;
+font-size: 16px !important;
 color: black !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
@@ -201,7 +201,7 @@ text-shadow: 0 1px 1px white;
 }
 
 h2 {
-	font-size: 26px !important;
+	font-size: 30px !important;
 	line-height: 24px;
 	color: #FCB837;
 	border-top: 1px solid #f1f1e6;
@@ -366,6 +366,7 @@ ol li ol li ol{
 
 .section table {
  border-collapse: collapse;
+ text-align: left;
 }
 
 th{
@@ -423,37 +424,37 @@ hr {
 /* ======================= Chapter ===========================*/
 
 .chapter .titlepage h2 , .titlepage .title a{
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #FCB837;
 }
 
 .chapter .section .titlepage h2 , .section .titlepage .title a{
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #FCB837;
 }
 
 .chapter .section .titlepage h3 a{
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: bold;
 	color: #FCB837;
 }
 
 .chapter .section .titlepage h4 a{
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: bold;
 	color: #FCB837;
 }
 
 .chapter .section .titlepage h5 a{
-	font-size: 14px;
+	font-size: 19px;
 	font-weight: bold;
 	color: #FCB837;
 }
 
 .chapter .section .titlepage h6 a{
-	font-size: 12px;
+	font-size: 17px;
 	font-weight: bold;
 	color: #FCB837;
 }
@@ -503,7 +504,6 @@ margin: 4px 0px 0px 19px;
 }
 
 .chapter .section .titlepage .informaltable table{
-	table-layout: fixed;
 	width: 100%;
 }
 
@@ -513,9 +513,12 @@ margin: 4px 0px 0px 19px;
 }
 
 .chapter .section .titlepage .informaltable table td{
-	text-align: center;
 	padding: 6px 0px;
 	border: solid 1px #797979;
+}
+
+.chapter .section .titlepage .informaltable table td  .mediaobject,.section table  .mediaobject {
+	text-align:center;
 }
 
 .chapter .section .titlepage .informaltable table td p{
@@ -619,7 +622,7 @@ td {
 /* N0te */	
 
 .chapter .note {
-    background: url("../background/NoteIcon.png") no-repeat scroll 5px 5px #e8e8c1;
+    background: url("../background/NoteIcon.png") no-repeat  30px center #e8e8c1;
     margin: 4px 4px 4px 4px;
     padding: 8px 10px 12px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -628,23 +631,24 @@ td {
 }
 
 .chapter .note .title {
-    float: left;
     font-weight: bold;
-	font-size: 14px !important
-    margin: 3px 0 0;
-    padding: 0px 10px 0 42px;
+	font-size: 16px !important;
+    margin: 0 0 0 86px;
+    padding: 0px 10px 0 10px;
+	border-left: 1px solid #A3A3A3;
+	color: #3c4a55;
 }
 
 .chapter .section .titlepage .note .title a{
-    font-size: 14px;
+    font-size: 16px;
 	font-weight: bold;
-	color: black;
+	color: #3c4a55;
 }
 
 .chapter .note p a {
     /*display: block;*/
     margin: 3px 0 0;
-    padding: 0px 10px 0 0px;}
+}
 
 .chapter .note p {
     margin: 0 0 0 86px;
@@ -706,7 +710,6 @@ td {
 }
 
 .chapter .tip .title {
-    float: left;
     font-weight: bold;
     margin: 0;
     padding: 2px 10px 0 42px;
