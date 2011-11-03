@@ -149,7 +149,7 @@ visibility: hidden;
 	color: #fac943;
 	font-weight: bold;
 	font-size: 24px;
-	padding: 40px 0px 0px 124px;
+	padding: 40px 0px 0px 160px;
 }
 
 
@@ -175,7 +175,7 @@ h3  {
 
 .note h3 {
 font-size: 16px !important;
-color: black !important;
+color: #3C4A55 !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
 border-top: 1px solid transparent;
@@ -184,7 +184,7 @@ text-shadow: 0 1px 1px white;
 
 .warning h3 {
 font-size: 16px !important;
-color: black !important;
+color: #3C4A55 !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
 border-top: 1px solid transparent;
@@ -193,7 +193,7 @@ text-shadow: 0 1px 1px white;
 
 .tip h3 {
 font-size: 16px !important;
-color: black !important;
+color: #3C4A55 !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
 border-top: 1px solid transparent;
@@ -622,9 +622,9 @@ td {
 /* N0te */	
 
 .chapter .note {
-    background: url("../background/NoteIcon.png") no-repeat  30px center #e8e8c1;
+    background: url("../background/NoteIcon.png") no-repeat  10px 10px #e8e8c1;
     margin: 4px 4px 4px 4px;
-    padding: 8px 10px 12px 3px;
+    padding: 15px 10px 22px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 10px;
@@ -633,9 +633,9 @@ td {
 .chapter .note .title {
     font-weight: bold;
 	font-size: 16px !important;
-    margin: 0 0 0 86px;
+    margin: 0 0 10px 40px;
     padding: 0px 10px 0 10px;
-	border-left: 1px solid #A3A3A3;
+	padding: 0 10px 0;
 	color: #3c4a55;
 }
 
@@ -651,9 +651,8 @@ td {
 }
 
 .chapter .note p {
-    margin: 0 0 0 86px;
-	border-left: 1px solid #A3A3A3;
-    padding: 5px 0 0 12px;
+     margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
     *padding: 0px 0px 12px 12px;
 }
 
@@ -745,6 +744,9 @@ td {
 .partintro {
 	padding: 20px;
 	background: #eee;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 
 .partintro a,.partintro a:visisted {
