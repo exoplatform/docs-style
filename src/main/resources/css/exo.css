@@ -251,19 +251,19 @@ h1 {
   margin: 4px 0px 0px 3px;
 }
 
-.book .toc dt {
+.set .toc dt, .book .toc dt {
   padding-top: 14px;
 }
 
-.book .toc dd dt{
+.set .toc dd dt, .book .toc dd dt{
   padding-top: 0px;
 }
 
-.book .toc dd dl dt{
+.set .toc dd dl dt, .book .toc dd dl dt{
   padding-left: 25px;
 }
 
-.book .toc dd dl dd{
+.set .toc dd dl dd, .book .toc dd dl dd{
   padding-left: 25px;
 }
 dt a {
