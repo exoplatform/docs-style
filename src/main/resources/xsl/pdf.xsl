@@ -1642,5 +1642,19 @@
          </xsl:call-template>
       </xsl:if>
    </xsl:template>
+   
+   <xsl:template match="partintro">
+  <xsl:variable name="keep.together">
+  </xsl:variable>
+  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt">
+    <xsl:if test="$keep.together != ''">
+      <xsl:attribute name="keep-together.within-column"><xsl:value-of
+                      select="$keep.together"/></xsl:attribute>
+    </xsl:if>
+    <xsl:call-template name="anchor"/>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
 
 </xsl:stylesheet>
