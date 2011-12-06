@@ -525,6 +525,10 @@ margin: 4px 0px 0px 19px;
 	margin: 0px;
 }
 
+.chapter .section .informaltable {
+  margin-bottom: 30px;
+}
+
 table {
 width:100%;
 margin-left:0px;
@@ -622,7 +626,7 @@ td {
 /* N0te */	
 
 .chapter .note {
-    background: url("../background/NoteIcon.png") no-repeat  10px 10px #e8e8c1;
+    background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
     margin: 4px 4px 4px 4px;
     padding: 15px 10px 22px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -664,7 +668,7 @@ td {
 /* warning */	
 
 .chapter .warning {
-    background: url("../background/WarningIcon.png") no-repeat scroll 5px 5px #fbad17;
+    background: url("../background/warning.png") no-repeat scroll 5px 5px #fbad17;
     margin: 4px 4px 4px 4px;
        padding: 15px 10px 22px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -697,7 +701,7 @@ td {
 /* Tip*/	
 
 .chapter .tip {
-    background: url("../background/TipIcon.png") no-repeat scroll 5px 5px #d5d5e8;
+    background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
     margin: 4px 4px 4px 4px;
        padding: 15px 10px 22px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
