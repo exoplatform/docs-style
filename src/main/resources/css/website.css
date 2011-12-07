@@ -1,0 +1,62 @@
+/***************** Banner / Footer **********************/
+
+.UIHeaderPageDocument ul li{
+	float: left;
+	font-size: 11px;
+	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
+}
+
+.UIHeaderPageDocument{
+	background: #202640;
+}
+
+.UIHeaderPageDocument .Logo{
+	background: url("../background/Logo.png") no-repeat left top;
+	width: 80px;
+	height: 35px;
+	display: block;
+	margin: 20px 0px 0px 35px;
+}
+
+.UIHeaderPageDocument .TopBannerSignin{
+	height: 70px;
+}
+
+.UIHeaderPageDocument .Menu .NavigationTop{
+	background: #373b50;
+	height: 36px;
+	border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	padding: 0px 25px 0px 45px;
+}
+
+.UIHeaderPageDocument .Menu .NavigationTop a{
+	color: #fff;
+	line-height:36px;
+	padding-right: 50px;
+	font-weight: bold;
+}
+
+.UIHeaderPageDocument .Menu .NavigationTop .SelectedNavigationTab{
+    color: #FFCA08;
+}
+
+.UIHeaderPageDocument .Menu .Title{
+	background: #e8f4ff;
+	font-size: 18px;
+	color: #373b50;
+	padding-left: 10px;
+	height: 29px;
+	line-height: 29px;
+}
+
+.UIFooterPageDocument{
+	color: #63687a;
+	text-align: center;
+	height: 60px;
+	padding-top: 15px;
+	background: #202640;
+	font-size: 11px;
+	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
+}
