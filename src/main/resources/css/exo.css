@@ -1,3 +1,4 @@
+@import url(codehighlight.css);
 body {
 	background:transparent url(../background/BannerRepeat.gif) repeat-x top;
 	font-family:Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif;
@@ -741,7 +742,7 @@ td {
 	font-size: 15px;
 
 }
-.partintro {
+.abstract {
 	padding: 20px;
 	background: #eee;
 	-moz-border-radius: 10px;
@@ -749,7 +750,7 @@ td {
 	border-radius: 10px;
 }
 
-.partintro a,.partintro a:visisted {
+.abstract a,.abstract a:visisted {
 	color:#16968e;
 }
 

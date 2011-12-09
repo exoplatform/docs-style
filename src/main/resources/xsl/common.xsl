@@ -31,7 +31,13 @@
     <xsl:if test="$img.src.path != ''">
       <xsl:value-of select="$img.src.path"/>
     </xsl:if>
-    <xsl:text>images/exojcr/docbook/</xsl:text>
+    <xsl:text>background/</xsl:text>
   </xsl:param>
   
+ <!-- TOC -->
+  <xsl:param name="section.autolabel" select="1"/>
+  
+ <!-- Include the chapter no -->
+   <xsl:param name="section.label.includes.component.label" select="1" />
+   
 </xsl:stylesheet>
