@@ -31,7 +31,7 @@
     <xsl:if test="$img.src.path != ''">
       <xsl:value-of select="$img.src.path"/>
     </xsl:if>
-    <xsl:text>images/exojcr/docbook/</xsl:text>
+    <xsl:text>background/</xsl:text>
   </xsl:param>
   
 </xsl:stylesheet>

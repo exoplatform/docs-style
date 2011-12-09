@@ -45,17 +45,18 @@
    <xsl:param name="callout.icon.size">10pt</xsl:param>
 
    <!-- Admonitions -->
-   <xsl:param name="admon.graphics.extension" select="'.svg'" />
+   <xsl:param name="admon.graphics" select="1"/>
+   <xsl:param name="admon.graphics.extension" select="'.png'" />
 
    <xsl:attribute-set name="admonition.title.properties">
       <xsl:attribute name="font-size">13pt</xsl:attribute>
       <xsl:attribute name="color">
   <xsl:choose>
     <xsl:when test="self::note">#4C5253</xsl:when>
-    <xsl:when test="self::caution">#533500</xsl:when>
-    <xsl:when test="self::important">white</xsl:when>
-    <xsl:when test="self::warning">white</xsl:when>
-    <xsl:when test="self::tip">white</xsl:when>
+    <xsl:when test="self::caution">#4C5253</xsl:when>
+    <xsl:when test="self::important">#4C5253</xsl:when>
+    <xsl:when test="self::warning">#4C5253</xsl:when>
+    <xsl:when test="self::tip">#4C5253</xsl:when>
     <xsl:otherwise>white</xsl:otherwise>
   </xsl:choose>
         </xsl:attribute>
@@ -71,20 +72,20 @@
       <xsl:attribute name="color">
   <xsl:choose>
     <xsl:when test="self::note">#4C5253</xsl:when>
-    <xsl:when test="self::caution">#533500</xsl:when>
-    <xsl:when test="self::important">white</xsl:when>
-    <xsl:when test="self::warning">white</xsl:when>
-    <xsl:when test="self::tip">white</xsl:when>
+    <xsl:when test="self::caution">#4C5253</xsl:when>
+    <xsl:when test="self::important">#4C5253</xsl:when>
+    <xsl:when test="self::warning">#4C5253</xsl:when>
+    <xsl:when test="self::tip">#4C5253</xsl:when>
     <xsl:otherwise>white</xsl:otherwise>
   </xsl:choose>
         </xsl:attribute>
       <xsl:attribute name="background-color">
       <xsl:choose>
-    <xsl:when test="self::note">#B5BCBD</xsl:when>
+    <xsl:when test="self::note">#E8E8C1</xsl:when>
     <xsl:when test="self::caution">#E3A835</xsl:when>
     <xsl:when test="self::important">#4A5D75</xsl:when>
-    <xsl:when test="self::warning">#7B1E1E</xsl:when>
-    <xsl:when test="self::tip">#7E917F</xsl:when>
+    <xsl:when test="self::warning">#FBAD17</xsl:when>
+    <xsl:when test="self::tip">#D5D5E8</xsl:when>
     <xsl:otherwise>#404040</xsl:otherwise>
       </xsl:choose>
         </xsl:attribute>
