@@ -1643,7 +1643,7 @@
       </xsl:if>
    </xsl:template>
    
-   <xsl:template match="partintro">
+   <xsl:template match="abstract">
   <xsl:variable name="keep.together">
   </xsl:variable>
   <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt">
