@@ -60,3 +60,125 @@
 	font-size: 11px;
 	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
 }
+
+
+.navheader, .navfooter {
+    border: none;
+}
+
+div.navfooter table {
+    border-style: dashed;
+    border-color: gray;
+    border-width: 1px 1px 1px 1px; /* Cocoon specific change */
+    background-color: #eeeeee; /* END */
+}
+
+/* N0te */	
+
+.note {
+    background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
+    margin: 4px 4px 4px 4px;
+    padding: 15px 10px 22px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.note .title {
+  font-weight: bold;
+	font-size: 16px !important;
+  margin: 0 0 10px 40px;
+  padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
+	color: #3c4a55;
+}
+
+.section .titlepage .note .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #3c4a55;
+}
+
+.note p a {
+    /*display: block;*/
+    margin: 3px 0 0;
+}
+
+.note p {
+     margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+    *padding: 0px 0px 12px 12px;
+}
+
+.note .itemizedlist ul li {
+	background: transparent !important;
+	padding-left: 0px !important;
+}
+
+/* warning */	
+
+.warning {
+    background: url("../background/warning.png") no-repeat scroll 5px 5px #fbad17;
+    margin: 4px 4px 4px 4px;
+       padding: 15px 10px 22px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.warning .title {
+    font-weight: bold;
+        margin: 0 0 10px 40px;
+    padding: 0 10px;
+}
+
+.section .titlepage .warning .title a{
+    font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+ .warning p a {
+    /*display: block;*/
+    padding: 4px 0;
+}
+
+.warning p {
+   margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+}
+
+/* Tip*/	
+
+.tip {
+    background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
+    margin: 4px 4px 4px 4px;
+       padding: 15px 10px 22px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.tip .title {
+    font-weight: bold;
+    margin: 0;
+   margin: 0 0 10px 40px;
+    padding: 0 10px;
+}
+
+.section .titlepage .tip .title a{
+    font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.tip p a {
+    /*display: block;*/
+    padding: 4px 0;
+}
+
+.tip p {
+  margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+}
+
