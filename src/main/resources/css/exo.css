@@ -47,10 +47,11 @@ visibility: hidden;
 
 .docnav {
  list-style: none outside none;
- position: relative;
+ position: relative; 
  text-align: center;
  padding: 23px 0px;
  margin-bottom: 35px;
+ width: 100%;
 }
 
 .docnav li {
@@ -58,84 +59,72 @@ visibility: hidden;
  display: inline;
 }
 
-.docnav .previous, .docnav .next {
- position: absolute;
+.docnav li.previous, .docnav li.next {
+ position:absolute;
+ top:1.6em;
 }
 
-.docnav .previous {
- left: 0;
- text-align: left;
+.docnav li:before {content:" ";}
+
+.docnav li.previous {
+ left:0px;
+ text-align:left;
 }
 
-.docnav .previous a{
- background: url(../background/PriviousIcon.gif) no-repeat left top;
+.docnav li.previous a {
+ background:url(../background/PriviousIcon.gif) top left no-repeat;
  width: 34px;
- line-height: 24px;
- padding: 4px 2px;
- color: transparent !important;
+ padding: 4px 2px 20px 2px;
+ display: block;
 }
 
-.docnav .previous a:hover{
- background: url(../background/PriviousIconHover.jpg) no-repeat left top;
+.docnav li.previous a:hover{
+ background: url(../background/PriviousIconHover.jpg) top left no-repeat;
 }
 
-.docnav .next {
- right: 0;
- text-align: right;
+.docnav li.next {
+    right:0px;
+    text-align:right;
 }
 
-.docnav .next a{
-	background: url(../background/NextIcon.gif) no-repeat right top;
+.docnav li.next a {
+ background:url(../background/NextIcon.gif) top right no-repeat;
  width: 34px;
- line-height: 24px;
- padding: 4px 2px;
- color: transparent !important;
+ padding: 4px 2px 20px 2px;
+ display: block; 
 }
 
-.docnav .next a:hover{
- background: url(../background/NextIconHover.jpg) no-repeat right top;
+.docnav li.next a:hover{
+ background: url(../background/NextIconHover.jpg) top right no-repeat;
 }
 
-.docnav .up, .docnav .home {
- margin: 0 1.5em;
+.docnav li.up, .docnav li.home {
+ margin:0.5em;
 }
 
-.docnav .up {
- left: 0;
- text-align: left;
- cursor: pointer;
-}
-
-.docnav .up a{
- background: url(../background/BackToTop.gif) no-repeat center top;
+.docnav li.up a {
+ background:url(../background/BackToTop.gif) top left no-repeat;
  width: 34px;
  height: 24px;
- padding: 4px 8px;
- color: transparent !important;
+ padding: 4px 10px;
+ display: inline-block; 
 }
 
-.docnav .up a:hover{
- background: url(../background/BackToTopHover.jpg) no-repeat center top;
+.docnav li.up a:hover{
+ background: url(../background/BackToTopHover.jpg) top left no-repeat;
 }
 
-.docnav .home {
- right: 0;
- text-align: right;
- cursor: pointer;
-}
-
-.docnav .home a{
-	background: url(../background/BackToHome.gif) no-repeat right top;
+.docnav li.home a {
+ background:url(../background/BackToHome.gif) top left no-repeat;
  width: 34px;
  height: 24px;
- padding: 4px 0px;
- color: transparent !important;
+ padding: 4px 10px;
+ display: inline-block; 
 }
 
-.docnav .home a:hover{
-	background: url(../background/BackToHomeHover.jpg) no-repeat right top;
+.docnav li.home a:hover{
+ background: url(../background/BackToHomeHover.jpg) top left no-repeat;
 }
-
 
 /*######################### Banner #############################*/
 

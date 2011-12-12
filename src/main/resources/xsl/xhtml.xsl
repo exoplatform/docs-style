@@ -57,11 +57,11 @@ Version:
 										<xsl:with-param name="object" select="$prev"/>
 									</xsl:call-template>
 								</xsl:attribute>
-								<strong>
+								<!--strong>
 									<xsl:call-template name="navig.content">
 										<xsl:with-param name="direction" select="'prev'"/>
 									</xsl:call-template>
-								</strong>
+								</strong-->
 							</a>
 						</xsl:if>
 					</li>
@@ -73,11 +73,12 @@ Version:
 										<xsl:with-param name="object" select="$next"/>
 									</xsl:call-template>
 								</xsl:attribute>
-								<strong>
+								<!--strong>
 									<xsl:call-template name="navig.content">
 										<xsl:with-param name="direction" select="'next'"/>
 									</xsl:call-template>
-								</strong>
+								</strong-->
+								<span style="display: none">&#160;</span>																																
 							</a>
 						</xsl:if>
 					</li>
@@ -120,11 +121,11 @@ Version:
 										<xsl:with-param name="object" select="$prev"/>
 									</xsl:call-template>
 								</xsl:attribute>
-								<strong>
+								<!--strong>
 									<xsl:call-template name="navig.content">
 										<xsl:with-param name="direction" select="'prev'"/>
 									</xsl:call-template>
-								</strong>
+								</strong-->
 							</a>
 						</xsl:if>
 					</li>
@@ -134,11 +135,11 @@ Version:
 								<xsl:attribute name="href">
 									<xsl:text>#</xsl:text>
 								</xsl:attribute>
-								<strong>
+								<!--strong>
 									<xsl:call-template name="navig.content">
 										<xsl:with-param name="direction" select="'up'"/>
 									</xsl:call-template>
-								</strong>
+								</strong-->
 							</a>
 						</li>
 					</xsl:if>
@@ -150,11 +151,11 @@ Version:
 										<xsl:with-param name="object" select="$home"/>
 									</xsl:call-template>
 								</xsl:attribute>
-								<strong>
+								<!--strong>
 									<xsl:call-template name="navig.content">
 										<xsl:with-param name="direction" select="'home'"/>
 									</xsl:call-template>
-								</strong>
+								</strong-->
 							</a>
 						</li>
 					</xsl:if>
@@ -166,11 +167,11 @@ Version:
 										<xsl:with-param name="object" select="$next"/>
 									</xsl:call-template>
 								</xsl:attribute>
-								<strong>
+								<!--strong>
 									<xsl:call-template name="navig.content">
 										<xsl:with-param name="direction" select="'next'"/>
 									</xsl:call-template>
-								</strong>
+								</strong-->
 							</a>
 						</li>
 					</xsl:if>
