@@ -1,3 +1,39 @@
+a {
+	text-decoration: none;
+	color: #005caa;
+}
+
+ul,li{
+	list-style-type: none;
+}
+
+.ClearFix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.ClearFix {
+	!display: inline-block;
+	!zoom: 1;
+	!display: block; 
+}
+
+.FL {
+	float: left;
+}
+
+.FR {
+	float: right;
+}
+
+a:hover{
+	color: #005caa;
+	text-decoration: underline;
+}
+
 /***************** Banner / Footer **********************/
 
 .UIHeaderPageDocument ul li{
@@ -72,6 +108,58 @@ div.navfooter table {
     border-width: 1px 1px 1px 1px; /* Cocoon specific change */
     background-color: #eeeeee; /* END */
 }
+
+/*Book - content */
+	
+
+.set {
+	padding: 20px;
+}
+
+.book {
+	padding: 20px;
+}
+
+.chapter {
+	padding: 20px;
+}
+
+.section {
+	padding: 20px;
+}
+
+.section .section {
+	padding: 0;
+}
+
+.book .section {
+	padding: 0;
+}
+
+.book .chapter {
+	padding: 0;
+}
+
+.book .chapter .section {
+	padding: 0;
+}
+
+.chapter .section {
+	padding: 0;
+}
+
+.set .book {
+	padding: 0;
+}
+
+.set .section {
+	padding: 0;
+}
+
+.set .chapter {
+	padding: 0;
+}
+
 
 /* N0te */	
 
