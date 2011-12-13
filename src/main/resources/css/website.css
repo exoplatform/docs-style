@@ -87,13 +87,27 @@ a:hover{
 	line-height: 29px;
 }
 
+.UIFooterLinkDoc a{
+	color: #fff;
+	height: 60px;
+	font-size: 14px;
+	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
+	text-decoration:bold;
+}
+ 
+.UIFooterLinkDoc{
+	text-align: center;
+	background: #202640;
+	padding-top: 10px;
+}
+
 .UIFooterPageDocument{
 	color: #63687a;
 	text-align: center;
 	height: 60px;
-	padding-top: 15px;
+	padding-top: 5px;
 	background: #202640;
-	font-size: 11px;
+	font-size: 10px;
 	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
 }
 
