@@ -1,7 +1,7 @@
-a {
+/*<a {
 	text-decoration: none;
 	color: #005caa;
-}
+}*/
 
 ul,li{
 	list-style-type: none;
@@ -72,6 +72,8 @@ a:hover{
 	line-height:36px;
 	padding-right: 50px;
 	font-weight: bold;
+	text-decoration: none;
+	
 }
 
 .UIHeaderPageDocument .Menu .NavigationTop .SelectedNavigationTab{
@@ -111,43 +113,101 @@ a:hover{
 	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
 }
 
+/* Navigation header */
 
-.navheader, .navfooter {
-    border: none;
+.docnav {
+	list-style: none outside none;
+	position: relative;
+	text-align: center;
+	padding: 23px 0px;
+	margin-bottom: 20px;
 }
 
-div.navfooter table {
-    border-style: dashed;
-    border-color: gray;
-    border-width: 1px 1px 1px 1px; /* Cocoon specific change */
-    background-color: #eeeeee; /* END */
+.docnav .previous a{
+ color: transparent !important;
 }
+
+.docnav .next a{
+ color: transparent !important;
+}
+
+.docnav .home a{
+ color: transparent !important;
+}
+
+.docnav .up a{
+ color: transparent !important;
+}
+
+.docnav li {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.docnav .title{
+	color: #FAC943;
+  font-size: 18px;
+ 	font-weight: bold;
+}
+
+.docnavtitle .titlefooterprev {
+	left: 0;
+	text-align: left;
+}
+
+.docnavtitle .titlefooternext {
+ 	right: 0;
+ 	text-align: right;
+}
+
+.docnavtitle .titlefooternext, .docnavtitle .titlefooternext {
+ position: absolute;
+}
+
+.docnavtitle{
+	list-style: none outside none;
+	position: relative;
+	padding: 23px 0px;
+	margin-top: -60px;
+	color: #FAC943;
+  font-size: 14px;
+ 	font-weight: bold;
+}
+
+.docnavtitle li {
+  padding-left: 20px;
+  padding-right: 20px;
+ 	list-style: none outside none;
+ 	display: inline;
+}
+
+
 
 /*Book - content */
 	
 
 .set {
-	padding: 20px;
+	margin: 25px;
 }
 
 .book {
-	padding: 20px;
+	margin: 25px;
 }
 
 .chapter {
-	padding: 20px;
+	margin: 25px;
 }
 
 .section {
-	padding: 20px;
+	margin: 25px;
 }
 
 .section .section {
-	padding: 0;
+	margin: 0;
 }
 
 .book .section {
-	padding: 0;
+	margin: 0;
 }
 
 .book .chapter {
@@ -155,11 +215,11 @@ div.navfooter table {
 }
 
 .book .chapter .section {
-	padding: 0;
+	margin: 0;
 }
 
 .chapter .section {
-	padding: 0;
+	margin: 0;
 }
 
 .set .book {
@@ -167,11 +227,11 @@ div.navfooter table {
 }
 
 .set .section {
-	padding: 0;
+	margin: 0;
 }
 
 .set .chapter {
-	padding: 0;
+	margin: 0;
 }
 
 
