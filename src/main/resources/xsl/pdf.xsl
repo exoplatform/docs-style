@@ -1647,7 +1647,7 @@
    <xsl:template match="abstract">
   <xsl:variable name="keep.together">
   </xsl:variable>
-  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt">
+  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt" margin="0pt">
     <xsl:if test="$keep.together != ''">
       <xsl:attribute name="keep-together.within-column"><xsl:value-of
                       select="$keep.together"/></xsl:attribute>
