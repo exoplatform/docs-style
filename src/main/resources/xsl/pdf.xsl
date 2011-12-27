@@ -1679,4 +1679,26 @@
   </fo:inline>
 </xsl:template>
 
+<xsl:template match="citetitle">
+  <xsl:param name="content">
+    <xsl:call-template name="simple.xlink">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline color="#0C46BC" font-style="normal" font-size="10pt">
+    <xsl:call-template name="anchor"/>
+    <xsl:if test="@dir">
+      <xsl:attribute name="direction">
+        <xsl:choose>
+          <xsl:when test="@dir = 'ltr' or @dir = 'lro'">ltr</xsl:when>
+          <xsl:otherwise>rtl</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template>
+
 </xsl:stylesheet>
