@@ -302,7 +302,7 @@
    <!-- No intendation of Titles -->
    <xsl:param name="body.start.indent">0pt</xsl:param>
 
-   <xsl:param name="title.color">#4a5d75</xsl:param>
+   <xsl:param name="title.color">#FCB837</xsl:param>
    <xsl:param name="chapter.title.color" select="$title.color" />
    <xsl:param name="section.title.color" select="$title.color" />
 
@@ -439,7 +439,7 @@
       <xsl:attribute name="font-family">
 		<xsl:value-of select="$title.fontset" />
 	</xsl:attribute>
-      <xsl:attribute name="color">#4a5d75</xsl:attribute>
+      <xsl:attribute name="color">#FCB837</xsl:attribute>
       <xsl:attribute name="font-size">12pt</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
    </xsl:attribute-set>
@@ -460,8 +460,8 @@
       <!-- highlight this entry? -->
       <xsl:if test="ancestor::thead or ancestor::tfoot">
          <xsl:attribute name="font-weight">bold</xsl:attribute>
-         <xsl:attribute name="background-color">#4a5d75</xsl:attribute>
-         <xsl:attribute name="color">white</xsl:attribute>
+         <xsl:attribute name="background-color">#323863</xsl:attribute>
+         <xsl:attribute name="color">#FCB837</xsl:attribute>
       </xsl:if>
    </xsl:template>
 
@@ -484,7 +484,7 @@
     </xsl:attribute>
       </xsl:if>
       <xsl:if test="ancestor::thead or ancestor::tfoot">
-         <xsl:attribute name="background-color">#4a5d75</xsl:attribute>
+         <xsl:attribute name="background-color">#323863</xsl:attribute>
       </xsl:if>
    </xsl:template>
 
@@ -961,7 +961,7 @@
       <xsl:if test="$header.rule != 0">
          <xsl:attribute name="border-bottom-width">0.5pt</xsl:attribute>
          <xsl:attribute name="border-bottom-style">solid</xsl:attribute>
-         <xsl:attribute name="border-bottom-color">#4a5d75</xsl:attribute>
+         <xsl:attribute name="border-bottom-color">#FCB837</xsl:attribute>
       </xsl:if>
    </xsl:template>
 
@@ -978,7 +978,7 @@
       <xsl:if test="$footer.rule != 0">
          <xsl:attribute name="border-top-width">0.5pt</xsl:attribute>
          <xsl:attribute name="border-top-style">solid</xsl:attribute>
-         <xsl:attribute name="border-top-color">#4a5d75</xsl:attribute>
+         <xsl:attribute name="border-top-color">#FCB837</xsl:attribute>
       </xsl:if>
    </xsl:template>
 
