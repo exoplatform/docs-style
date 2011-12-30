@@ -121,12 +121,12 @@
    <xsl:param name="default.image.width">17.4cm</xsl:param>
 
    <xsl:attribute-set name="xref.properties">
-      <xsl:attribute name="font-style">italic</xsl:attribute>
+      <xsl:attribute name="font-style">normal</xsl:attribute>
       <xsl:attribute name="color">
 	<xsl:choose>
 		<xsl:when
                test="ancestor::note or ancestor::caution or ancestor::important or ancestor::warning or ancestor::tip">
-			<xsl:text>#aee6ff</xsl:text>
+			<xsl:text>#0C46BC</xsl:text>
 		</xsl:when>
 		<xsl:otherwise>
 			<xsl:text>#0066cc</xsl:text>
