@@ -46,7 +46,11 @@
 
    <!-- Admonitions -->
    <xsl:param name="admon.graphics" select="1"/>
-   <xsl:param name="admon.graphics.extension" select="'.png'" />
+   <xsl:param name="admon.graphics.extension" select="'.png'"/>
+   <xsl:template match="*" mode="admon.graphic.width">
+  <xsl:param name="node" select="."/>
+  <xsl:text>24pt</xsl:text>
+   </xsl:template>
 
    <xsl:attribute-set name="admonition.title.properties">
       <xsl:attribute name="font-size">13pt</xsl:attribute>
@@ -1736,5 +1740,6 @@
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
+
 
 </xsl:stylesheet>
