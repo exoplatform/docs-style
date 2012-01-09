@@ -226,7 +226,7 @@
 
 
 	<!-- ==================================================================== -->
-	
+	<!--
 	<xsl:template match="programlisting">
     
     <xsl:variable name="language">
@@ -248,7 +248,6 @@
             xmlns:jhr="com.uwyn.jhighlight.renderer.Renderer" disable-output-escaping="yes"/>
           </xsl:when>
                 <xsl:otherwise>
-                  <!-- Support a single linkend in HTML -->
                   <xsl:variable name="targets" select="key('id', @linkends)"/>
                   <xsl:variable name="target" select="$targets[1]"/>
                   <xsl:choose>
@@ -281,7 +280,7 @@
       </pre>
     
   </xsl:template>
-  
+  -->
   	<!-- ==================================================================== -->
   	
 </xsl:stylesheet>
