@@ -7,6 +7,7 @@ ul,li{
 	list-style-type: none;
 }
 
+
 .ClearFix:after {
 	content: ".";
 	display: block;
@@ -34,6 +35,12 @@ a:hover{
 	text-decoration: underline;
 }
 
+/***************** Home Page **********************/
+
+.HomeContainer {
+	margin : 15px;
+}
+
 /***************** Banner / Footer **********************/
 
 .UIHeaderPageDocument ul li{
@@ -48,14 +55,14 @@ a:hover{
 
 .UIHeaderPageDocument .Logo{
 	background: url("../background/Logo.png") no-repeat left top;
-	width: 80px;
-	height: 35px;
+	width: 65px;
+	height: 29px;
 	display: block;
 	margin: 20px 0px 0px 35px;
 }
 
 .UIHeaderPageDocument .TopBannerSignin{
-	height: 70px;
+	height: 55px;
 }
 
 .UIHeaderPageDocument .Menu .NavigationTop{
@@ -64,7 +71,7 @@ a:hover{
 	border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
-	padding: 0px 25px 0px 45px;
+	padding: 0px 0px 0px 45px;
 }
 
 .UIHeaderPageDocument .Menu .NavigationTop a{
@@ -73,43 +80,30 @@ a:hover{
 	padding-right: 50px;
 	font-weight: bold;
 	text-decoration: none;
-	
 }
 
 .UIHeaderPageDocument .Menu .NavigationTop .SelectedNavigationTab{
     color: #FFCA08;
 }
 
-.UIHeaderPageDocument .Menu .Title{
-	background: #e8f4ff;
-	font-size: 18px;
-	color: #373b50;
-	padding-left: 10px;
-	height: 29px;
-	line-height: 29px;
+
+.UIHeaderPageDocument .Menu .NavigationTop .LinkDoc30{
+	padding-left: 298px;
+	color: #fff;
+	line-height:36px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13px;
 }
 
-.UIFooterLinkDoc a{
-	color: #fff;
-	height: 60px;
-	font-size: 14px;
-	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
-	text-decoration:bold;
-}
- 
-.UIFooterLinkDoc{
-	text-align: center;
-	background: #202640;
-	padding-top: 10px;
-}
 
 .UIFooterPageDocument{
 	color: #63687a;
 	text-align: center;
-	height: 60px;
-	padding-top: 5px;
-	background: #202640;
-	font-size: 10px;
+	height: 40px;
+	/*padding-top: 5px;
+	background: #202640;*/
+	font-size: 11px;
 	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
 }
 

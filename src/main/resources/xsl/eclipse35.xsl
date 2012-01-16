@@ -20,6 +20,29 @@
   <xsl:param name="ignore.image.scaling" select="1"/>
   <xsl:param name="tablecolumns.extension" select="0"/>
   <xsl:param name="graphicsize.extension" select="0"/>
+  
+  <!-- Set chunk.section.depth to 0 to just chunk chapters. -->
+  <xsl:param name="chunk.section.depth" select="1"/>
+  <xsl:param name="chunk.first.sections" select="1"/>
+  
+  <!-- turn off a TOC -->
+  <xsl:param name="generate.toc">
+		/appendix nop
+		article/appendix  nop
+		/article  toc,title
+		book      toc,title,figure,table,example,equation
+		/chapter  nop
+		part      nop
+		/preface  toc,title
+		reference toc,title
+		/sect1    nop
+		/sect2    nop
+		/sect3    nop
+		/sect4    nop
+		/sect5    nop
+		/section  nop
+		set       nop
+	</xsl:param>
  
   
   <!-- ==================================================================== -->
@@ -222,6 +245,12 @@
         </ul>
       </xsl:if>
   </xsl:if>
+  
+  <!-- FOOTER IN EVERY PAGES -->
+  	<div class="UIFooterPageDocument">
+			Copyright ©2012. All rights reserved. eXo Platform SAS
+		</div>
+
 </xsl:template>
 
 
