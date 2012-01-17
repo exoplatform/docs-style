@@ -41,7 +41,7 @@
 		/sect4    nop
 		/sect5    nop
 		/section  nop
-		set       nop
+		set       toc,title
 	</xsl:param>
  
   
