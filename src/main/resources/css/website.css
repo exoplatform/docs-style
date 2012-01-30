@@ -61,6 +61,14 @@ a:hover{
 	margin: 20px 0px 0px 35px;
 }
 
+.UIHeaderPageDocument .PDF{
+	background: url("../background/Download_PDF.png") no-repeat right top;
+	width: 176px;
+	height: 46px;
+	display: block;
+	margin: 10px 15px 0 0px;
+}
+
 .UIHeaderPageDocument .TopBannerSignin{
 	height: 55px;
 }
