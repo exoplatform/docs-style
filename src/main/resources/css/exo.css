@@ -50,7 +50,7 @@ visibility: hidden;
  position: relative; 
  text-align: center;
  padding: 23px 0px;
- margin-bottom: 35px;
+ margin-bottom: 0;
  width: 100%;
 }
 
@@ -411,6 +411,13 @@ hr {
 	margin: 8px 0px 0px 0px;
 }
 
+.UIFooterPageDocument{
+	color: #63687a;
+	text-align: center;
+	height: 40px;
+	font-size: 12px;
+	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
+}
 /* ======================= Chapter ===========================*/
 
 .chapter .titlepage h2 , .titlepage .title a{
