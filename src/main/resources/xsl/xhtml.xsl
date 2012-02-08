@@ -179,6 +179,11 @@ Version:
 			</ul>
 		</xsl:if>
 	</xsl:if>
+
+<!-- FOOTER IN EVERY PAGES -->
+  	<div class="UIFooterPageDocument">
+			Copyright © 2009-2012. All rights reserved. eXo Platform SAS
+		</div>
 </xsl:template>
 
 <!--
