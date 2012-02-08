@@ -28,6 +28,78 @@
       <version.release.plugin>2.2.1</version.release.plugin>
       <version.buildnumber.plugin>1.0</version.buildnumber.plugin>
       <pushChanges>false</pushChanges>
+      <org.chromattic.version>1.1.1</org.chromattic.version>
+    	<org.wikbook.version>0.9.37</org.wikbook.version>
+    	<docbkx-maven-plugin.version>2.0.13</docbkx-maven-plugin.version>
+    	<javax.ws.rs.version>1.0</javax.ws.rs.version>
   </properties>
+  
+  <dependencies>
+
+    <dependency>
+      <groupId>org.wikbook</groupId>
+      <artifactId>wikbook.template.core</artifactId>
+      <version>${org.wikbook.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>jsr311-api</artifactId>
+      <version>${javax.ws.rs.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.chromattic</groupId>
+      <artifactId>chromattic.api</artifactId>
+      <version>${org.chromattic.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.chromattic</groupId>
+      <artifactId>chromattic.core</artifactId>
+      <version>${org.chromattic.version}</version>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+    <plugins>
+     	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>default-compile</id>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+            <phase>compile</phase>
+            <configuration>
+              <compilerArgument>-proc:none</compilerArgument>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classifier>templates</classifier>
+              <includes>
+                <include>**/templates/*</include>
+              </includes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
