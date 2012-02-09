@@ -354,7 +354,16 @@ a:hover{
 	font-size: 15px !important;
  }
  
-  h6 {
+ h6 {
 	color: #FCB837;
 	font-size: 14px !important;
+ }
+ 
+ /* Table */
+	/* Add space between 2 tables. Correct the text size in table */
+.section table {
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 14px;
+	margin: 10px 0;
  }
