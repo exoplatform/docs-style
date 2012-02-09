@@ -347,3 +347,14 @@ a:hover{
     padding: 0 0 5px 12px;
 }
 
+/* Heading */
+      /* correct the h5 & h6 text color & text size*/
+ h5 {
+	color: #FCB837;
+	font-size: 15px !important;
+ }
+ 
+  h6 {
+	color: #FCB837;
+	font-size: 14px !important;
+ }
