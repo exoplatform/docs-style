@@ -380,3 +380,25 @@ a:hover{
     list-style: none outside none;
 	padding-left: 10px;
 }
+
+/* procedure margin & color */
+	/* Fix the margin & text color of procedure */
+ 
+ ol {
+    margin-left: 0;
+    padding-left: 20px;
+}
+ 
+.procedure {
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+.procedure ol li {
+	color: black;
+	font-size: 14px;
+}
+
+.procedure ol li  p {
+	font-weight: normal;
+}
