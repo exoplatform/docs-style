@@ -367,3 +367,16 @@ a:hover{
 	font-size: 14px;
 	margin: 10px 0;
  }
+ 
+ /* Bullet List */
+	/* Add bullet list image*/
+.procedure .listitem {
+    list-style: none outside none;
+	padding-left: 10px;
+}
+
+.listitem {
+	background: url("../background/Bulleticon.png") no-repeat scroll left 5px transparent;
+    list-style: none outside none;
+	padding-left: 10px;
+}
