@@ -30,7 +30,7 @@
 		/appendix nop
 		article/appendix  nop
 		/article  toc,title
-		book      toc,title,figure,table,example,equation
+		book      toc,title, <!-- Remove list of tables, figures, examples -->
 		/chapter  nop
 		part      nop
 		/preface  toc,title
