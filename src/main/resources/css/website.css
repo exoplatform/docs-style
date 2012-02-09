@@ -376,7 +376,7 @@ a:hover{
 }
 
 .listitem {
-	background: url("../background/Bulleticon.png") no-repeat scroll left 5px transparent;
+	background: url("../background/LIIcon.png") no-repeat scroll left 5px transparent;
     list-style: none outside none;
 	padding-left: 10px;
 }
