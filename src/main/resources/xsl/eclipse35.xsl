@@ -312,7 +312,7 @@
   -->
   	<!-- ==================================================================== -->
   	
-<!-- Remove table number -->
+<!-- Remove table number. Remove the navigation label to fix the header, footer navigation display in IE -->
   <xsl:param name="local.l10n.xml" select="document('')"/>
 <l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
   <l:l10n language="en">
@@ -322,6 +322,10 @@
     <l:context name="xref-number-and-title">
       <l:template name="table" text=" "/>
     </l:context>
+	<l:gentext key="nav-home" text=" "/> 
+	<l:gentext key="nav-next" text=""/>
+	<l:gentext key="nav-prev" text=" "/>
+	<l:gentext key="nav-up" text=" "/>
   </l:l10n>
 </l:i18n>
 
