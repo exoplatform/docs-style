@@ -468,7 +468,8 @@
          <xsl:attribute name="color">#FCB837</xsl:attribute>
       </xsl:if>
    </xsl:template>
-
+   <!-- Hide URL -->
+   <xsl:param name="ulink.show" select="0"/>
    <!--
       From: fo/table.xsl
       Reason: Table Header format
