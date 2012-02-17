@@ -402,3 +402,38 @@ a:hover{
 .procedure ol li  p {
 	font-weight: normal;
 }
+
+
+/***************** 404 error page **********************/
+
+.ErrorBox {
+	background:url("../background/404-icon.png") no-repeat 26px 14px;
+	padding: 30px 0 0 170px;
+	font-family: verdana,arial,tahoma;
+	color:#737373;
+}
+
+.ErrorBox  .Title {
+	font-size:30px;
+	font-family: arial,tahoma,serif;
+	color:#4c4c4c;
+}
+
+.ErrorBox  ul  {
+	padding:5px 0;
+}
+
+.ErrorBox  ul li {
+	list-style:none;
+	background:url("../background/arrow-icon.png") no-repeat left center;
+	padding: 4px 0 4px 20px;
+}
+.ErrorBox  ul li a {
+	text-decoration:none;
+	color:#066eb7;
+}
+.ErrorBox  ul li a:hover {
+	text-decoration:underline;
+}
+
+
