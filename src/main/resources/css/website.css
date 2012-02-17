@@ -381,6 +381,16 @@ a:hover{
 	padding-left: 10px;
 }
 
+.chapter ul li{
+	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
+	list-style: none;
+	padding-left: 15px;
+	font-size: 14px;
+	color: black;
+	font-weight: normal;
+}
+
+
 /* procedure margin & color */
 	/* Fix the margin & text color of procedure */
  
