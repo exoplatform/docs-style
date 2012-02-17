@@ -390,6 +390,9 @@ a:hover{
 	font-weight: normal;
 }
 
+.procedure ul li  p {
+	font-weight: normal;
+}
 
 /* procedure margin & color */
 	/* Fix the margin & text color of procedure */
@@ -413,6 +416,9 @@ a:hover{
 	font-weight: normal;
 }
 
+.procedure ul li  p {
+	font-weight: normal;
+}
 
 /***************** 404 error page **********************/
 
