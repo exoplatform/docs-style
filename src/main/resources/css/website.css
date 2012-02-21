@@ -173,18 +173,29 @@ a:hover{
 	padding: 23px 0px;
 	margin-top: -60px;
 	color: #FAC943;
-  font-size: 14px;
+	font-size: 14px;
  	font-weight: bold;
 }
 
 .docnavtitle li {
   padding-left: 20px;
   padding-right: 20px;
- 	list-style: none outside none;
- 	display: inline;
+  list-style: none outside none;
+  display: inline;
 }
 
+.navheader th {
+background: none;
+border: 0px;
+box-shadow:0 0px 0px #FFFFFF;
+font-size: 14px;
+}
 
+.navheader td {
+background: none;
+border: 0px;
+box-shadow:0 0px 0px #FFFFFF;
+}
 
 /*Book - content */
 	
@@ -418,6 +429,13 @@ a:hover{
 
 .procedure ul li  p {
 	font-weight: normal;
+}
+
+/*********************Breadcrumbs************************/
+	/*Align the breadcrumbs to page elements*/
+.help_breadcrumbs {    
+    padding-left: 25px;
+    padding-top: 5px;
 }
 
 /***************** 404 error page **********************/
