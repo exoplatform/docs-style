@@ -50,66 +50,10 @@
   <!-- From: xhtml/chunk-common.xsl 
   	Redefine a new template for the header navigation
   -->
+
   <xsl:template name="header.navigation">
-  <xsl:param name="prev" select="/foo"/>
-  <xsl:param name="next" select="/foo"/>
-  <xsl:param name="nav.context"/>
-
-  <xsl:variable name="home" select="/*[1]"/>
-  <xsl:variable name="up" select="parent::*"/>
-
-  <xsl:variable name="row1" select="$navig.showtitles != 0"/>
-  <xsl:variable name="row2" select="count($prev) &gt; 0                                     or (count($up) &gt; 0                                          and generate-id($up) != generate-id($home)                                         and $navig.showtitles != 0)                                     or count($next) &gt; 0"/>
-
-  <xsl:if test="$suppress.navigation = '0' and $suppress.header.navigation = '0'">
-    <ul class="docnav">
-      <xsl:if test="$row2">
-      
-      	<!-- PREVIOUS -->
-				<xsl:if test="count($prev)&gt;0">
-					<li class="previous">
-          	<a accesskey="p">
-		          <xsl:attribute name="href">
-		          	<xsl:call-template name="href.target">
-		            	<xsl:with-param name="object" select="$prev"/>
-		            </xsl:call-template>
-		           </xsl:attribute>
-		           <xsl:call-template name="navig.content">
-		           	<xsl:with-param name="direction" select="'prev'"/>
-		           </xsl:call-template>
-             </a>
-           </li>
-        </xsl:if>
-				
-				
-				<!-- TITLE -->
-				<li class="title">
-						<xsl:apply-templates select="$up" mode="object.title.markup"/>
-          	<!--xsl:when test="count($up) &gt; 0                                   and generate-id($up) != generate-id($home)                                   and $navig.showtitles != 0">
-            	<xsl:apply-templates select="$up" mode="object.title.markup"/>
-            </xsl:when>
-            <xsl:otherwise>&#160;</xsl:otherwise-->
-        </li>
-        
-        <!-- NEXT -->
-				<xsl:if test="count($next)&gt;0">
-					<li class="next">
-		      	<a accesskey="n">
-		        	<xsl:attribute name="href">
-				        <xsl:call-template name="href.target">
-				        	<xsl:with-param name="object" select="$next"/>
-				        </xsl:call-template>
-		          </xsl:attribute>
-		          <xsl:call-template name="navig.content">
-		          	<xsl:with-param name="direction" select="'next'"/>
-		         	</xsl:call-template>
-		        </a>
-        	</li>
-        </xsl:if>
-   		</xsl:if>
-   	</ul>
-   </xsl:if>
-	</xsl:template>
+    <xsl:variable name="row1" select="$navig.showtitles != 0"/>
+  </xsl:template>
 	
 	<!-- ==================================================================== -->
 	
