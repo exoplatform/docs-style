@@ -388,6 +388,18 @@ th{
 	margin: 0px 0px 0px 0px;
 }
 
+ /********************Code Block*********************/
+	/*Fix the code block does not display with docbook*/
+pre {
+	background: none repeat scroll 0 0 #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0;
+    overflow-x: auto;
+    padding: 12px;
+}
+
+
 .footer{
 	padding: 8px 0px;
 	text-align: right;
