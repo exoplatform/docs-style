@@ -398,7 +398,12 @@ pre {
     overflow-x: auto;
     padding: 12px;
 }
-
+    /*Fix the code block with callout displays incorrectly*/
+.programlistingco {
+	background: none;
+    border: 0px;
+    padding: 0px;
+}
 
 .footer{
 	padding: 8px 0px;
