@@ -35,11 +35,121 @@ a:hover{
 	text-decoration: underline;
 }
 
-/***************** Home Page **********************/
+/******************HOME PAGE *********************/
 
-.HomeContainer {
-	margin : 15px;
+.HomeContainer{
+	font-family: Verdana, Arial, Myriad Pro, sans-serif;
+	font-size: 12px;
+	background: url("../background/BgDocument.png") repeat-x left top;
+	height: 55px;
 }
+
+.ContentContainer{
+	padding: 12px 30px;
+	line-height: 23px;
+}
+
+.HomeContainer h1{
+	font-size: 30px;
+	font-family: Myriad Pro ,Verdana, Arial, sans-serif;
+	margin: 0 0 40px 0;
+}
+
+.ContentContainer .TxtTitle{
+	font-family: Myriad Pro ,Verdana, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.ContentContainer .ButtonDocument{
+	margin: 20px 0px 31px 0px;
+}
+
+.ContentContainer .ButtonDocument li {
+	background: url("../background/BgDocument.png") repeat-x left -66px;
+	height: 34px;
+	float: left;
+	margin-right: 11px;
+	line-height: 34px;
+	padding: 0px 50px;
+	font-family: Arial, Myriad Pro ,Verdana,  sans-serif;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.ContentContainer .ButtonDocument li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.ContentContainer h2{
+	border: solid 1px #dbdbdb;
+	border-radius: 5px;
+	height: 39px;
+	font-family: Verdana, Arial, Myriad Pro , sans-serif;
+	font-size: 18px !important;
+	line-height: 38px;
+	color: #2c2c2c;
+	font-weight: normal;
+	padding:0 0 0 60px;
+	margin: 19px 0 10px;
+}
+
+.ContentContainer h3{
+	background: #f9f9f9;
+	border: solid 1px #dbdbdb;
+	border-radius: 5px;
+	font-family:Arial, Verdana, Myriad Pro , sans-serif;
+	height: 30px;
+	padding:0 0 0 19px;
+	line-height:  30px;
+	font-size: 14px;
+	color: #3c3c3c;
+	margin: 0px;
+}
+
+.ContentContainer p{
+	color: #393939;
+	margin: 5px 0px;
+}
+
+.ContentContainer .IconNew{
+	background: #f0f0f0 url("../background/IconDocs.png") no-repeat 20px 7px;
+
+}
+
+.ContentContainer .IconUser{
+	background: #f0f0f0 url("../background/IconDocs.png") no-repeat 20px -58px;
+
+}
+
+.ContentContainer .IconOtherSource{
+	background: #f0f0f0 url("../background/IconDocs.png") no-repeat 20px -123px;
+
+}
+
+
+.ContentContainer .TxtContent{
+	padding: 5px 0px 10px 20px;
+}
+
+.TxtNote li{
+	background: url("../background/Arrow.png") no-repeat left 10px;
+	padding-left: 15px;
+	margin-bottom: 5px;
+}
+
+.TxtNote li a{
+	color: #145bc7;
+	text-decoration: none;
+}
+
+.TxtContent ul{
+ margin: 0px;
+ padding: 0px;
+}
+
 
 /***************** Banner / Footer **********************/
 
