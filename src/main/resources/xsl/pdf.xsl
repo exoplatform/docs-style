@@ -323,16 +323,17 @@
    <xsl:param name="header.rule" select="1" />
 
    <!-- Space between paper border and content (chaotic stuff, don't touch) -->
-   <xsl:param name="page.margin.top">15mm</xsl:param>
+
+   <xsl:param name="page.margin.top">10mm</xsl:param>
    <xsl:param name="region.before.extent">10mm</xsl:param>
-   <xsl:param name="body.margin.top">15mm</xsl:param>
+   <xsl:param name="body.margin.top">12mm</xsl:param>
 
    <xsl:param name="body.margin.bottom">15mm</xsl:param>
    <xsl:param name="region.after.extent">10mm</xsl:param>
-   <xsl:param name="page.margin.bottom">15mm</xsl:param>
+   <xsl:param name="page.margin.bottom">9mm</xsl:param>
 
-   <xsl:param name="page.margin.outer">30mm</xsl:param>
-   <xsl:param name="page.margin.inner">30mm</xsl:param>
+   <xsl:param name="page.margin.outer">19.5mm</xsl:param>
+   <xsl:param name="page.margin.inner">19.5mm</xsl:param>
 
    <!-- No intendation of Titles -->
    <xsl:param name="body.start.indent">0pt</xsl:param>
