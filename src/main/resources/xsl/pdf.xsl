@@ -212,14 +212,23 @@
       <xsl:attribute name="linefeed-treatment">preserve</xsl:attribute>
       <xsl:attribute name="text-align">start</xsl:attribute>
    </xsl:attribute-set>
-
-   <xsl:param name="generate.toc">set toc book toc article toc</xsl:param>
+    
+   <!--Show the text: Table of Contents at the beginning of Toc page-->
+   <xsl:param name="generate.toc">set toc book toc,title article toc</xsl:param>
 
    <!--###################################################
       Custom TOC (bold chapter titles)
       ################################################### -->
 
-   <!-- Improve the TOC. -->
+<!-- Improve the TOC -->
+    <!--Change Conents into Table of Contents -->
+
+	<xsl:param name="local.l10n.xml" select="document('')"/> 
+	<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"> 
+		<l:l10n language="en"> 
+		<l:gentext key="TableofContents" text="Table of Contents"/>
+		</l:l10n>
+	</l:i18n>
    <xsl:template name="toc.line">
       <xsl:variable name="id">
          <xsl:call-template name="object.id" />
