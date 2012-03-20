@@ -261,15 +261,28 @@
    <!-- Format Variable Lists as Blocks (prevents horizontal overflow). -->
    <xsl:param name="variablelist.as.blocks">1</xsl:param>
 
-   <!-- The horrible list spacing problems, this is much better. -->
-   <xsl:attribute-set name="list.block.spacing">
-      <xsl:attribute name="space-before.optimum">2em</xsl:attribute>
-      <xsl:attribute name="space-before.minimum">1em</xsl:attribute>
-      <xsl:attribute name="space-before.maximum">3em</xsl:attribute>
-      <xsl:attribute name="space-after.optimum">0.1em</xsl:attribute>
-      <xsl:attribute name="space-after.minimum">0.1em</xsl:attribute>
-      <xsl:attribute name="space-after.maximum">0.1em</xsl:attribute>
-   </xsl:attribute-set>
+<!--Define style for list-item -->
+<xsl:attribute-set name="list.block.spacing">
+	<xsl:attribute name="margin-left">
+		<xsl:choose>
+			<xsl:when test="self::itemizedlist">1em</xsl:when>
+			<xsl:otherwise>0pt</xsl:otherwise>
+		</xsl:choose>
+	</xsl:attribute>
+	<xsl:attribute name="space-before.optimum">0.75em</xsl:attribute>
+	<xsl:attribute name="space-before.minimum">0.70em</xsl:attribute>
+	<xsl:attribute name="space-before.maximum">0.80em</xsl:attribute>
+	<xsl:attribute name="space-after.optimum">0.75em</xsl:attribute>
+	<xsl:attribute name="space-after.minimum">0.70em</xsl:attribute>
+	<xsl:attribute name="space-after.maximum">0.80em</xsl:attribute>
+</xsl:attribute-set>
+
+   <!-- Set spacing around individual items in the list -->
+	<xsl:attribute-set name="list.item.spacing">
+		<xsl:attribute name="space-before.optimum">0.40em</xsl:attribute>
+		<xsl:attribute name="space-before.minimum">0.40em</xsl:attribute>
+		<xsl:attribute name="space-before.maximum">0.40em</xsl:attribute>
+	</xsl:attribute-set>
 
    <!-- Some padding inside tables -->
    <xsl:attribute-set name="table.cell.padding">
