@@ -37,6 +37,13 @@
    <xsl:param name="hyphenate">true</xsl:param>
    <!--xsl:param name="ulink.hyphenate" select="1"/-->
 
+<!-- Define spacing around paragraphs-->
+	<xsl:attribute-set name="normal.para.spacing">
+	<xsl:attribute name="space-before.minimum">2mm</xsl:attribute>
+	<xsl:attribute name="space-before.optimum">2mm</xsl:attribute>
+	<xsl:attribute name="space-before.maximum">2mm</xsl:attribute>
+	</xsl:attribute-set>
+
    <xsl:param name="line-height" select="1.5" />
 
    <!-- Callouts -->
