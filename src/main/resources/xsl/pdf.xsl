@@ -111,6 +111,8 @@
       <xsl:attribute name="padding-top">12pt</xsl:attribute>
       <xsl:attribute name="padding-right">12pt</xsl:attribute>
       <xsl:attribute name="padding-left">12pt</xsl:attribute>
+      <xsl:attribute name="padding">20pt</xsl:attribute>
+      <xsl:attribute name="margin">0pt</xsl:attribute>
       <xsl:attribute name="margin-left">
     <xsl:value-of select="$title.margin.left" />
   </xsl:attribute>
@@ -1513,7 +1515,7 @@
          font-size="{$programlisting.font.size}" space-before="12pt" space-after="12pt"
          linefeed-treatment="preserve" white-space-collapse="false"
          white-space-treatment="preserve" padding-bottom="12pt" padding-top="12pt"
-         padding-right="12pt" padding-left="12pt">
+         padding-right="12pt" padding-left="12pt" padding="20pt" margin="0">
 
          <xsl:choose>
             <xsl:when test="$parsable = 'true'">
