@@ -25,6 +25,9 @@ From: xhtml/chunk-common.xsl
 Reason: remove tables, truncate link text
 Version:
 -->
+<!-- Display the chapter name rather than bkXXchYY.html-->
+<xsl:param name="use.id.as.filename" select="1"/>
+
 <xsl:template name="header.navigation">
 	<xsl:param name="prev" select="/foo"/>
 	<xsl:param name="next" select="/foo"/>
