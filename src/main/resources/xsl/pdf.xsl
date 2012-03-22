@@ -1163,7 +1163,7 @@
    <xsl:template match="subtitle" mode="book.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
          xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center"
-         font-size="34pt" space-before="30pt" font-family="{$title.fontset}">
+         font-size="17pt" space-before="10pt" font-style="italic" font-family="{$title.fontset}">
          <xsl:apply-templates select="." mode="book.titlepage.recto.mode" />
       </fo:block>
    </xsl:template>
