@@ -1019,6 +1019,43 @@
       </xsl:if>
    </xsl:template>
 
+   <!-- Define style for footer -->
+
+    <!--Text appearance in footers -->
+	<xsl:attribute-set name="footer.content.properties">
+	  <xsl:attribute name="font-style">italic</xsl:attribute>
+	  <xsl:attribute name="font-size">8pt</xsl:attribute>
+	</xsl:attribute-set>
+
+    <!--Insert copyright text to footer -->
+	<xsl:template name="footer.content">
+		<xsl:param name="pageclass" select="''"/>
+		<xsl:param name="sequence" select="''"/>
+		<xsl:param name="position" select="''"/>
+		<fo:block>  
+			<xsl:choose>
+				<xsl:when test="$pageclass = 'titlepage'">
+				<!--no footer on title pages-->
+				</xsl:when>
+				<xsl:when test="$position = 'left'">
+				<xsl:apply-templates select="//copyright[1]" mode="titlepage.mode"/>
+				</xsl:when>
+				<xsl:when test="$position = 'right'">
+				<xsl:apply-templates select="." mode="titleabbrev.markup"/>
+				</xsl:when>
+				<xsl:when test="$position = 'center'">
+				p.<fo:page-number/>
+				</xsl:when>
+				<xsl:when test="$sequence = 'blank'">
+				</xsl:when>
+				<xsl:when test="$sequence = 'odd'">
+				</xsl:when>
+				<xsl:when test="$sequence = 'even'">
+				</xsl:when>
+			</xsl:choose>
+		</fo:block>
+	</xsl:template>
+
    <xsl:param name="footnote.font.size">
       <xsl:value-of select="$body.font.master * 0.8" />
       <xsl:text>pt</xsl:text>
