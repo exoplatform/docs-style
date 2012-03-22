@@ -1167,6 +1167,15 @@
          <xsl:apply-templates select="." mode="book.titlepage.recto.mode" />
       </fo:block>
    </xsl:template>
+	
+	<!--Style for Copyright -->
+	<xsl:template match="copyright" mode="book.titlepage.recto.auto.mode">
+		<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
+		xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center"
+		font-size="9pt" space-before="10pt" font-style="italic" font-family="{$title.fontset}">
+		<xsl:apply-templates select="." mode="book.titlepage.recto.mode" />
+		</fo:block>
+	</xsl:template>
 
    <xsl:template match="issuenum" mode="book.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -1278,7 +1287,11 @@
             <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="subtitle" />
          </xsl:when>
       </xsl:choose>
-
+	  <xsl:choose>
+		<xsl:when test="bookinfo/copyright">
+		  <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/copyright" />
+		</xsl:when>
+	  </xsl:choose>
       <fo:block xsl:use-attribute-sets="book.titlepage.recto.style" font-size="14pt"
          space-before="15.552pt">
          <xsl:apply-templates mode="book.titlepage.recto.auto.mode"
