@@ -25,6 +25,9 @@
   <xsl:param name="chunk.section.depth" select="1"/>
   <xsl:param name="chunk.first.sections" select="1"/>
   
+  <!--Display fixed book name rather than bk0X.html and fixed chapter name rather than bkXXchYY.html -->
+  <xsl:param name="use.id.as.filename" select="1"/>
+  
   <!-- turn off a TOC -->
   <xsl:param name="generate.toc">
 		/appendix nop
