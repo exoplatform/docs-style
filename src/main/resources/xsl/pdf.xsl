@@ -118,13 +118,15 @@
   </xsl:attribute>
    </xsl:attribute-set>
 
+   <!-- Font style for programlisting -->
    <xsl:param name="programlisting.font" select="'verdana,helvetica,sans-serif'" />
-   <xsl:param name="programlisting.font.size" select="'100%'" />
 
-   <!-- Change to monospace font for programlisting, needed to workaround crappy callouts -->
-   <!-- <xsl:param name="programlisting.font" select="$monospace.font.family" /> -->
    <!-- Make the font for programlisting slightly smaller -->
-   <!-- <xsl:param name="programlisting.font.size" select="'75%'" /> -->
+   <xsl:param name="programlisting.font.size" select="'70%'" />
+ <xsl:param name="body.font.size" select="'75%'" />
+  <xsl:param name="chapter.title.font.size" select="'60%'" /> 
+ <xsl:param name="section.title.font.size" select="'60%'" /> 
+  <xsl:param name="title.font.size" select="'60%'" /> 
 
    <!-- Make the section depth in the TOC 2, same as html -->
    <xsl:param name="toc.section.depth">2</xsl:param>
@@ -198,20 +200,22 @@
 	</xsl:attribute>
    </xsl:attribute-set>
 
-   <xsl:attribute-set name="verbatim.properties">
-      <xsl:attribute name="space-before.minimum">0.8em</xsl:attribute>
-      <xsl:attribute name="space-before.optimum">1em</xsl:attribute>
-      <xsl:attribute name="space-before.maximum">1.2em</xsl:attribute>
-      <xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
-      <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
-      <xsl:attribute name="space-after.maximum">1.2em</xsl:attribute>
-      <xsl:attribute name="hyphenate">false</xsl:attribute>
-      <xsl:attribute name="wrap-option">wrap</xsl:attribute>
-      <xsl:attribute name="white-space-collapse">false</xsl:attribute>
-      <xsl:attribute name="white-space-treatment">preserve</xsl:attribute>
-      <xsl:attribute name="linefeed-treatment">preserve</xsl:attribute>
-      <xsl:attribute name="text-align">start</xsl:attribute>
-   </xsl:attribute-set>
+<!-- Set the vertical spacing around the various verbatim-type elements (programlisting, literallayout) -->
+<xsl:attribute-set name="verbatim.properties">
+	<xsl:attribute name="line-height">0.5</xsl:attribute>
+	<xsl:attribute name="space-before.minimum">0.4em</xsl:attribute>
+	<xsl:attribute name="space-before.optimum">>0.5em</xsl:attribute>
+	<xsl:attribute name="space-before.maximum">0.6em</xsl:attribute>
+	<xsl:attribute name="space-after.minimum">0.4em</xsl:attribute>
+	<xsl:attribute name="space-after.optimum">0.5em</xsl:attribute>
+	<xsl:attribute name="space-after.maximum">0.6em</xsl:attribute>
+	<xsl:attribute name="hyphenate">false</xsl:attribute>
+	<xsl:attribute name="wrap-option">wrap</xsl:attribute>
+	<xsl:attribute name="white-space-collapse">false</xsl:attribute>
+	<xsl:attribute name="white-space-treatment">preserve</xsl:attribute>
+	<xsl:attribute name="linefeed-treatment">preserve</xsl:attribute>
+	<xsl:attribute name="text-align">start</xsl:attribute>
+</xsl:attribute-set>
     
    <!--Show the text: Table of Contents at the beginning of Toc page-->
    <xsl:param name="generate.toc">set toc book toc,title article toc</xsl:param>
