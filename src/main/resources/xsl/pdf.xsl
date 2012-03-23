@@ -345,7 +345,7 @@
    <xsl:param name="title.color">#FCB837</xsl:param>
    <xsl:param name="chapter.title.color" select="$title.color" />
    <xsl:param name="section.title.color" select="$title.color" />
-
+   <!-- Define properties for section title1 -->
    <xsl:attribute-set name="section.title.level1.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
@@ -353,7 +353,11 @@
 		<xsl:value-of select="$body.font.master * 1.6" />
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
+    <xsl:attribute name="border-bottom">0.5pt dashed #FCB837</xsl:attribute>
+    <xsl:attribute name="padding-top">6pt</xsl:attribute>
+    <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
    </xsl:attribute-set>
+
    <xsl:attribute-set name="section.title.level2.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
