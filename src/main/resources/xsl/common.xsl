@@ -20,11 +20,22 @@
   -->  
 
   <!-- XHTML and PDF --> 
+ <!--  Enable extensions (needed for callouts) -->
+ <xsl:param name="use.extensions">1</xsl:param>
+
+ <!-- For backwards compatibility we want to use callouts specified using programlistingco elements -->
+ <xsl:param name="callouts.extension">1</xsl:param>
+
+ <!-- Use graphical callouts as they look nicer with highlighed code. -->
+  <xsl:param name="callout.graphics">1</xsl:param>
+  <xsl:param name="callout.graphics.number.limit">15</xsl:param>
+ <xsl:param name="callout.graphics.extension">.png</xsl:param>
+
   <xsl:param name="callout.graphics.path">
     <xsl:if test="$img.src.path != ''">
       <xsl:value-of select="$img.src.path"/>
     </xsl:if>
-    <xsl:text>images/exojcr/docbook/callouts/</xsl:text>
+    <xsl:text>images/callouts/</xsl:text>
   </xsl:param>
  
   <xsl:param name="admon.graphics.path">
@@ -34,6 +45,9 @@
     <xsl:text>background/</xsl:text>
   </xsl:param>
   
+   <!--Specify location of callout icons -->
+   <xsl:param name="callout.defaultcolumn">1</xsl:param>
+
  <!-- TOC -->
   <xsl:param name="section.autolabel" select="1"/>
   

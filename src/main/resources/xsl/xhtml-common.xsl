@@ -46,15 +46,6 @@
       figure after example before equation before table before procedure before
    </xsl:param>
    
-   <!-- Callouts -->
-   <!-- Place callout marks at this column in annotated areas. The algorithm using this number doesn't
-        know about highlighted code with extra span elements so we need to pad each line at the start
-        with an XML comment and a line break. The callout marks must then be placed immediately afterwards.
-        This ensures that the callouts appear on the same line as the code it relates to and we can position
-        them using CSS so that they all appear in a column on the right. -->
-   <xsl:param name="callout.defaultcolumn">15</xsl:param>
-   <xsl:param name="callout.icon.size">17px</xsl:param>
-      
   <!-- Admonitions -->
   <xsl:param name="admon.style" select="''"/>
 

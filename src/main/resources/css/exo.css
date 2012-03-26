@@ -405,6 +405,23 @@ pre {
     padding: 0px;
 }
 
+.calloutlist {margin: 20px 0 10px 0;}
+.calloutlist table {
+	border-collapse: separate;
+	border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.calloutlist td {
+	border:none;
+    padding: 2px 6px;
+}
+
+.calloutlist table p {
+	margin:0;
+}
+
+
 .footer{
 	padding: 8px 0px;
 	text-align: right;

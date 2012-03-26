@@ -46,11 +46,6 @@
 
    <xsl:param name="line-height" select="1.5" />
 
-   <!-- Callouts -->
-   <!-- Place callout bullets at this column in programlisting.-->
-   <xsl:param name="callout.defaultcolumn">80</xsl:param>
-   <xsl:param name="callout.icon.size">10pt</xsl:param>
-
    <!-- Admonitions -->
    <xsl:param name="admon.graphics" select="1"/>
    <xsl:param name="admon.graphics.extension" select="'.png'"/>
