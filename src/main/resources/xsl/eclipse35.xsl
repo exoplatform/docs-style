@@ -16,6 +16,21 @@
   <xsl:param name="eclipse.plugin.id">org.exoplatform.doc.35</xsl:param>
   <xsl:param name="eclipse.plugin.provider">eXo Platform</xsl:param>
   
+  <!--Callouts-->
+   <!--  Enable extensions (needed for callouts) -->
+ <xsl:param name="use.extensions">1</xsl:param>
+
+ <!-- For backwards compatibility we want to use callouts specified using programlistingco elements -->
+ <xsl:param name="callouts.extension">1</xsl:param>
+
+ <!-- Use graphical callouts as they look nicer with highlighed code. -->
+  <xsl:param name="callout.graphics">1</xsl:param>
+  <xsl:param name="callout.graphics.number.limit">15</xsl:param>
+ <xsl:param name="callout.graphics.extension">.png</xsl:param>
+  
+   <!--Specify location of callout icons -->
+   <xsl:param name="callout.defaultcolumn">1</xsl:param>
+
  	<!-- These extensions are required for table printing and other stuff -->
   <xsl:param name="ignore.image.scaling" select="1"/>
   <xsl:param name="tablecolumns.extension" select="0"/>
