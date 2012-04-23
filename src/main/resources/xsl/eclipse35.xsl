@@ -217,7 +217,7 @@
 
 
 	<!-- ==================================================================== -->
-	<!--
+
 	<xsl:template match="programlisting">
     
     <xsl:variable name="language">
@@ -271,7 +271,7 @@
       </pre>
     
   </xsl:template>
-  -->
+  
   	<!-- ==================================================================== -->
   	
 <!-- Remove table number. Remove the navigation label to fix the header, footer navigation display in IE -->
