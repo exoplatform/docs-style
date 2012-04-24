@@ -14,9 +14,9 @@
   <name>eXo documentation common style</name>
 
    <scm>
-      <connection>scm:git:ssh://github.com/exoplatform/docs-style.git</connection>
+      <connection>scm:git:git://github.com/exoplatform/docs-style.git</connection>
       <url>https://github.com/exoplatform/docs-style</url>
-      <developerConnection>scm:git:ssh://github.com/exoplatform/docs-style.git</developerConnection>
+      <developerConnection>scm:git:git@github.com:exoplatform/docs-style.git</developerConnection>
    </scm>
 
   <ciManagement>
