@@ -202,6 +202,7 @@ http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered
     <l:context name="xref-number-and-title">
       <l:template name="table" text=" "/><!-- leave the space here -->
     </l:context>
+	<l:gentext key="TableofContents" text="The following topics are covered:"/>
   </l:l10n>
 </l:i18n>
 

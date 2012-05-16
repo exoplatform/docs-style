@@ -109,15 +109,16 @@ article toc
 chapter nop
 qandadiv toc
 qandaset toc
-sect1 nop
-sect2 nop
+sect1 toc,title
+sect2 toc,title
 sect3 nop
 sect4 nop
 sect5 nop
-section toc
+section toc,title
 part toc
 </xsl:param>
 
+<xsl:param name="generate.section.toc.level" select="2"/>
 <xsl:param name="suppress.navigation" select="0"/>
 <xsl:param name="suppress.header.navigation" select="0"/>
 <xsl:param name="suppress.footer.navigation" select="0"/>
