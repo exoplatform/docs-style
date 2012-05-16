@@ -50,7 +50,7 @@
   <xsl:param name="admon.style" select="''"/>
 
   <!-- Set chunk.section.depth to 0 to just chunk chapters. -->
-  <xsl:param name="chunk.section.depth" select="0"/>
+  <xsl:param name="chunk.section.depth" select="6"/>
   <xsl:param name="chunk.first.sections" select="1"/>
   <xsl:param name="chunk.toc" select="''"/>
   <xsl:param name="chunker.output.doctype-public" select="'-//W3C//DTD XHTML 1.0 Strict//EN'"/>
