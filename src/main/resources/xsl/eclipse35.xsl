@@ -37,7 +37,7 @@
   <xsl:param name="graphicsize.extension" select="0"/>
   
   <!-- Set chunk.section.depth to 0 to just chunk chapters. -->
-  <xsl:param name="chunk.section.depth" select="1"/>
+  <xsl:param name="chunk.section.depth" select="6"/>
   <xsl:param name="chunk.first.sections" select="1"/>
   
   <!--Display fixed book name rather than bk0X.html and fixed chapter name rather than bkXXchYY.html -->
