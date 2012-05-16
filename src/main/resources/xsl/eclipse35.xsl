@@ -53,16 +53,16 @@
 		part      nop
 		/preface  toc,title
 		reference toc,title
-		/sect1    nop
-		/sect2    nop
+		sect1     toc,title
+		sect2     toc,title
 		/sect3    nop
 		/sect4    nop
 		/sect5    nop
-		/section  nop
+		section   toc,title
 		set       toc,title
 	</xsl:param>
  
-  
+    <xsl:param name="generate.section.toc.level" select="2"/>
   <!-- ==================================================================== -->
   
   <!-- From: xhtml/chunk-common.xsl 
@@ -281,6 +281,7 @@
     <l:context name="title">
       <l:template name="table" text=" "/>
     </l:context>
+    <l:gentext key="TableofContents" text="The following topics are covered:"/>
     <l:context name="xref-number-and-title">
       <l:template name="table" text=" "/>
     </l:context>
