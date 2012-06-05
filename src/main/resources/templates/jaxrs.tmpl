@@ -6,7 +6,7 @@ h1. ${verb.name} ${verb.sibling("@Path").attribute("flat:value")?replace("{", ""
 *URL*:
 
 {code}
-http://platform35.demo.exoplatform.org/rest/private/${@Path.attribute("value")}${verb.sibling("@Path").attribute("flat:value")}
+http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${verb.sibling("@Path").attribute("flat:value")}
 {code}
 <#if verb.sibling("@Produces")??>
 
