@@ -626,7 +626,6 @@ td {
 	padding-left: 0px;
 }
 
-
 .chapter ul li{
 	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
 	list-style: none;
@@ -659,9 +658,9 @@ td {
 	font-weight: normal;
 }
 
-/* N0te */	
+/* Note */	
 
-.chapter .note {
+.note {
     background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
     margin: 4px 4px 4px 4px;
     padding: 15px 10px 22px 3px;
@@ -670,7 +669,7 @@ td {
 	border-radius: 10px;
 }
 
-.chapter .note .title {
+.note .title {
     font-weight: bold;
 	font-size: 16px !important;
     margin: 0 0 10px 40px;
@@ -679,18 +678,18 @@ td {
 	color: #3c4a55;
 }
 
-.chapter .section .titlepage .note .title a{
+.note .title a{
     font-size: 16px;
 	font-weight: bold;
 	color: #3c4a55;
 }
 
-.chapter .note p a {
+.note p a {
     /*display: block;*/
     margin: 3px 0 0;
 }
 
-.chapter .note p {
+.note p {
      margin: 0 0 0 40px;
     padding: 0 0 5px 12px;
     *padding: 0px 0px 12px 12px;
@@ -703,7 +702,7 @@ td {
 
 /* warning */	
 
-.chapter .warning {
+.warning {
     background: url("../background/warning.png") no-repeat scroll 5px 5px #fbad17;
     margin: 4px 4px 4px 4px;
        padding: 15px 10px 22px 3px;
@@ -712,31 +711,31 @@ td {
 	border-radius: 10px;
 }
 
-.chapter .warning .title {
+.warning .title {
     font-weight: bold;
-        margin: 0 0 10px 40px;
+    margin: 0 0 10px 40px;
     padding: 0 10px;
 }
 
-.chapter .section .titlepage .warning .title a{
-    font-size: 14px;
+.warning .title a{
+    font-size: 16px;
 	font-weight: bold;
 	color: black;
 }
 
-.chapter .warning p a {
+.warning p a {
     /*display: block;*/
     padding: 4px 0;
 }
 
-.chapter .warning p {
+.warning p {
    margin: 0 0 0 40px;
     padding: 0 0 5px 12px;
 }
 
 /* Tip*/	
 
-.chapter .tip {
+.tip {
     background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
     margin: 4px 4px 4px 4px;
        padding: 15px 10px 22px 3px;
@@ -745,25 +744,25 @@ td {
 	border-radius: 10px;
 }
 
-.chapter .tip .title {
+.tip .title {
     font-weight: bold;
     margin: 0;
    margin: 0 0 10px 40px;
     padding: 0 10px;
 }
 
-.chapter .section .titlepage .tip .title a{
-    font-size: 14px;
+.tip .title a{
+    font-size: 16px;
 	font-weight: bold;
 	color: black;
 }
 
-.chapter .tip p a {
+.tip p a {
     /*display: block;*/
     padding: 4px 0;
 }
 
-.chapter .tip p {
+.tip p {
   margin: 0 0 0 40px;
     padding: 0 0 5px 12px;
 }
