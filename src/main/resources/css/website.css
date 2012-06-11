@@ -404,7 +404,7 @@ box-shadow:0 0px 0px #FFFFFF;
 /* warning */	
 
 .warning {
-    background: url("../background/warning.png") no-repeat scroll 5px 5px #fbad17;
+    background: url("../background/warning.png") no-repeat scroll 5px 5px #FFE000;
     margin: 4px 4px 4px 4px;
        padding: 15px 10px 22px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;

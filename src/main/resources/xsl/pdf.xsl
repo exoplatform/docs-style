@@ -90,7 +90,7 @@
     <xsl:when test="self::note">#E8E8C1</xsl:when>
     <xsl:when test="self::caution">#E3A835</xsl:when>
     <xsl:when test="self::important">#4A5D75</xsl:when>
-    <xsl:when test="self::warning">#FBAD17</xsl:when>
+    <xsl:when test="self::warning">#FFE000</xsl:when>
     <xsl:when test="self::tip">#D5D5E8</xsl:when>
     <xsl:otherwise>#404040</xsl:otherwise>
       </xsl:choose>
