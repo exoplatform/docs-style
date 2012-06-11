@@ -101,7 +101,7 @@
    </xsl:template>     
 
 <!-- TOC -->
-<xsl:param name="toc.section.depth" select="5"/>
+<!--xsl:param name="toc.section.depth" select="5"/-->
 <xsl:param name="generate.toc">
 set toc
 book toc
