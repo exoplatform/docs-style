@@ -800,6 +800,11 @@ td {
 
 .code {
 	font-size: 15px;
+	background: none repeat scroll 0 0 #FEE9CC;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 1px 3px;
 
 }
 .abstract {

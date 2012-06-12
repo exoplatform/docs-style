@@ -1741,6 +1741,28 @@
 </xsl:template>
 
 
+<xsl:template match="code">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.monoseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline background-color="#FEE9CC" font-size="12pt">
+    <xsl:call-template name="anchor"/>
+    <xsl:if test="@dir">
+      <xsl:attribute name="direction">
+        <xsl:choose>
+          <xsl:when test="@dir = 'ltr' or @dir = 'lro'">ltr</xsl:when>
+          <xsl:otherwise>rtl</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template>
+
 <!--
   From: fo/table.xsl
   Reason: Remove Table Heading
