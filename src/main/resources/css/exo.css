@@ -682,7 +682,7 @@ td {
 
 .note {
     background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
-    margin: 4px 4px 4px 4px;
+    margin: 20px 0 0 !important;
     padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -722,7 +722,7 @@ td {
 
 .warning {
     background: url("../background/warning.png") no-repeat scroll 5px 5px #FFE000;
-    margin: 4px 4px 4px 4px;
+    margin: 20px 0 0 !important;
        padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -758,7 +758,7 @@ td {
 
 .tip {
     background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
-    margin: 4px 4px 4px 4px;
+    margin: 20px 0 0 !important;
     padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
