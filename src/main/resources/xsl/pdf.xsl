@@ -1763,6 +1763,35 @@
   </fo:inline>
 </xsl:template>
 
+
+<!-- template for guibutton & guilabel -->
+
+<xsl:template match="guibutton">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.boldseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline background-color="#e8e6e6" padding-right="2pt" color="#383838" font-size="9pt">      
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template> 
+ 
+<xsl:template match="guilabel">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.boldseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline padding-right="2pt" color="#383838" font-size="9pt" letter-spacing="1pt">      
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template> 
+
 <!--
   From: fo/table.xsl
   Reason: Remove Table Heading
