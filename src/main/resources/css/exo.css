@@ -339,8 +339,7 @@ ol{
 	margin-left: 0px;
 }
 
-ol li {
-    color: #314572;
+ol li {    
     font-size: 14px;
     list-style: decimal outside none;
 }
