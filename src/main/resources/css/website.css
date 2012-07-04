@@ -21,6 +21,53 @@ ul,li{
 	list-style-type: none;
 }
 
+body {
+	Background: none;
+    color: #393939;
+    font-family: Verdana,Arial,Sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+.BoldText{	
+	font-size: 13;
+}
+.underline{	
+	font-size: 12px;
+}
+.italic {
+    font-size: 12px;    
+}
+
+h2 {
+	font-size: 28px;
+	border-bottom: 1px solid #F1F1E6;
+	border-top: none;
+	border-left: 3px solid;
+	padding: 7px;
+}
+
+h3 {
+	font-size:22px;
+	border-top:none;
+	border-bottom: 1px solid #F1F1E6;
+	border-left: 3px solid;
+	padding: 2px 5px;
+}
+
+h4 {
+	border-top:none;
+	border-bottom: 1px solid #F1F1E6;
+	border-left: 3px solid;
+	padding: 2px 5px;
+}
+
+.toc a {
+	font-size: 12px;	
+}
+
+.abstract {   
+    padding: 10px 20px;
+}
 
 .ClearFix:after {
 	content: ".";
