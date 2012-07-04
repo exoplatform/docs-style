@@ -16,6 +16,13 @@
   <xsl:param name="eclipse.plugin.id">org.exoplatform.doc.35</xsl:param>
   <xsl:param name="eclipse.plugin.provider">eXo Platform</xsl:param>
   
+  <!-- Table of content Depth & Numbering -->
+ <xsl:param name="chapter.autolabel" select="1"/>
+ <xsl:param name="part.autolabel" select="'1'"/>
+ <xsl:param name="section.autolabel" select="'1'"/>
+ <xsl:param name="section.label.includes.component.label" select="'1'"/>
+ <xsl:param name="section.autolabel.max.depth">4</xsl:param>
+  
   <!--Callouts-->
    <!--  Enable extensions (needed for callouts) -->
  <xsl:param name="use.extensions">1</xsl:param>

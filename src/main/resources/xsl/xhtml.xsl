@@ -16,8 +16,9 @@
   <xsl:include href="xhtml-common.xsl"/>
 
   <xsl:param name="img.src.path">./</xsl:param>
-  <xsl:param name="section.autolabel">0</xsl:param>
-  <xsl:param name="section.label.includes.component.label">0</xsl:param>
+  <!-- Table of content Depth & Numbering -->
+  <xsl:param name="section.autolabel">1</xsl:param>
+  <xsl:param name="section.label.includes.component.label">1</xsl:param>
   <xsl:param name="section.autolabel.max.depth">2</xsl:param>
 
 <!--
