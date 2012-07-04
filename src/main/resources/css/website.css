@@ -3,6 +3,20 @@
 	color: #005caa;
 }*/
 
+a:hover{
+	color: #31a8d0;
+	text-decoration: underline;
+}
+
+.section ul li {
+	background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+    color: #393939;
+    font-size: 12px;
+    font-weight: normal;
+    list-style: none outside none;
+	padding-left:10px;
+}
+
 ul,li{
 	list-style-type: none;
 }
@@ -30,10 +44,6 @@ ul,li{
 	float: right;
 }
 
-a:hover{
-	color: #005caa;
-	text-decoration: underline;
-}
 
 /******************HOME PAGE *********************/
 
@@ -135,7 +145,7 @@ a:hover{
 }
 
 .TxtNote li{
-	background: url("../background/Arrow.png") no-repeat left 10px;
+	background: url("../background/Arrow.png") no-repeat left 6px;
 	padding-left: 15px;
 	margin-bottom: 5px;
 }
@@ -209,10 +219,10 @@ a:hover{
 .UIHeaderPageDocument .Menu .NavigationTop .LinkDoc30{
 	/*padding-left: 298px;*/
 	color: #fff;
-	line-height:36px;
+	.:36px;
 	font-weight: bold;
 	text-decoration: underline;
-	font-size: 13px;
+	font-size: 12px;
 	float: right;
 }
 
@@ -281,7 +291,7 @@ a:hover{
 .docnavtitle{
 	list-style: none outside none;
 	position: relative;
-	padding: 23px 0px;
+	padding: 10px 0px;
 	margin-top: -60px;
 	color: #FAC943;
 	font-size: 14px;
@@ -365,18 +375,18 @@ box-shadow:0 0px 0px #FFFFFF;
 
 .note {
     background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
-    margin: 20px 0 0 !important;
-    padding: 15px 10px 5px 3px;
+    margin: 10px 0 0 !important;
+    padding: 6px 20px 6px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 10px;
 }
 
 .note .title {
-  font-weight: bold;
-	font-size: 16px !important;
-  margin: 0 0 10px 40px;
-  padding: 0px 10px 0 10px;
+    font-weight: bold;
+	font-size: 12px !important;
+    margin: 0 0 3px 40px;
+    padding: 0px 10px 0 10px;
 	padding: 0 10px 0;
 	color: #3c4a55;
 }
@@ -393,18 +403,18 @@ box-shadow:0 0px 0px #FFFFFF;
 }
 
 .note p {
-     margin: 0 0 0 40px;
-    padding: 0 0 5px 12px;
+    margin: 0 0 0 40px;
+    padding: 0 0 5px 10px;
     *padding: 0px 0px 12px 12px;
 }
 
-.note .itemizedlist ul li { background: transparent url(../background/LIIcon.png) no-repeat left 5px; list-style: none; margin-left: 28px;}
+.note .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px;}
 .note .itemizedlist ul li p { margin:0;padding-left:0; }
 
 /* warning */	
 
 .warning {
-    background: url("../background/warning.png") no-repeat scroll 5px 5px #FFE000;
+    background: url("../background/warning.png") no-repeat scroll 10px 10px #FFE000;
     margin: 20px 0 0 !important;
        padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -414,14 +424,16 @@ box-shadow:0 0px 0px #FFFFFF;
 
 .warning .title {
     font-weight: bold;
-        margin: 0 0 10px 40px;
-    padding: 0 10px;
+	font-size: 12px !important;
+    margin: 0 0 3px 40px;
+    padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
 }
 
 .section .titlepage .warning .title a{
     font-size: 16px;
 	font-weight: bold;
-	color: black;
+	color: #393939;
 }
 
  .warning p a {
@@ -434,12 +446,12 @@ box-shadow:0 0px 0px #FFFFFF;
     padding: 0 0 5px 12px;
 }
 
-.warning .itemizedlist ul li { background: transparent url(../background/LIIcon.png) no-repeat left 5px; list-style: none; margin-left: 28px; }
+.warning .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
 .warning .itemizedlist ul li p { margin:0;padding-left:0; }
 /* Tip*/	
 
 .tip {
-    background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
+    background: url("../background/tip.png") no-repeat scroll 10px 10px #d5d5e8;
     margin: 20px 0 0 !important;
        padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -447,17 +459,19 @@ box-shadow:0 0px 0px #FFFFFF;
 	border-radius: 10px;
 }
 
+
 .tip .title {
     font-weight: bold;
-    margin: 0;
-   margin: 0 0 10px 40px;
-    padding: 0 10px;
+	font-size: 12px !important;
+    margin: 0 0 3px 40px;
+    padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
 }
 
 .section .titlepage .tip .title a{
     font-size: 16px;
 	font-weight: bold;
-	color: black;
+	color: #393939;
 }
 
 .tip p a {
@@ -470,7 +484,7 @@ box-shadow:0 0px 0px #FFFFFF;
     padding: 0 0 5px 12px;
 }
 
-.tip .itemizedlist ul li { background: transparent url(../background/LIIcon.png) no-repeat left 5px; list-style: none; margin-left: 28px; }
+.tip .itemizedlist ul li { background: url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
 .tip .itemizedlist ul li p { margin:0;padding-left:0; }
 
 /* Heading */
@@ -490,7 +504,7 @@ box-shadow:0 0px 0px #FFFFFF;
 .section table {
 	border-collapse: collapse;
 	text-align: left;
-	font-size: 14px;
+	font-size: 12px;
 	margin: 10px 0;
  }
  
@@ -502,17 +516,17 @@ box-shadow:0 0px 0px #FFFFFF;
 }
 
 .listitem {
-	background: url("../background/LIIcon.png") no-repeat scroll left 5px transparent;
+	background: url("../background/Arrow.png") no-repeat scroll left 6px transparent;
     list-style: none outside none;
 	padding-left: 10px;
 }
 
 .chapter ul li{
-	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
+	background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
 	list-style: none;
-	padding-left: 15px;
-	font-size: 14px;
-	color: black;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #393939;
 	font-weight: normal;
 }
 
@@ -528,22 +542,28 @@ box-shadow:0 0px 0px #FFFFFF;
     padding-left: 20px;
 }
  
+ ol li {
+ font-size:12px;
+ line-height: 10px;
+ }
 .procedure {
 	margin-left: 0px;
 	font-weight: bold;
 }
 
 .procedure ol li {
-	color: black;
-	font-size: 14px;
+	color: #393939;
+	font-size: 12px;
 }
 
 .procedure ol li  p {
 	font-weight: normal;
+	line-height:10px;
 }
 
 .procedure ul li  p {
 	font-weight: normal;
+	line-height: 10px
 }
 
 /*********************Breadcrumbs************************/
@@ -551,6 +571,15 @@ box-shadow:0 0px 0px #FFFFFF;
 .help_breadcrumbs {    
     padding-left: 25px;
     padding-top: 5px;
+}
+
+.help_breadcrumbs a{
+text-decoration:none;    
+}
+
+.help_breadcrumbs a:hover{
+text-decoration:underline;
+color:#31a8d0;    
 }
 
 /***************** 404 error page **********************/
@@ -565,7 +594,7 @@ box-shadow:0 0px 0px #FFFFFF;
 .ErrorBox  .Title {
 	font-size:30px;
 	font-family: arial,tahoma,serif;
-	color:#4c4c4c;
+	color:#393939;
 }
 
 .ErrorBox  ul  {

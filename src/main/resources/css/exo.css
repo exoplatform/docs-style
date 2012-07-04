@@ -1,11 +1,12 @@
 @import url(codehighlight.css);
 body {
 	background:transparent url(../background/BannerRepeat.gif) repeat-x top;
-	font-family:Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif;
+	font-family:Verdana,Arial,Sans-serif;
 	font-size:14px;
 	margin:0;
 	padding:0px;
 	text-align: justify;
+	color: #393939;
 }
 
 .UIPageBody {	
@@ -18,12 +19,12 @@ body {
 }c
 
 .chapter > .section {
- color: black;
+ color: #393939;
  text-decoration: none; 
 }
 
 /*.chapter > .section a {
- color: black;
+ color: #393939;
 }*/
 
 /* ClearFix */	
@@ -172,7 +173,7 @@ font-size: 16px !important;
 color: #3C4A55 !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
-border-top: 1px solid transparent;
+border:none;
 text-shadow: 0 1px 1px white;
 }
 
@@ -181,7 +182,7 @@ font-size: 16px !important;
 color: #cc0000 !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
-border-top: 1px solid transparent;
+border:none;
 text-shadow: 0 1px 1px white;
 }
 
@@ -190,7 +191,7 @@ font-size: 16px !important;
 color: #3C4A55 !important;
 margin-top: 4px;
 padding: 0 10px 0 0;
-border-top: 1px solid transparent;
+border:none;
 text-shadow: 0 1px 1px white;
 }
 
@@ -214,11 +215,11 @@ h1 {
 }
 
 .toc .chapter a {
-        color:#2E398C;
+        color:#005caa;
 }
 
 .toc .chapter a:hover {
-        color:#E47B00;
+        color:#145BC7;
         text-decoration:underline;
 }
 
@@ -226,16 +227,16 @@ h1 {
 	font-size: 14px;
         /*font-weight: bold;*/
         text-decoration: none;
-	color:black;       
+	color:#393939;       
 }
 
 
 .toc .section a {
-  color:#2E398C;
+  color:#005caa;
  }
 
 .toc .section a:hover {
-  color:#E47B00;
+  color:#145BC7;
   text-decoration:underline;
 }
 
@@ -243,6 +244,7 @@ h1 {
 
 .toc dd {
   margin: 4px 0px 0px 3px;
+  padding-left: 40px;
 }
 
 .set .toc dt, .book .toc dt {
@@ -253,15 +255,16 @@ h1 {
   padding-top: 0px;
 }
 
-.set .toc dd dl dt, .book .toc dd dl dt{
-  padding-left: 25px;
+/** .set .toc dd dl dt, .book .toc dd dl dt{
+  padding-left: 0px;
 }
 
 .set .toc dd dl dd, .book .toc dd dl dd{
   padding-left: 25px;
 }
+**/
 dt a {
-	color: #2E398C !important;
+	color: #005caa !important;
 }
 
 
@@ -359,22 +362,23 @@ ol li ol li ol{
 
 
 ul li{
-background:transparent url(../background/LIIcon.png) no-repeat left 5px;
+background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
 	list-style: none;
 	padding-left: 20px;
 }
 
-.section ul li{
-	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
-	list-style: none;
-	padding-left: 20px;
-	font-size: 14px;
-	color: black;
-	font-weight: normal;
+
+.section ul li {
+	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+    color: #393939;    
+    font-weight: normal;
+    list-style: none outside none;
+	padding-left:10px;
 }
+
 
  .chapter ul li{
- 	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
+ 	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent;
  	list-style: none;
 }
 
@@ -394,11 +398,11 @@ th{
 }
 
 .ulink, .link{
-	color:#2E398C;
+	color:#005caa;
 }
 
 .ulink:hover, .link:hover{
-	color:#E47B00;
+	color:#145BC7;
         text-decoration:underline;
 }
 
@@ -525,7 +529,7 @@ margin: 4px 0px 0px 19px;
  
 .chapter .toc .section a {
 	line-height: 20px;
-	color: #2E398C !important;
+	color: #005caa !important;
 }
 
 
@@ -602,7 +606,7 @@ td {
 
 .chapter .section .section .itemizedlist #d0e38{
 	font-size: 14px;
-	color: black;
+	color: #393939;
 }
 
 
@@ -628,7 +632,7 @@ td {
 
 .chapter .section .section .itemizedlist #d0e485{
 	font-size: 14px;
-	color: black;
+	color: #393939;
 }
 
 .chapter .section .section .itemizedlist .itemizedlist p{
@@ -648,11 +652,11 @@ td {
 }
 
 .chapter ul li{
-	background:transparent url(../background/LIIcon.png) no-repeat left 5px;
+	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent;
 	list-style: none;
 	padding-left: 20px;
 	font-size: 14px;
-	color: black;
+	color: #393939;
 	font-weight: normal;
 }
 .docnav li{
@@ -661,7 +665,7 @@ td {
 }
 
 .chapter .itemizedlist ul li ul li{
-	background:transparent url(../background/LIIcon.png) no-repeat scroll left 5px;
+	background:	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent;
 	list-style:none outside none;
 }
 
@@ -672,7 +676,7 @@ td {
 
 .chapter ol li{
 	font-size: 14px;
-	color: black;
+	color: #393939;
 	font-weight: bold;
 }
 .chapter ol li a,.chapter ol li p{
@@ -716,7 +720,7 @@ td {
     *padding: 0px 0px 12px 12px;
 }
 
-.note .itemizedlist ul li { background: transparent url(../background/LIIcon.png) no-repeat left 5px; list-style: none; margin-left: 28px;}
+.note .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px;}
 .note .itemizedlist ul li p { margin:0;padding-left:0; }
 
 /* warning */	
@@ -739,7 +743,7 @@ td {
 .warning .title a{
     font-size: 16px;
 	font-weight: bold;
-	color: black;
+	color: #393939;
 }
 
 .warning p a {
@@ -752,7 +756,7 @@ td {
     padding: 0 0 5px 12px;
 }
 
-.warning .itemizedlist ul li { background: transparent url(../background/LIIcon.png) no-repeat left 5px; list-style: none; margin-left: 28px; }
+.warning .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px; }
 .warning .itemizedlist ul li p { margin:0;padding-left:0; }
 
 /* Tip*/	
@@ -776,7 +780,7 @@ td {
 .tip .title a{
     font-size: 16px;
 	font-weight: bold;
-	color: black;
+	color: #393939;
 }
 
 .tip p a {
@@ -789,7 +793,7 @@ td {
     padding: 0 0 5px 12px;
 }
 
-.tip .itemizedlist ul li { background: transparent url(../background/LIIcon.png) no-repeat left 5px; list-style: none; margin-left: 28px; }
+.tip .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px; }
 .tip .itemizedlist ul li p { margin:0;padding-left:0; }
 
 .chapter .section a  a{
@@ -846,7 +850,7 @@ margin-left: 40px;
 	text-align: center;
 	text-shadow: 0 1px 0 #FFFFFF;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 12px;
 	color: #333333;
 	padding: 1px 5px;
 	-moz-border-radius: 3px;
@@ -857,7 +861,7 @@ margin-left: 40px;
 .guilabel {	
     color: #333333;
     font-family: Tahoma;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
     padding: 1px 5px;
