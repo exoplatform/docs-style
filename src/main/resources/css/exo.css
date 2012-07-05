@@ -244,7 +244,11 @@ h1 {
 
 .toc dd {
   margin: 4px 0px 0px 3px;
-  padding-left: 40px;
+  padding-left: 38px;
+}
+
+.toc dd  dd {
+  padding-left: 27px;
 }
 
 .set .toc dt, .book .toc dt {
