@@ -219,7 +219,7 @@ ul,li{
 .UIHeaderPageDocument .Menu .NavigationTop .LinkDoc30{
 	/*padding-left: 298px;*/
 	color: #fff;
-	.:36px;
+	line-height:36px;
 	font-weight: bold;
 	text-decoration: underline;
 	font-size: 12px;
