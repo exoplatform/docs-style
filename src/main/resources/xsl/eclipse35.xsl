@@ -343,8 +343,10 @@
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/othercredit"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/releaseinfo"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/releaseinfo"/>
+<!--  Remove copyrights under each chapter title
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/copyright"/>
-  <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/copyright"/>
+  <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/copyright"/> 
+-->
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/legalnotice"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/legalnotice"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/pubdate"/>
