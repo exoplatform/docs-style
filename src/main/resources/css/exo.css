@@ -601,6 +601,8 @@ margin-left:0px;
 td {
 	padding: 6px 6px;
 	border: 1px solid #797979;
+	max-width: 210px;
+	word-wrap: break-word;
 }
 
 .chapter .section .titlepage .informaltable .inlinemediaobject img{
