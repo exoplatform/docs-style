@@ -323,7 +323,9 @@
     </xsl:when>
   </xsl:choose>
 
-  <xsl:choose>
+ 
+   <!--Remove this template to not display the Gatein logo
+ <xsl:choose>
     <xsl:when test="bookinfo/subtitle">
       <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/subtitle"/>
     </xsl:when>
@@ -334,6 +336,8 @@
       <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="subtitle"/>
     </xsl:when>
   </xsl:choose>
+   -->
+ 
 <!-- Remove templates to not display information of author
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/corpauthor"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/corpauthor"/>
