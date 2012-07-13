@@ -50,7 +50,7 @@
   <xsl:param name="admon.style" select="''"/>
 
   <!-- Set chunk.section.depth to 0 to just chunk chapters. -->
-  <xsl:param name="chunk.section.depth" select="6"/>
+  <xsl:param name="chunk.section.depth" select="0"/>
   <xsl:param name="chunk.first.sections" select="1"/>
   <xsl:param name="chunk.toc" select="''"/>
   <xsl:param name="chunker.output.doctype-public" select="'-//W3C//DTD XHTML 1.0 Strict//EN'"/>
@@ -98,7 +98,7 @@
       </xsl:otherwise>
       </xsl:choose>
       
-   </xsl:template>     
+   </xsl:template>  
 
 <!-- TOC -->
 <!--xsl:param name="toc.section.depth" select="5"/-->
@@ -109,8 +109,8 @@ article toc
 chapter nop
 qandadiv toc
 qandaset toc
-sect1 toc,title
-sect2 toc,title
+sect1 nop
+sect2 nop
 sect3 nop
 sect4 nop
 sect5 nop
@@ -118,7 +118,7 @@ section toc,title
 part toc
 </xsl:param>
 
-<xsl:param name="generate.section.toc.level" select="2"/>
+<xsl:param name="generate.section.toc.level" select="0"/>
 <xsl:param name="suppress.navigation" select="0"/>
 <xsl:param name="suppress.header.navigation" select="0"/>
 <xsl:param name="suppress.footer.navigation" select="0"/>
