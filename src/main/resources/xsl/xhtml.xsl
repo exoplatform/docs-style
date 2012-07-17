@@ -209,4 +209,6 @@ http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered
 
 <xsl:template match="table" mode="label.markup"/>
 
+<xsl:template match="section[@role = 'NotInToc']" mode="toc" />
+
 </xsl:stylesheet>
