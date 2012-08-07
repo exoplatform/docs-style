@@ -55,7 +55,7 @@
 		/appendix nop
 		article/appendix  nop
 		/article  toc,title
-		book      toc <!-- Remove list of tables, figures, examples -->
+		/book     nop <!-- Remove list of tables, figures, examples -->
 		/chapter  nop
 		part      nop
 		/preface  toc,title
@@ -298,6 +298,7 @@
 	<l:gentext key="nav-next" text=""/>
 	<l:gentext key="nav-prev" text=" "/>
 	<l:gentext key="nav-up" text=" "/>
+	<l:gentext key="Abstract" text=" "/>
   </l:l10n>
 </l:i18n>
 

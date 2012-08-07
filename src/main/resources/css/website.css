@@ -393,6 +393,10 @@ box-shadow:0 0px 0px #FFFFFF;
 	margin: 0;
 }
 
+.book .title {
+	margin: 0 0 15px 0;
+}
+
 .book .chapter {
 	padding: 0;
 }

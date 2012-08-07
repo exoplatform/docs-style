@@ -475,6 +475,10 @@ hr {
 	color: #fbad18;
 }
 
+.book .title {
+	margin: 0 0 15px 0;
+}
+
 .book .titlepage .subtitle a{
 	font-size: 18px;
 }
@@ -823,6 +827,14 @@ td {
 	border-radius: 10px;
 }
 
+.abstract .itemizedlist ul li{ 
+	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+    color: #393939;
+    font-size: 12px;
+    font-weight: normal;
+    list-style: none outside none;
+    padding-left: 10px;
+}
 .abstract a,.abstract a:visisted {
 	color:#16968e;
 }
