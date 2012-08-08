@@ -1827,5 +1827,16 @@
   </xsl:choose>
 </xsl:template>
 
+<xsl:template match="highlights">
+ <xsl:variable name="keep.together">
+ </xsl:variable>
+ <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="white" padding="0px 5px 7px" border-left="1.5px dotted #CCCCCC" margin-bottom="10px">
+	<xsl:if test="$keep.together != ''">
+		<xsl:attribute name="keep-together.within-column"><xsl:value-of select="$keep.together"/></xsl:attribute>
+    </xsl:if>
+  <xsl:call-template name="anchor"/>
+  <xsl:apply-templates/>
+ </fo:block>
+</xsl:template>
 
 </xsl:stylesheet>
