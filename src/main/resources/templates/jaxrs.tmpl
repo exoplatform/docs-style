@@ -1,13 +1,21 @@
+|| Resource || Description ||
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-h1. ${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")} </#if>{anchor:id=${verb.doc("flat:anchor")}}
+| [${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} |
+</#list>
 
-*Description*: ${verb.doc()}
+<#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
+h1. ${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")} </#if>{anchor:id=${verb.doc("flat:anchor")}RoleNotInToc}
 
+${verb.doc()}
+
+<#if verb.sibling("@Path")??>
 *URL*:
 
 {code}
 http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${verb.sibling("@Path").attribute("flat:value")}
 {code}
+
+</#if>
 <#if verb.sibling("@Produces")??>
 
 *Supported Format*: ${verb.sibling("@Produces").attribute("flat:value")}
@@ -19,20 +27,28 @@ http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${ve
 
 *Parameters*:
 * *Required (path parameters)*: <#if verb.children("@PathParam")?size = 0>No</#if>
+<#if verb.children("@PathParam")?size != 0>
+|| Parameter || Description ||
 <#list verb.children("@PathParam") as param>
-** *{{{${param.attribute("flat:value")}}}}*: ${param.doc()}
+| *{{{${param.attribute("flat:value")}}}}* | ${param.doc()} |
 </#list>
+</#if>
 * *Optional (query paramters)*: <#if verb.children("@QueryParam")?size = 0>No</#if>
+<#if verb.children("@QueryParam")?size != 0>
+|| Parameter || Description ||
 <#list verb.children("@QueryParam") as param>
-** *{{{${param.attribute("flat:value")}}}}*: ${param.doc()}
+| *{{{${param.attribute("flat:value")}}}}* | ${param.doc()} |
 </#list>
+</#if>
 
+<#if verb.doc("flat:request") != "">
 *Request*:
-
 ${verb.doc("bloc:request")}
+</#if>
 
+<#if verb.doc("flat:response") != "">
 *Response*:
-
 ${verb.doc("bloc:response")}
+</#if>
 
 </#list>

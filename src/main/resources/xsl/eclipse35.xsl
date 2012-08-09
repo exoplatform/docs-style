@@ -70,6 +70,8 @@
 	</xsl:param>
  
     <xsl:param name="generate.section.toc.level" select="2"/>
+    
+    <xsl:template match="section[@role = 'NotInToc']" mode="toc" />
   <!-- ==================================================================== -->
   
   <!-- From: xhtml/chunk-common.xsl 
