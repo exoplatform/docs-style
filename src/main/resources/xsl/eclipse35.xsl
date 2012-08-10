@@ -66,7 +66,7 @@
 		/sect4    nop
 		/sect5    nop
 		section   toc,title
-		set       toc,title
+		set       toc
 	</xsl:param>
  
     <xsl:param name="generate.section.toc.level" select="2"/>
