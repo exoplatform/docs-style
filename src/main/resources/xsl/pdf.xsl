@@ -1764,6 +1764,22 @@
 </xsl:template>
 
 
+<xsl:template match="screen">    
+  <xsl:variable name="keep.together">
+  </xsl:variable>
+  <fo:block font-family="{$monospace.font.family}" color="#c0c0c0" background-color="#0c0f0d" font-size="8pt" space-before="10pt" space-after="10pt"
+         linefeed-treatment="preserve" white-space-collapse="false"
+         white-space-treatment="preserve" padding-bottom="7pt" padding-top="7pt"
+         padding-right="10pt" padding-left="10pt" margin="0" >        
+	<xsl:if test="$keep.together != ''">
+      <xsl:attribute name="keep-together.within-column"><xsl:value-of
+                      select="$keep.together"/></xsl:attribute>
+    </xsl:if>
+    <xsl:call-template name="anchor"/>
+    <xsl:apply-templates/>	
+  </fo:block>
+</xsl:template>
+ 
 <!-- template for guibutton & guilabel -->
 
 <xsl:template match="guibutton">
