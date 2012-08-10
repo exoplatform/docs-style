@@ -12,7 +12,7 @@ ${verb.doc()}
 *URL*:
 
 {code}
-http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${verb.sibling("@Path").attribute("flat:value")}
+http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")?replace("/", "")}${verb.sibling("@Path").attribute("flat:value")}
 {code}
 
 </#if>
