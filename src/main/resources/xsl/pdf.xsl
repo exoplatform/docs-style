@@ -1839,4 +1839,46 @@
  </fo:block>
 </xsl:template>
 
+<!-- set the menuchoice separator character-->   	  	
+<xsl:param name="menuchoice.menu.separator"><fo:inline color="#383838"> --> </fo:inline></xsl:param>
+
+<xsl:template match="guimenu"> 	 
+  <xsl:param name="content"> 	 
+    <xsl:call-template name="inline.boldseq"> 	 
+      <xsl:with-param name="content"> 	 
+        <xsl:apply-templates/> 	 
+      </xsl:with-param> 	 
+    </xsl:call-template> 	 
+  </xsl:param> 	 
+  <fo:inline padding-right="2pt" color="#383838" font-size="9pt" letter-spacing="1pt">      
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template> 	
+
+<xsl:template match="guisubmenu">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.boldseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>	
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline padding-right="2pt" color="#383838" font-size="9pt" letter-spacing="1pt">       	
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template> 
+
+<xsl:template match="guimenuitem">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.boldseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>	
+      </xsl:with-param>
+    </xsl:call-template>	
+  </xsl:param>	
+  <fo:inline padding-right="2pt" color="#383838" font-size="9pt" letter-spacing="1pt">      	
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template>
+
 </xsl:stylesheet>
