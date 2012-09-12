@@ -893,26 +893,35 @@ margin-left: 40px;
 	padding: 0px 5px 1px;
 }
 
-.guimenu { 	 
+.guimenu {
+  background: none repeat scroll 0 0 #F2F2F2;
+  padding: 0 3px;		
   font-weight: bold; 
   color: #333333; 	 
-  letter-spacing: 2px; 	 
+  letter-spacing: 1px; 	 
   font-size: 12px; 	 
-  font-family: Tahoma; 	 
+  font-family: Tahoma;
+  border: 1px solid #BFBFBF;  
 }
  	
-.guisubmenu { 	 
+.guisubmenu { 
+  background: none repeat scroll 0 0 #F2F2F2;
+  padding: 0 3px;	 
   font-weight: bold; 	 
   color: #333333; 	 
-  letter-spacing: 2px; 	 
+  letter-spacing: 1px; 	 
   font-size: 12px; 	 
-    font-family: Tahoma; 	 
+  font-family: Tahoma; 
+  border: 1px solid #BFBFBF;  
 }
  	  	
-.guimenuitem { 	 
+.guimenuitem {
+  background: none repeat scroll 0 0 #F2F2F2;
+  padding: 0 3px; 	 
   font-weight: bold; 	 
   color: #333333; 	 
-  letter-spacing: 2px; 	 
-    font-size: 12px; 	 
-    font-family: Tahoma; 	 
+  letter-spacing: 1px; 	 
+  font-size: 12px; 	 
+  font-family: Tahoma; 
+  border: 1px solid #BFBFBF;  
 }
