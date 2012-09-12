@@ -609,12 +609,12 @@ box-shadow:0 0px 0px #FFFFFF;
 
 .procedure ol li  p {
 	font-weight: normal;
-	line-height:10px;
+	line-height: 1.3em;
 }
 
 .procedure ul li  p {
 	font-weight: normal;
-	line-height: 10px
+	line-height: 1.3em;
 }
 
 /*********************Breadcrumbs************************/
