@@ -32,6 +32,7 @@ http://{domain_name}/{rest_context_name}/${("private/"+@Path.attribute("value")+
 <#list verb.children("@PathParam") as param>
 | *{{{${param.attribute("flat:value")}}}}* | ${param.doc()} |
 </#list>
+
 </#if>
 * *Optional (query parameters)*: <#if verb.children("@QueryParam")?size = 0>No</#if>
 <#if verb.children("@QueryParam")?size != 0>
