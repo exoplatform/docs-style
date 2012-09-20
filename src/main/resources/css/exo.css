@@ -893,35 +893,26 @@ margin-left: 40px;
 	padding: 0px 5px 1px;
 }
 
-.guimenu {
-  background: none repeat scroll 0 0 #F2F2F2;
-  padding: 0 3px;		
+.guimenu {	
   font-weight: bold; 
   color: #333333; 	 
   letter-spacing: 1px; 	 
   font-size: 12px; 	 
-  font-family: Tahoma;
-  border: 1px solid #BFBFBF;  
+  font-family: Tahoma; 
 }
  	
-.guisubmenu { 
-  background: none repeat scroll 0 0 #F2F2F2;
-  padding: 0 3px;	 
+.guisubmenu { 	 
   font-weight: bold; 	 
   color: #333333; 	 
   letter-spacing: 1px; 	 
   font-size: 12px; 	 
-  font-family: Tahoma; 
-  border: 1px solid #BFBFBF;  
+  font-family: Tahoma;
 }
  	  	
-.guimenuitem {
-  background: none repeat scroll 0 0 #F2F2F2;
-  padding: 0 3px; 	 
+.guimenuitem { 
   font-weight: bold; 	 
   color: #333333; 	 
   letter-spacing: 1px; 	 
   font-size: 12px; 	 
-  font-family: Tahoma; 
-  border: 1px solid #BFBFBF;  
+  font-family: Tahoma;
 }
