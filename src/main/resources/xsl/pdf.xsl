@@ -1704,7 +1704,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline color="#888888" font-family="Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif" font-size="12pt">
+  <fo:inline color="#888888" font-family="Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif" font-size="9pt">
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
@@ -1726,7 +1726,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline color="#0C46BC" font-style="normal" font-size="10pt">
+  <fo:inline color="#0C46BC" font-style="normal" font-size="9pt">
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
@@ -1780,6 +1780,28 @@
   </fo:block>
 </xsl:template>
  
+ <xsl:template match="term">
+  <xsl:param name="content">
+    <xsl:call-template name="simple.xlink">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline color="#2E398C" font-style="normal" font-size="9pt">
+    <xsl:call-template name="anchor"/>
+    <xsl:if test="@dir">
+      <xsl:attribute name="direction">
+        <xsl:choose>
+          <xsl:when test="@dir = 'ltr' or @dir = 'lro'">ltr</xsl:when>
+          <xsl:otherwise>rtl</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template>
+ 
 <!-- template for guibutton & guilabel -->
 
 <xsl:template match="guibutton">
@@ -1807,6 +1829,7 @@
     <xsl:copy-of select="$content"/>
   </fo:inline>
 </xsl:template> 
+
 
 <!--
   From: fo/table.xsl

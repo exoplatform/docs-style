@@ -849,11 +849,15 @@ td {
 	color:#a30000;
 }
 .citetitle span {
-  color: #0c46bc;
+    color: #0c46bc;
     font-style: normal;
 }
 .procedure {
-margin-left: 40px;
+	margin-left: 40px;
+}
+
+.term {	
+	color: #2E398C !important
 }
 
 /* guilabel guibutton */
