@@ -920,3 +920,22 @@ td {
   font-size: 12px; 	 
   font-family: Tahoma;
 }
+
+.example .title {	
+  text-shadow: 0 1px 1px white;     	
+  color: #393939;     	 
+  font-size: 12px;     	
+}
+
+.example .title b {
+	padding: 1px 5px;
+	background: none repeat scroll 0 0 #FAC943;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;	
+}
+
+.example {
+  padding-left: 5px; 	 
+  border-left: 2px solid #CCCCCC; 	 
+ }
