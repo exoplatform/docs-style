@@ -191,7 +191,7 @@ Version:
 </xsl:template>
 
 <!--
-Remove the numbers in front of each table
+Remove the numbers in front of each table & example
 http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered
 -->
 <xsl:param name="local.l10n.xml" select="document('')"/>
@@ -199,10 +199,12 @@ http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered
   <l:l10n language="en">
     <l:context name="title">
       <l:template name="table" text=" "/><!-- leave the space here -->
+	  <l:template name="example" text="Example: %t"/><!-- leave the space here -->
     </l:context>
     <l:context name="xref-number-and-title">
       <l:template name="table" text=" "/><!-- leave the space here -->
-    </l:context>
+	  <l:template name="example" text=" "/>	
+    </l:context>		
 	<l:gentext key="TableofContents" text="The following topics are covered:"/>
 	<l:gentext key="Abstract" text=" "/>
   </l:l10n>

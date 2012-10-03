@@ -289,11 +289,13 @@
   <l:l10n language="en">
     <l:context name="title">
       <l:template name="table" text=" "/>
+	  <l:template name="example" text="Example: %t"/>
     </l:context>
     <l:gentext key="TableofContents" text="The following topics are covered:"/>
     <l:context name="xref-number-and-title">
       <l:template name="table" text=" "/>
-    </l:context>
+	  <l:template name="example" text=" "/>     	 
+    </l:context>	
 	<l:gentext key="nav-home" text=" "/> 
 	<l:gentext key="nav-next" text=""/>
 	<l:gentext key="nav-prev" text=" "/>
