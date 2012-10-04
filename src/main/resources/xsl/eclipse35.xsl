@@ -44,7 +44,7 @@
   <xsl:param name="graphicsize.extension" select="0"/>
   
   <!-- Set chunk.section.depth to 0 to just chunk chapters. -->
-  <xsl:param name="chunk.section.depth" select="6"/>
+  <xsl:param name="chunk.section.depth" select="4"/>
   <xsl:param name="chunk.first.sections" select="1"/>
   
   <!--Display fixed book name rather than bk0X.html and fixed chapter name rather than bkXXchYY.html -->
@@ -69,7 +69,7 @@
 		set       toc
 	</xsl:param>
  
-    <xsl:param name="generate.section.toc.level" select="2"/>
+    <xsl:param name="generate.section.toc.level" select="3"/>
     
     <xsl:template match="section[@role = 'NotInToc']" mode="toc" />
   <!-- ==================================================================== -->
