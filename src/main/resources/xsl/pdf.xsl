@@ -55,7 +55,7 @@
    </xsl:template>
 
    <xsl:attribute-set name="admonition.title.properties">
-      <xsl:attribute name="font-size">13pt</xsl:attribute>
+      <xsl:attribute name="font-size">10pt</xsl:attribute>
       <xsl:attribute name="color">
   <xsl:choose>
     <xsl:when test="self::note">#4C5253</xsl:when>
@@ -195,6 +195,20 @@
 	</xsl:attribute>
    </xsl:attribute-set>
 
+<!-- Set properties for Example block --> 
+	<!-- properties for the example title -->
+	<xsl:attribute-set name="formal.title.properties">
+      <xsl:attribute name="font-size">10pt</xsl:attribute> 
+      <xsl:attribute name="color">#393939</xsl:attribute>	  	  
+	</xsl:attribute-set> 
+	<!-- properties for the example content -->
+	<xsl:attribute-set name="example.properties">
+      <xsl:attribute name="font-size">10pt</xsl:attribute> 
+      <xsl:attribute name="color">#393939</xsl:attribute>	  
+	  <xsl:attribute name="border-left">1pt solid #CCCCCC</xsl:attribute>
+	  <xsl:attribute name="padding-left">2pt</xsl:attribute>    	
+	</xsl:attribute-set> 
+   
 <!-- Set the vertical spacing around the various verbatim-type elements (programlisting, literallayout) -->
 <xsl:attribute-set name="verbatim.properties">
 	<xsl:attribute name="line-height">0.5</xsl:attribute>
@@ -220,11 +234,13 @@
       ################################################### -->
 
 <!-- Improve the TOC -->
-    <!--Change Conents into Table of Contents -->
-
+    <!--Change Contents into Table of Contents -->	
 	<xsl:param name="local.l10n.xml" select="document('')"/> 
 	<l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"> 
 		<l:l10n language="en"> 
+		<l:context name="title">
+           <l:template name="example" text="Example: %t "/><!-- Change "Example number title" to "Example: title"-->
+       </l:context>   	
 		<l:gentext key="TableofContents" text="Table of Contents"/>
 		</l:l10n>
 	</l:i18n>
@@ -1947,3 +1963,5 @@
 </xsl:template> 
 
 </xsl:stylesheet>
+
+
