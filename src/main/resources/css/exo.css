@@ -430,10 +430,10 @@ th{
 pre {
 	background: none repeat scroll 0 0 #F4F4F4;
     border: 1px solid #CCCCCC;
-    border-radius: 5px 5px 5px 5px;
-    margin: 0;
+    border-radius: 5px 5px 5px 5px;    
     overflow-x: auto;
-    padding:10px;
+    padding: 10px;
+	margin: 5px 0;
 }
     /*Fix the code block with callout displays incorrectly*/
 .programlistingco {
