@@ -1920,4 +1920,17 @@
   </fo:inline>
 </xsl:template>
 
+<xsl:template match="command"> 	 
+  <xsl:param name="content"> 	 
+    <xsl:call-template name="inline.monoseq"> 	 
+      <xsl:with-param name="content"> 	 
+        <xsl:apply-templates/> 	 
+      </xsl:with-param> 	 
+    </xsl:call-template> 	 
+  </xsl:param> 	 
+  <fo:inline background-color="#F8F8F8" font-size="12pt" color="#008200">     	 
+    <xsl:copy-of select="$content"/> 	 
+  </fo:inline> 	 
+</xsl:template>
+
 </xsl:stylesheet>
