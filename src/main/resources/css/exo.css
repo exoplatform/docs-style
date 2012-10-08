@@ -17,7 +17,7 @@ body {
 
 .preface {
 	margin: 25px;
-}c
+}
 
 .chapter > .section {
  color: #393939;
@@ -811,12 +811,13 @@ td {
 }
 
 .code {
-	font-size: 15px;
+	font-size: 13px;
 	background: none repeat scroll 0 0 #FEE9CC;
 	border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	padding: 1px 3px;
+	padding: 0px 3px;
+	border: 1px solid #FFDEB0;
 
 }
 .abstract {
@@ -931,3 +932,11 @@ td {
   padding-left: 5px; 	 
   border-left: 2px solid #CCCCCC; 	 
  }
+ 
+.command {
+	background: none repeat scroll 0 0 #F8F8F8;
+	color: #008200; 	
+	font-family: monospace; 	
+	font-weight: normal; 	
+	padding: 1px 4px;
+} 
