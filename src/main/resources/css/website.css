@@ -436,7 +436,7 @@ box-shadow:0 0px 0px #FFFFFF;
 
 .note {
     background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
-    margin: 10px 0 0 !important;
+    margin: 10px 0px !important;
     padding: 6px 20px 6px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -476,8 +476,8 @@ box-shadow:0 0px 0px #FFFFFF;
 
 .warning {
     background: url("../background/warning.png") no-repeat scroll 10px 10px #FFE000;
-    margin: 20px 0 0 !important;
-       padding: 15px 10px 5px 3px;
+    margin: 10px 0px !important;
+    padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 10px;
@@ -513,8 +513,8 @@ box-shadow:0 0px 0px #FFFFFF;
 
 .tip {
     background: url("../background/tip.png") no-repeat scroll 10px 10px #d5d5e8;
-    margin: 20px 0 0 !important;
-       padding: 15px 10px 5px 3px;
+    margin: 10px 0px !important;
+    padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 10px;
