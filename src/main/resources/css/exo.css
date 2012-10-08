@@ -433,7 +433,7 @@ pre {
     border-radius: 5px 5px 5px 5px;    
     overflow-x: auto;
     padding: 10px;
-	margin: 5px 0;
+	margin: 5px 0px;	
 }
     /*Fix the code block with callout displays incorrectly*/
 .programlistingco {
@@ -697,7 +697,7 @@ td {
 
 .note {
     background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
-    margin: 20px 0 0 !important;
+    margin: 10px 0px;
     padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -737,8 +737,8 @@ td {
 
 .warning {
     background: url("../background/warning.png") no-repeat scroll 5px 5px #FFE000;
-    margin: 20px 0 0 !important;
-       padding: 15px 10px 5px 3px;
+    margin: 10px 0px;
+    padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border-radius: 10px;
@@ -773,7 +773,7 @@ td {
 
 .tip {
     background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
-    margin: 20px 0 0 !important;
+    margin: 10px 0px;
     padding: 15px 10px 5px 3px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
