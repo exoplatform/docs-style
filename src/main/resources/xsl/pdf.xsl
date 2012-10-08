@@ -1933,4 +1933,17 @@
   </fo:inline> 	 
 </xsl:template>
 
+<xsl:template match="filename"> 	 
+	<xsl:param name="content">
+		<xsl:call-template name="inline.italicseq">
+			<xsl:with-param name="content">
+				<xsl:apply-templates/>
+			</xsl:with-param> 	 
+		</xsl:call-template>
+	</xsl:param>
+	<fo:inline font-size="9pt" letter-spacing="1pt">      
+		<xsl:copy-of select="$content"/>
+	</fo:inline> 	 
+</xsl:template> 
+
 </xsl:stylesheet>

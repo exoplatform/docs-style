@@ -940,3 +940,10 @@ td {
 	font-weight: normal; 	
 	padding: 1px 4px;
 } 
+
+.filename { 	 
+	font-family:tahoma;
+	font-size: 13px;
+	font-style: italic;
+	letter-spacing: 0.1em;
+}
