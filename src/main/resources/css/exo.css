@@ -935,15 +935,18 @@ td {
  
 .command {
 	background: none repeat scroll 0 0 #F8F8F8;
-	color: #008200; 	
-	font-family: monospace; 	
-	font-weight: normal; 	
+	border: 1px solid #F8F8F8;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 15px;
+	font-family: monospace;
+	font-style: italic;
+	font-weight: bold; 	
 	padding: 1px 4px;
-} 
+}
 
 .filename { 	 
-	font-family:tahoma;
-	font-size: 13px;
-	font-style: italic;
+	font-family: monospace;
+	font-weight: bold;
 	letter-spacing: 0.1em;
+	font-size: 15px;
 }

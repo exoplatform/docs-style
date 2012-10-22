@@ -1928,20 +1928,20 @@
       </xsl:with-param> 	 
     </xsl:call-template> 	 
   </xsl:param> 	 
-  <fo:inline background-color="#F8F8F8" font-size="12pt" color="#008200">     	 
-    <xsl:copy-of select="$content"/> 	 
-  </fo:inline> 	 
+  <fo:inline background-color="#F8F8F8" font-size="16px" font-family="verdana,helvetica,sans-serif" font-style="italic" font-weight="bold">
+<xsl:copy-of select="$content"/>
+  </fo:inline>
 </xsl:template>
 
 <xsl:template match="filename"> 	 
 	<xsl:param name="content">
-		<xsl:call-template name="inline.italicseq">
+		<xsl:call-template name="inline.monoseq">
 			<xsl:with-param name="content">
 				<xsl:apply-templates/>
 			</xsl:with-param> 	 
 		</xsl:call-template>
 	</xsl:param>
-	<fo:inline font-size="9pt" letter-spacing="1pt">      
+	<fo:inline font-size="16px" letter-spacing="0.1pt" font-family="verdana,helvetica,sans-serif" font-weight="bold">      
 		<xsl:copy-of select="$content"/>
 	</fo:inline> 	 
 </xsl:template> 
