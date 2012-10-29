@@ -317,16 +317,43 @@
       <xsl:attribute name="padding-top">2pt</xsl:attribute>
       <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
    </xsl:attribute-set>
+   
+   <!-- TABLE FORMAT / fix: wikbook version 0.9.41 causes missing table borders /--> 
 
+   <xsl:template name="table.cell.properties"> 
+		<xsl:if test="ancestor::thead or ancestor::tfoot">	
+		  <xsl:attribute name="background-color">#323863</xsl:attribute>	
+		  <xsl:attribute name="text-align">center</xsl:attribute>	
+		</xsl:if>
+        <xsl:attribute name="border-start-style">solid</xsl:attribute>
+        <xsl:attribute name="border-end-style">solid</xsl:attribute>
+        <xsl:attribute name="border-top-style">solid</xsl:attribute>
+		<xsl:attribute name="border-bottom-style">solid</xsl:attribute>
+		<xsl:attribute name="border-start-width">0.1pt</xsl:attribute>
+		<xsl:attribute name="border-end-width">0.1pt</xsl:attribute>
+		<xsl:attribute name="border-top-width">0.1pt</xsl:attribute>
+		<xsl:attribute name="border-bottom-width">0.1pt</xsl:attribute>
+		<xsl:attribute name="border-start-color">#323863</xsl:attribute>
+		<xsl:attribute name="border-end-color">#323863</xsl:attribute>
+		<xsl:attribute name="border-bottom-color">#323863</xsl:attribute>
+		<xsl:attribute name="border-top-color">#323863</xsl:attribute>					
+   </xsl:template>	
+
+	<xsl:template match="entry//text()">
+		<xsl:call-template name="hyphenate-url">
+			<xsl:with-param name="url" select="."/>
+		</xsl:call-template>
+	</xsl:template>
+	
    <!-- Only hairlines as frame and cell borders in tables -->
-   <xsl:param name="table.frame.border.thickness">0.3pt</xsl:param>
-   <xsl:param name="table.cell.border.thickness">0.15pt</xsl:param>
-   <xsl:param name="table.cell.border.color">#5c5c4f</xsl:param>
-   <xsl:param name="table.frame.border.color">#5c5c4f</xsl:param>
-   <xsl:param name="table.cell.border.right.color">white</xsl:param>
-   <xsl:param name="table.cell.border.left.color">white</xsl:param>
-   <xsl:param name="table.frame.border.right.color">white</xsl:param>
-   <xsl:param name="table.frame.border.left.color">white</xsl:param>
+   <xsl:param name="table.frame.border.thickness">0.1pt</xsl:param>
+   <xsl:param name="table.cell.border.thickness">0.1pt</xsl:param>
+   <xsl:param name="table.cell.border.color">#323863</xsl:param>
+   <xsl:param name="table.frame.border.color">#323863</xsl:param>
+   <xsl:param name="table.cell.border.right.color">#323863</xsl:param>
+   <xsl:param name="table.cell.border.left.color">#323863</xsl:param>
+   <xsl:param name="table.frame.border.right.color">#323863</xsl:param>
+   <xsl:param name="table.frame.border.left.color">#323863</xsl:param>
    <!-- Paper type, no headers on blank pages, no double sided printing -->
    <xsl:param name="paper.type" select="'A4'" />
    <xsl:param name="double.sided">1</xsl:param>
@@ -517,6 +544,10 @@
          <xsl:attribute name="font-weight">bold</xsl:attribute>
          <xsl:attribute name="background-color">#323863</xsl:attribute>
          <xsl:attribute name="color">#FCB837</xsl:attribute>
+		 <xsl:attribute name="padding-top">2pt</xsl:attribute>
+		 <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
+		 <xsl:attribute name="padding-left">4pt</xsl:attribute>
+		 <xsl:attribute name="padding-right">4pt</xsl:attribute>	
       </xsl:if>
    </xsl:template>
    <!-- Hide URL -->
