@@ -205,7 +205,7 @@ http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered
       <l:template name="table" text=" "/><!-- leave the space here -->
 	  <l:template name="example" text=" "/>	
     </l:context>		
-	<l:gentext key="TableofContents" text="The following topics are covered:"/>
+	<l:gentext key="TableofContents" text=""/>
 	<l:gentext key="Abstract" text=" "/>
   </l:l10n>
 </l:i18n>
