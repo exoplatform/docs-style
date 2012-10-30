@@ -1358,19 +1358,18 @@
 
    </xsl:template>
 
-   <!-- <xsl:template name="book.titlepage.verso">
-      <xsl:choose>
+  <xsl:template name="book.titlepage.verso">
+    <xsl:choose>
       <xsl:when test="bookinfo/abstract">
-      <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/abstract"/>
+        <xsl:apply-templates mode="titlepage.mode" select="bookinfo/abstract"/>
       </xsl:when>
       <xsl:when test="info/abstract">
-      <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/abstract"/>
+        <xsl:apply-templates mode="titlepage.mode" select="info/abstract"/>
       </xsl:when>
-      </xsl:choose>
-      
-      </xsl:template> -->
+    </xsl:choose>
 
-   <xsl:template name="book.titlepage.verso"></xsl:template>
+  </xsl:template>
+
 
 
    <!-- <xsl:template name="book.titlepage3.recto">
@@ -1384,8 +1383,8 @@
       <xsl:when test="title">
       <xsl:apply-templates mode="book.titlepage.verso.auto.mode" select="title"/>
       </xsl:when>
-      </xsl:choose> 
-      
+      </xsl:choose>
+
       <xsl:apply-templates mode="book.titlepage.verso.auto.mode" select="bookinfo/authorgroup"/>
       <xsl:apply-templates mode="book.titlepage.verso.auto.mode" select="info/authorgroup"/>
       <xsl:apply-templates mode="book.titlepage.verso.auto.mode" select="bookinfo/author"/>
@@ -1742,6 +1741,21 @@
     <xsl:apply-templates/>
   </fo:block>
 </xsl:template>
+
+  <xsl:template match="abstract" mode="titlepage.mode">
+    <xsl:variable name="keep.together">
+    </xsl:variable>
+    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt" margin="0pt">
+      <xsl:if test="$keep.together != ''">
+        <xsl:attribute name="keep-together.within-column">
+          <xsl:value-of
+                  select="$keep.together"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:call-template name="anchor"/>
+      <xsl:apply-templates/>
+    </fo:block>
+  </xsl:template>
 
 <xsl:template match="prompt">
   <xsl:param name="content">
