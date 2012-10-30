@@ -291,7 +291,7 @@
       <l:template name="table" text=" "/>
 	  <l:template name="example" text="Example: %t"/>
     </l:context>
-    <l:gentext key="TableofContents" text="The following topics are covered:"/>
+    <l:gentext key="TableofContents" text=""/>
     <l:context name="xref-number-and-title">
       <l:template name="table" text=" "/>
 	  <l:template name="example" text=" "/>     	 
