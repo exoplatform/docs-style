@@ -1559,15 +1559,15 @@
 
 
    <xsl:template
-      match="programlisting|programlisting[@role='XML']|programlisting[@role='JAVA']|programlisting[@role='XHTML']|programlisting[@role='JSP']|programlisting[@role='CSS']">
+      match="programlisting|programlisting[@language='XML']|programlisting[@language='JAVA']|programlisting[@language='XHTML']|programlisting[@language='JSP']|programlisting[@language='CSS']">
 
-      <xsl:variable name="role">
-         <xsl:value-of select="s:toUpperCase(string(@role))"
+    <xsl:variable name="language">
+      <xsl:value-of select="s:toUpperCase(string(@language))"
             xmlns:s="java:java.lang.String" />
       </xsl:variable>
 
       <xsl:variable name="hilighter" select="jbh:new()" />
-      <xsl:variable name="parsable" select="jbh:isParsable($role)" />
+    <xsl:variable name="parsable" select="jbh:isParsable($language)"/>
 
       <fo:block background-color="#F5F5F5" border-style="solid" border-width=".3mm"
          border-color="#CCCCCC" font-family="{$programlisting.font}"
@@ -1584,7 +1584,7 @@
                         <xsl:variable name="child.content" select="." />
 
                         <xsl:variable name="caller"
-                           select="jbh:parseText($hilighter, $role, string($child.content), 'UTF-8')" />
+                           select="jbh:parseText($hilighter, $language, string($child.content), 'UTF-8')" />
                         <xsl:variable name="noOfTokens"
                            select="jbh:getNoOfTokens($caller)" />
 
