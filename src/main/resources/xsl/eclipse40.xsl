@@ -57,6 +57,7 @@
 		/article  toc,title
 		/book     nop <!-- Remove list of tables, figures, examples -->
 		/chapter  nop
+		qandaset toc
 		part      nop
 		/preface  toc,title
 		reference toc,title
@@ -366,6 +367,13 @@
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/revhistory"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/abstract"/>
   <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/abstract"/>
+</xsl:template>
+
+<!-- Customized display format for FAQs -->
+
+<xsl:template match="question" mode="label.markup">
+   <xsl:text>Q</xsl:text>
+   <xsl:number level="single" count="qandaentry" format="1"/>
 </xsl:template>
 	
 </xsl:stylesheet>

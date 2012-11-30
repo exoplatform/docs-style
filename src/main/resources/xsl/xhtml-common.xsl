@@ -107,7 +107,6 @@ set toc
 book nop
 article toc
 chapter nop
-qandadiv toc
 qandaset toc
 sect1 nop
 sect2 nop
@@ -531,5 +530,4 @@ Version: 1.74.0
 	  </xsl:call-template>
     </div>
   </xsl:template>
-  
 </xsl:stylesheet>

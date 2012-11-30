@@ -614,6 +614,19 @@ td {
 	word-wrap: break-word;
 }
 
+.qandaset tr.question td {
+	font-weight: bold;
+	padding: 0 0.5em;
+	margin: 0;
+	vertical-align: top;
+	background: #dce3e1;
+}
+
+.answer {
+	margin-left: 2em;
+	margin-bottom: 3em;
+}
+
 .chapter .section .titlepage .informaltable .inlinemediaobject img{
 	height: 16px;
 }
