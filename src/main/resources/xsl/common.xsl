@@ -53,5 +53,11 @@
   
  <!-- Include the chapter no -->
    <xsl:param name="section.label.includes.component.label" select="1" />
+
+ <!-- Custom style for question -->
+	<xsl:template match="question" mode="label.markup">
+		<xsl:text>Q</xsl:text>
+		<xsl:number level="single" count="qandaentry" format="1"/>
+	</xsl:template>
    
 </xsl:stylesheet>
