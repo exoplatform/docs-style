@@ -241,7 +241,9 @@ h1 {
   text-decoration:underline;
 }
 
-
+.set .toc dt a[href*="Guide.html"] {
+	font-size: 20px;
+}
 
 .toc dd {
   margin: 4px 0px 0px 3px;
