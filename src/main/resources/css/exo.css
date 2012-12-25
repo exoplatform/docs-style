@@ -433,7 +433,8 @@ pre {
     border-radius: 5px 5px 5px 5px;    
     overflow-x: auto;
     padding: 10px;
-	margin: 5px 0px;	
+	margin: 5px 0px;
+	position: relative;
 }
     /*Fix the code block with callout displays incorrectly*/
 .programlistingco {
@@ -442,8 +443,34 @@ pre {
     padding: 0px;
 }
 
+/* Images */
+
+pre img {
+    display:block;
+    margin:1em 0;
+}
+
+.inlinemediaobject, .inlinemediaobject img {
+    display:inline !important;
+    margin:0em;
+}
+
+.programlisting a img, pre a img, td a img, td img {
+    display:inline;
+}
+
+pre a span img, pre span img {
+    display:inline;
+	left:2px;
+	position:absolute;
+}
+
 .calloutlist {margin: 20px 0 10px 0;}
 
+.calloutlist img {
+    display:block;
+    margin:0 0;
+}
 .calloutlist table {
 	border-collapse: separate;
 	border: 1px solid #ccc;
