@@ -217,11 +217,6 @@
         </ul>
       </xsl:if>
   </xsl:if>
-  
-  <!-- FOOTER IN EVERY PAGES -->
-  	<div class="UIFooterPageDocument">
-			Copyright ©2012. All rights reserved. eXo Platform SAS
-	</div>
 	
    <!-- DISQUS -->
 	
@@ -239,7 +234,11 @@
 		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-        
+      	<!-- FOOTER IN EVERY PAGES -->
+  		<div class="UIFooterPageDocument">
+			Copyright ©2012. All rights reserved. eXo Platform SAS
+		</div>
+	
 	</xsl:template>
 
 
