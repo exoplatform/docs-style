@@ -10,7 +10,7 @@
   <groupId>org.exoplatform.doc</groupId>
   <artifactId>doc-style</artifactId>
   <packaging>jar</packaging>
-  <version>2.0.1-SNAPSHOT</version>
+  <version>4.0.0-Alpha1-SNAPSHOT</version>
   <name>eXo Platform documentation common style</name>
 
    <scm>
