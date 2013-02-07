@@ -12,8 +12,8 @@
 
   <xsl:import href="http://docbook.sourceforge.net/release/xsl/1.76.1/eclipse/eclipse3.xsl"/>
 
-  <xsl:param name="eclipse.plugin.name">eXo Platform Documentation 3.5</xsl:param>
-  <xsl:param name="eclipse.plugin.id">org.exoplatform.doc.35</xsl:param>
+  <xsl:param name="eclipse.plugin.name">eXo Platform Documentation 4.0</xsl:param>
+  <xsl:param name="eclipse.plugin.id">org.exoplatform.doc.40</xsl:param>
   <xsl:param name="eclipse.plugin.provider">eXo Platform</xsl:param>
   
   <!-- Table of content Depth & Numbering -->
