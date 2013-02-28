@@ -29,7 +29,7 @@
     <!-- **************************************** -->
     <!-- Dependencies versions                    -->
     <!-- **************************************** -->
-    <org.exoplatform.depmgt.version>2</org.exoplatform.depmgt.version>
+    <org.exoplatform.depmgt.version>3</org.exoplatform.depmgt.version>
   </properties>
   <dependencyManagement>
     <dependencies>
