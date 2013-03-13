@@ -676,3 +676,74 @@ color:#31a8d0;
 }
 
 
+/***************Customize the style of Disqus plugin****************/
+
+#disqus_thread {
+border: 1px solid rgba(0, 0, 0, 0.15) !important;
+border-radius: 14px 14px 14px 14px !important;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.45) !important;
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+font-size: 15px;
+    font-weight: bold;
+padding: 1px 8px 0 !important;
+position: relative !important;
+margin: 25px !important;
+width: auto !important;
+}
+
+#dsq-content h3 {	
+font-family: "Helvetica",sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    margin-bottom: 7px !important;
+}
+
+#dsq-account-dropdown{
+display: none !important;
+}
+
+.dsq-comment-header {
+background: none repeat scroll 0 0 #FFFFFF !important;
+border-radius: 9px 0 0 0 !important;
+border: 1px 0 0 solid rgba(0, 0, 0, 0.15) !important;
+    color: #2A9AF9 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+.dsq-brlink {
+font-size: 8px;
+margin: 25px;
+}
+
+#dsq-content .dsq-comment-meta li, #dsq-content .dsq-comment-actions li {
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+#dsq-content .dsq-comment-text p {
+    font-weight: normal !important;
+font-size: 12px !important;
+}
+
+#dsq-content .dsq-more-button {
+width: 150px !important;
+margin: auto !important;
+margin-bottom: 2px !important;
+}
+
+#dsq-content #dsq-authenticate .dsq-login-buttons {
+display: none !important;
+}
+
+#dsq-subscribe a {
+display: none !important;
+}
+
+#dsq-content #dsq-global-toolbar {
+/*display: none !important;*/
+}
+
+#dsq-sort-by {
+display: none !important;
+}
