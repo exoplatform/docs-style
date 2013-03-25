@@ -1,6 +1,13 @@
-<#list @PrimaryType.children("@Property", "@ManyToOne") as property>
+<#if @PrimaryType??>
+<#assign annotationInstance = @PrimaryType>
+<#elseif @MixinType??>
+<#assign annotationInstance = @MixinType>
+</#if>
+
+<#if annotationInstance??>
+<#list annotationInstance.children("@Property", "@ManyToOne") as property>
 <#if property_index == 0>
-The _{{{${@PrimaryType.attribute("name")}}}}_ node type has the following properties:
+The _{{{${annotationInstance.attribute("name")}}}}_ node type has the following properties:
 || Property Name || Required Type ||Mutiple|| Description ||
 </#if>
 <#if property.name == "Property">
@@ -13,10 +20,10 @@ The _{{{${@PrimaryType.attribute("name")}}}}_ node type has the following proper
 </#if>
 </#list>
 
-<#list @PrimaryType.children("@OneToOne", "@OneToMany") as child>
+<#list annotationInstance.children("@OneToOne", "@OneToMany") as child>
 <#if child.doc() != "">
 <#if child_index == 0>
-The _{{{${@PrimaryType.attribute("name")}}}}_ node type has the following child nodes:
+The _{{{${annotationInstance.attribute("name")}}}}_ node type has the following child nodes:
 || Child Nodes || Default Primary Type || Description ||
 </#if>
 <#if child.sibling("@MappedBy")??>
@@ -35,3 +42,4 @@ The _{{{${@PrimaryType.attribute("name")}}}}_ node type has the following child 
 </#if>
 </#if>
 </#list>
+</#if>
