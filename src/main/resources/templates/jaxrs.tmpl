@@ -1,10 +1,12 @@
+${@Path.doc()}
+
 || Resource || Description ||
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
 | [${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} |
 </#list>
 
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-h1. ${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")} </#if>{anchor:id=${verb.doc("flat:anchor")}RoleNotInToc}
+h1. ${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")} </#if>{anchor:id=${verb.doc("flat:anchor")}}
 
 ${verb.doc()}
 
@@ -14,6 +16,14 @@ ${verb.doc()}
 {code}
 http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${verb.sibling("@Path").attribute("flat:value")}
 {code}
+
+<#if verb.doc("flat:LevelAPI") != "">
+*Level API*: ${verb.doc("bloc:LevelAPI")}
+</#if>
+
+<#if @Path.doc("bloc:LevelAPI") != "">
+*Level API*: ${@Path.doc("bloc:LevelAPI")}
+</#if>
 
 </#if>
 <#if verb.sibling("@Produces")??>
@@ -50,10 +60,6 @@ ${verb.doc("bloc:request")}
 <#if verb.doc("flat:response") != "">
 *Response*:
 ${verb.doc("bloc:response")}
-</#if>
-
-<#if verb.doc("flat:LevelAPI") != "">
-*Level API*: ${verb.doc("bloc:LevelAPI")}
 </#if>
 
 </#list>

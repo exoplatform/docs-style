@@ -1,0 +1,995 @@
+@import url(codehighlight.css);
+body {
+	background:transparent url(../background/BannerRepeat.gif) repeat-x top;
+	font-family:Verdana,Arial,Sans-serif;
+	font-size:12px;
+	margin:0;
+	padding:0px;
+	text-align:justify;
+	color:#393939;
+	line-height:150%;
+}
+
+.UIPageBody {	
+	width: 921px;
+	margin: auto;
+}
+
+.preface {
+	margin: 25px;
+}
+
+.chapter > .section {
+ color: #393939;
+ text-decoration: none; 
+}
+
+/*.chapter > .section a {
+ color: #393939;
+}*/
+
+/* ClearFix */	
+.ClearFix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.ClearFix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .ClearFix {height: 1%;}
+.ClearFix {display: block;}
+/* End hide from IE-mac */ 
+
+/*.UIWikiBooks body > div {
+	width: 860px;
+	margin: auto;
+} */
+
+/* ######################## Navigation ######################## */
+
+.docnav {
+ list-style: none outside none;
+ position: relative; 
+ text-align: center;
+ padding: 23px 0px;
+ margin-bottom: 0;
+ width: 100%;
+}
+
+.docnav li {
+ list-style: none outside none;
+ display: inline;
+}
+
+.docnav li.previous, .docnav li.next {
+ position:absolute;
+ top:1.6em;
+}
+
+.docnav li:before {content:" ";}
+
+.docnav li.previous {
+ left:0px;
+ text-align:left;
+}
+
+.docnav li.previous a {
+ background:url(../background/PriviousIcon.gif) top left no-repeat;
+ width: 34px;
+ padding: 4px 2px 20px 2px;
+ display: block;
+}
+
+.docnav li.previous a:hover{
+ background: url(../background/PriviousIconHover.jpg) top left no-repeat;
+}
+
+.docnav li.next {
+    right:0px;
+    text-align:right;
+}
+
+.docnav li.next a {
+ background:url(../background/NextIcon.gif) top right no-repeat;
+ width: 34px;
+ padding: 4px 2px 20px 2px;
+ display: block; 
+}
+
+.docnav li.next a:hover{
+ background: url(../background/NextIconHover.jpg) top right no-repeat;
+}
+
+.docnav li.up, .docnav li.home {
+ margin:0.5em;
+}
+
+.docnav li.up a {
+ background:url(../background/BackToTop.gif) top left no-repeat;
+ width: 34px;
+ height: 24px;
+ padding: 4px 10px;
+ display: inline-block; 
+}
+
+.docnav li.up a:hover{
+ background: url(../background/BackToTopHover.jpg) top left no-repeat;
+}
+
+.docnav li.home a {
+ background:url(../background/BackToHome.gif) top left no-repeat;
+ width: 34px;
+ height: 24px;
+ padding: 4px 10px;
+ display: inline-block; 
+}
+
+.docnav li.home a:hover{
+ background: url(../background/BackToHomeHover.jpg) top left no-repeat;
+}
+
+/*######################### Banner #############################*/
+
+.Banner {
+	background:transparent url(../background/BannerBG.gif) no-repeat left top;
+	height: 125px;
+       /* padding-top: 125px; */
+}
+
+
+.Banner .VersionInfo{
+	color: #fac943;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 40px 0px 0px 160px;
+}
+
+
+.WikiBooksContainer{
+	padding: 8px 0px;
+	border-bottom: 1px solid #ececec;
+}
+
+/* ##################### TOC ################### */
+
+h4   {
+	font-size: 17px !important; 
+	color: #FCB837
+}
+
+h3  {
+	font-size: 22px;
+	color: #FCB837;
+	border-top: 1px dashed #E9E9D8;
+	padding-top:10px;
+	margin-top: 10px;
+}
+
+.note h3 {
+font-size: 16px !important;
+color: #3C4A55 !important;
+margin-top: 4px;
+padding: 0 10px 0 0;
+border:none;
+text-shadow: 0 1px 1px white;
+}
+
+.warning h3 {
+font-size: 16px !important;
+color: #cc0000 !important;
+margin-top: 4px;
+padding: 0 10px 0 0;
+border:none;
+text-shadow: 0 1px 1px white;
+}
+
+.tip h3 {
+font-size: 16px !important;
+color: #3C4A55 !important;
+margin-top: 4px;
+padding: 0 10px 0 0;
+border:none;
+text-shadow: 0 1px 1px white;
+}
+
+h2 {
+	font-size: 28px !important;
+	line-height: 24px;
+	color: #FCB837;
+	border-top: 1px solid #f1f1e6;
+	padding-top: 5px;
+}
+
+h1 {
+	font-size: 30px;
+	margin:0px;
+}
+
+.toc .book a {
+	font-size: 20px;
+	margin: 4px 0px;
+    text-decoration: none;
+}
+
+.toc .chapter a {
+        color:#005caa;
+}
+
+.toc .chapter a:hover {
+        color:#145BC7;
+        text-decoration:underline;
+}
+
+.toc a {
+	font-size: 12px;
+        /*font-weight: bold;*/
+        text-decoration: none;
+	color:#393939;       
+}
+
+
+.toc .section a {
+  color:#005caa;
+ }
+
+.toc .section a:hover {
+  color:#145BC7;
+  text-decoration:underline;
+}
+
+.set .toc dt a[href*="Guide.html"] {
+	font-size: 20px;
+}
+
+.toc dd {
+  margin: 4px 0px 0px 3px;
+  padding-left: 38px;
+}
+
+.toc dd  dd {
+  padding-left: 27px;
+}
+
+.set .toc dt, .book .toc dt {
+  padding-top: 12px;
+}
+
+.set .toc dd dt, .book .toc dd dt{
+  padding-top: 0px;
+}
+
+/** .set .toc dd dl dt, .book .toc dd dl dt{
+  padding-left: 0px;
+}
+
+.set .toc dd dl dd, .book .toc dd dl dd{
+  padding-left: 25px;
+}
+**/
+dt a {
+	color: #005caa !important;
+}
+
+
+/** **/
+
+/** **/
+
+.BlueText{
+	color:#314572;
+}
+
+.OrangeText{
+	color:#e54c10;
+}
+
+.GreenText{
+	color:#5384ad;
+}
+
+.DarkGreenText{
+	color:#422ea6;
+}
+
+.GrayText{
+	color: #464646;
+}
+
+.NormalText{
+	font-weight: normal;
+}
+
+.BoldText{
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.italic{
+	font-style: italic;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.underline{
+	text-decoration:underline;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.ChildenContent{
+	margin-left: 12px;
+	padding: 4px 0px;
+}
+
+
+ul{
+	padding-left: 24px;
+	margin-left: 0px;
+}
+
+ul li ul{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+ul li ul li{
+	list-style:none;
+}
+
+ul li ul li ul{
+	padding-left: 16px;
+}
+
+ol{
+	padding-left: 24px;
+	margin-left: 0px;
+}
+
+ol li {    
+    font-size: 12px;
+    list-style: decimal outside none;
+}
+
+ol li ol{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+ol li ol li{
+	list-style:none;
+}
+
+ol li ol li ol{
+	padding-left: 16px;
+}
+
+
+ul li{
+background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
+	list-style: none;
+	padding-left: 10px;
+}
+
+
+.section ul li {
+	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+    color: #393939;    
+    font-weight: normal;
+    list-style: none outside none;
+	padding-left:10px;
+}
+
+.preface ul li {
+	background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+    color: #393939;
+    font-size: 12px;
+    font-weight: normal;
+    list-style: none outside none;
+	padding-left:10px;
+}
+
+
+.section table {
+ border-collapse: collapse;
+ text-align: left;
+}
+
+th{
+	background:#323863;
+	color:RGB(255,208,8);
+	box-shadow:0 1px 1px #A1A1A1;
+	font-size:14px;
+	text-align:center;
+	padding: 6px;
+	border: #797979;
+}
+
+.ulink, .link{
+	color:#005caa;
+}
+
+.ulink:hover, .link:hover{
+	color:#145BC7;
+        text-decoration:underline;
+}
+
+.TextForm, .programlistingco, .screen {
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px;
+	background: #f4f4f4;
+	padding: 0px 12px;
+	border: 1px solid #cccccc;
+    overflow-x: auto;
+	margin: 0px 0px 0px 0px;
+}
+
+ /********************Code Block*********************/
+	/*Fix the code block does not display with docbook*/
+pre {
+	background: none repeat scroll 0 0 #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;    
+    overflow-x: auto;
+    padding: 10px;
+	margin: 5px 0px;
+	position: relative;
+}
+    /*Fix the code block with callout displays incorrectly*/
+.programlistingco {
+	background: none;
+    border: 0px;
+    padding: 0px;
+}
+
+/* Images */
+
+pre img {
+    display:block;
+    margin:1em 0;
+}
+
+.inlinemediaobject, .inlinemediaobject img {
+    display:inline !important;
+    margin:0em;
+}
+
+.programlisting a img, pre a img, td a img, td img {
+    display:inline;
+}
+
+pre a span img, pre span img {
+    display:inline;
+	left:2px;
+	position:absolute;
+}
+
+.calloutlist {margin: 20px 0 10px 0;}
+
+.calloutlist img {
+    display:block;
+    margin:0 0;
+}
+.calloutlist table {
+	border-collapse: separate;
+	border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.calloutlist td {
+	border:none;
+    padding: 2px 6px;
+}
+
+.calloutlist table p {
+	margin:0;
+}
+
+
+.footer{
+	padding: 8px 0px;
+	text-align: right;
+	color: #898989;
+}
+
+hr {
+ display: none;
+}
+
+
+.book .titlepage .title a{
+	color: #fbad18;
+}
+
+.book .title {
+	margin: 0 0 15px 0;
+}
+
+.book .titlepage .subtitle a{
+	font-size: 18px;
+}
+
+.book .titlepage .authorgroup{
+	margin: 8px 0px 0px 0px;
+}
+
+.UIFooterPageDocument{
+	color: #63687a;
+	text-align: center;
+	height: 40px;
+	font-size: 12px;
+	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
+}
+/* ======================= Chapter ===========================*/
+
+.chapter .titlepage h2 , .titlepage .title a{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FCB837;
+}
+
+.chapter .section .titlepage h2 , .section .titlepage .title a{
+	font-size: 30px;
+	font-weight: bold;
+	color: #FCB837;
+}
+
+.chapter .section .titlepage h3 a{
+	font-size: 25px;
+	font-weight: bold;
+	color: #FCB837;
+}
+
+.chapter .section .titlepage h4 a{
+	font-size: 22px;
+	font-weight: bold;
+	color: #FCB837;
+}
+
+.chapter .section .titlepage h5 a{
+	font-size: 19px;
+	font-weight: bold;
+	color: #FCB837;
+}
+
+.chapter .section .titlepage h6 a{
+	font-size: 17px;
+	font-weight: bold;
+	color: #FCB837;
+}
+
+.chapter .toc dl dd dl{
+margin: 4px 0px 0px 19px;
+}
+
+.chapter .toc .section{
+	border-top: none;
+}
+ 
+.chapter .toc .section a {
+	line-height: 20px;
+	color: #005caa !important;
+}
+
+
+.chapter .toc .section a:hover {
+	line-height: 20px;
+	color: #31a8d0 !important;
+}
+
+.chapter .titlepage .title a {
+	color: #FCB837;
+}
+
+.chapter .section .titlepage .title a {
+	color: #FCB837;
+}
+
+.chapter .section .titlepage .itemizedlist ul {
+	padding-left: 13px;
+}
+
+.chapter .section .titlepage .orderedlist ol {
+	background:transparent url(../background/ListBG.gif) no-repeat left 4px;
+	padding-left: 13px;
+}
+
+.chapter .section .titlepage .orderedlist ol li{
+	list-style: none;
+}
+
+
+.chapter .section .titlepage .itemizedlist ul li{
+}
+
+.chapter .section .titlepage .informaltable table{
+	width: 100%;
+}
+
+.chapter .section .titlepage .informaltable table th{
+	border: solid 1px #797979;
+	padding: 6px 0px;
+}
+
+.chapter .section .titlepage .informaltable table td{
+	padding: 6px 0px;
+	border: solid 1px #797979;
+}
+
+.chapter .section .titlepage .informaltable table td  .mediaobject,.section table  .mediaobject {
+	text-align:center;
+}
+
+.chapter .section .titlepage .informaltable table td p{
+	margin: 0px;
+}
+
+.chapter .section .informaltable {
+  margin-bottom: 30px;
+}
+
+table {
+width:100%;
+margin-left:0px;
+}
+
+td {
+	padding: 6px 6px;
+	border: 1px solid #797979;
+	max-width: 210px;
+	word-wrap: break-word;
+}
+
+.qandaset tr.question td {
+	font-weight: bold;
+	padding: 0 0.5em;
+	margin: 0;
+	vertical-align: top;
+	background: #dce3e1;
+}
+
+.answer {
+	margin-left: 2em;
+	margin-bottom: 3em;
+}
+
+.chapter .section .titlepage .informaltable .inlinemediaobject img{
+	height: 16px;
+}
+
+.chapter .section .section .itemizedlist #d0e38{
+	font-size: 12px;
+	color: #393939;
+}
+
+
+.chapter .section .section .orderedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .orderedlist .orderedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .orderedlist .orderedlist .orderedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .orderedlist .orderedlist .orderedlist .orderedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .itemizedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .itemizedlist #d0e485{
+	font-size: 12px;
+	color: #393939;
+}
+
+.chapter .section .section .itemizedlist .itemizedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .itemizedlist .itemizedlist .itemizedlist p{
+	font-size: 12px;
+}
+
+.chapter .section .section .itemizedlist .itemizedlist .itemizedlist .itemizedlist p{
+	font-size: 12Wpx;
+}
+
+.chapter ul li{
+	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+	list-style: none;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #393939;
+	font-weight: normal;
+}
+.docnav li{
+	background:none!important;
+	padding:0;
+}
+
+.chapter .itemizedlist ul li ul li{
+	background:	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+	list-style:none outside none;
+}
+
+
+.chapter ol{
+	padding-left: 0px;
+}
+
+.chapter ol li{
+	font-size: 12px;
+	color: #393939;
+	font-weight: bold;
+}
+.chapter ol li a,.chapter ol li p{
+	font-weight: normal;
+}
+
+/* Note */	
+
+.note {
+    background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
+    margin: 10px 0px;
+    padding: 15px 10px 5px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.note .title {
+    font-weight: bold;
+	font-size: 16px !important;
+    margin: 0 0 10px 40px;
+    padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
+	color: #3c4a55;
+}
+
+.note .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #3c4a55;
+}
+
+.note p a {
+    /*display: block;*/
+    margin: 3px 0 0;
+}
+
+.note p {
+     margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+    *padding: 0px 0px 12px 12px;
+}
+
+.note .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px;}
+.note .itemizedlist ul li p { margin:0;padding-left:0; }
+
+/* warning */	
+
+.warning {
+    background: url("../background/warning.png") no-repeat scroll 5px 5px #FFE000;
+    margin: 10px 0px;
+    padding: 15px 10px 5px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.warning .title {
+    font-weight: bold;
+    margin: 0 0 10px 40px;
+    padding: 0 10px;
+}
+
+.warning .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #393939;
+}
+
+.warning p a {
+    /*display: block;*/
+    padding: 4px 0;
+}
+
+.warning p {
+   margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+}
+
+.warning .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px; }
+.warning .itemizedlist ul li p { margin:0;padding-left:0; }
+
+/* Tip*/	
+
+.tip {
+    background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
+    margin: 10px 0px;
+    padding: 15px 10px 5px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.tip .title {
+    font-weight: bold;
+    margin: 0;
+   margin: 0 0 10px 40px;
+    padding: 0 10px;
+}
+
+.tip .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #393939;
+}
+
+.tip p a {
+    /*display: block;*/
+    padding: 4px 0;
+}
+
+.tip p {
+  margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+}
+
+.tip .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px; }
+.tip .itemizedlist ul li p { margin:0;padding-left:0; }
+
+.chapter .section a  a{
+	color: red
+}
+
+.code {
+	font-size: 13px;
+	background: none repeat scroll 0 0 #FEE9CC;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 0px 3px;
+	border: 1px solid #FFDEB0;
+
+}
+.abstract {
+	padding: 10px;
+	background: #eee;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.abstract .itemizedlist ul li{ 
+	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+    color: #393939;
+    font-size: 12px;
+    font-weight: normal;
+    list-style: none outside none;
+    padding-left: 10px;
+}
+.abstract a,.abstract a:visisted {
+	color:#16968e;
+}
+
+.prompt span {
+	color:#888;
+	font-family: Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+}
+
+.citetitle span {
+	color:#a30000;
+}
+.citetitle span {
+    color: #0c46bc;
+    font-style: normal;
+}
+.procedure {
+	margin-left: 40px;
+}
+
+.term {	
+	color: #2E398C !important
+}
+
+/* guilabel guibutton */
+
+.guibutton {
+	background: -moz-linear-gradient(#FAFAFA, #EAEAEA) repeat scroll 0 0 transparent;
+	background:	-webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EAEAEA));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#EAEAEA');
+	border-color: #D4D4D4 #D4D4D4 #BCBCBC;
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	text-shadow: 0 1px 0 #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	padding: 1px 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.guilabel {	
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.highlights {
+	background: white;
+	border-left: 2px dotted #CCCCCC;
+	margin-bottom: 10px;
+	padding: 0px 5px 1px;
+}
+
+.guimenu {	
+  font-weight: bold; 
+  color: #333333; 	 
+  letter-spacing: 1px; 	 
+  font-size: 12px; 	 
+  font-family: Tahoma; 
+}
+ 	
+.guisubmenu { 	 
+  font-weight: bold; 	 
+  color: #333333; 	 
+  letter-spacing: 1px; 	 
+  font-size: 12px; 	 
+  font-family: Tahoma;
+}
+ 	  	
+.guimenuitem { 
+  font-weight: bold; 	 
+  color: #333333; 	 
+  letter-spacing: 1px; 	 
+  font-size: 12px; 	 
+  font-family: Tahoma;
+}
+
+.example .title {	
+  text-shadow: 0 1px 1px white;     	
+  color: #393939;     	 
+  font-size: 12px;     	
+}
+
+.example {
+  padding-left: 5px; 	 
+  border-left: 2px solid #CCCCCC; 	 
+ }
+ 
+.command {
+	background: none repeat scroll 0 0 #F8F8F8;
+	border: 1px solid #F8F8F8;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 15px;
+	font-family: monospace;
+	font-style: italic;
+	font-weight: bold; 	
+	padding: 1px 4px;
+	line-height: 20px;
+}
+
+.filename { 	 
+	font-family: monospace;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 15px;
+}
