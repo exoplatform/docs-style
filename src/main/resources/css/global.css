@@ -1,7 +1,9 @@
+/*============== Status Elements================*/
 .clearfix {
   *zoom: 1;
 }
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   display: table;
   content: "";
   line-height: 0;
@@ -50,7 +52,8 @@
   -moz-box-shadow: 0 1px 2px 0px #ffffff;
   box-shadow: 0 1px 2px 0px #ffffff;
 }
-.uiActionWithLabel:hover:active, .uiActionWithLabel:hover:focus {
+.uiActionWithLabel:hover:active,
+.uiActionWithLabel:hover:focus {
   -webkit-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.15) inset;
   -moz-box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.15) inset;
@@ -67,7 +70,8 @@
 .actionContainer {
   white-space: nowrap;
 }
-.actionIcon, .actionIconSmall {
+.actionIcon,
+.actionIconSmall {
   border: 1px solid transparent;
   cursor: pointer;
   display: inline-block;
@@ -76,7 +80,8 @@
   padding: 2px 4px;
   vertical-align: middle;
 }
-.actionIcon:hover, .actionIconSmall:hover {
+.actionIcon:hover,
+.actionIconSmall:hover {
   background-color: #f9f9f9;
   background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f1f1));
@@ -106,7 +111,8 @@
   border-radius: 3px;
   background-color: #ececec;
 }
-.actionIcon .uiIconMiniArrowDown, .actionIconSmall .uiIconMiniArrowDown {
+.actionIcon .uiIconMiniArrowDown,
+.actionIconSmall .uiIconMiniArrowDown {
   margin-left: 5px;
 }
 .actionIcon:active,
@@ -128,7 +134,8 @@
   padding: 0px 2px;
 }
 /*============== error, noticeEmpty ================*/
-.error, .noticeEmpty {
+.error,
+.noticeEmpty {
   color: #e0233e;
 }
 .noticeEmpty {
@@ -207,7 +214,8 @@
 .uiBox .title + .uiGrid.table th {
   background-color: #f9f9f9;
 }
-.uiBox .title + .uiGrid.table tr td:first-child, .uiBox .title + .uiGrid.table tr th:first-child {
+.uiBox .title + .uiGrid.table tr td:first-child,
+.uiBox .title + .uiGrid.table tr th:first-child {
   border-left: none;
 }
 .uiBox.roundedBottom {
@@ -458,7 +466,9 @@ nav,
 section {
   display: block;
 }
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -476,10 +486,12 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
 }
-sub, sup {
+sub,
+sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
@@ -507,7 +519,8 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-#map_canvas img, .google-maps img {
+#map_canvas img,
+.google-maps img {
   max-width: none;
 }
 button,
@@ -518,11 +531,13 @@ textarea {
   font-size: 100%;
   vertical-align: middle;
 }
-button, input {
+button,
+input {
   *overflow: visible;
   line-height: normal;
 }
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -539,7 +554,8 @@ input[type="search"] {
   box-sizing: content-box;
   -webkit-appearance: textfield;
 }
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 textarea {
@@ -582,7 +598,8 @@ h6 {
 .dropdown-menu li > a {
   padding: 5px 10px;
 }
-.dropdown-menu.dropdownArrowTop:before, .dropdown-menu.dropdownArrowTop:after {
+.dropdown-menu.dropdownArrowTop:before,
+.dropdown-menu.dropdownArrowTop:after {
   position: absolute;
   content: '';
   display: inline-block;
@@ -611,7 +628,9 @@ h6 {
 .uiDropdownWithIcon .dropdown-submenu > .dropdown-menu {
   border-radius: 3px;
 }
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
   background-color: #517abe;
   background-image: -moz-linear-gradient(top, #628acc, #3763aa);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#628acc), to(#3763aa));
@@ -621,7 +640,8 @@ h6 {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff628acc', endColorstr='#ff3763aa', GradientType=0);
 }
-.dropdown-menu .active > a, .dropdown-menu .active > a:hover {
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
   background-color: #284f7b;
   background-image: -moz-linear-gradient(top, #2f5e92, #1c3958);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2f5e92), to(#1c3958));
@@ -638,20 +658,20 @@ h6 {
   *margin-right: .3em;
   line-height: 16px;
   vertical-align: text-top;
-  background-image: url("../images/icons/uiIconsLightGray.png");
+  background-image: url("Sprites/Sprites/../images/icons/uiIconsLightGray.png");
   background-repeat: no-repeat;
 }
 /* Blue icons with optional class, or on hover/active states of certain elements */
 .uiIconBlue {
-  background-image: url("../images/icons/uiIconsBlue.png");
+  background-image: url("Sprites/Sprites/../images/icons/uiIconsBlue.png");
 }
 /* light grey icons with optional class, or on  */
 .uiIconDrakGray {
-  background-image: url("../images/icons/uiIconsDarkGray.png");
+  background-image: url("Sprites/Sprites/../images/icons/uiIconsDarkGray.png");
 }
 /* White icons with optional class, or on hover/active states of Drop down with Icons */
 .uiIconWhite {
-  background-image: url("../images/icons/uiIconsWhite.png");
+  background-image: url("Sprites/Sprites/../images/icons/uiIconsWhite.png");
 }
 .uiIconSearch {
   background-position: 0px 0px;
@@ -681,10 +701,13 @@ h6 {
 .uiIconEditCategory {
   background-position: -40px 0px;
 }
-.uiIconLock, .uiIconPagePermission {
+.uiIconLock,
+.uiIconPagePermission {
   background-position: -60px 0px;
 }
-.uiIconLink, .uiIconPermalink, .uiIconLinkr {
+.uiIconLink,
+.uiIconPermalink,
+.uiIconLinkr {
   background-position: -80px 0px;
 }
 .uiIconWatch,
@@ -693,10 +716,13 @@ h6 {
 .uiIconUnWatch {
   background-position: -100px 0px;
 }
-.uiIconMove, .uiIconMovePage, .uiIconMoveCategory {
+.uiIconMove,
+.uiIconMovePage,
+.uiIconMoveCategory {
   background-position: -120px 0px;
 }
-.uiIconPreview, .uiIconView {
+.uiIconPreview,
+.uiIconView {
   background-position: -140px 0px;
 }
 .uiIconRestore {
@@ -717,7 +743,8 @@ h6 {
 .uiIconTag {
   background-position: -60px -20px;
 }
-.uiIconSave, .uiIconPasteNode {
+.uiIconSave,
+.uiIconPasteNode {
   background-position: -80px -20px;
 }
 .uiIconExport {
@@ -738,22 +765,30 @@ h6 {
 .uiIconSetting {
   background-position: 0px -40px;
 }
-.uiIconSettings, .uiIconMoreAction {
+.uiIconSettings,
+.uiIconMoreAction {
   background-position: -20px -40px;
 }
-.uiIconTemplate, .uiIconFromTemplate, .uiIconAddPageFromTemplate {
+.uiIconTemplate,
+.uiIconFromTemplate,
+.uiIconAddPageFromTemplate {
   background-position: -40px -40px;
 }
 .uiIconFile {
   background-position: -60px -40px;
 }
-.uiIconPublish, .uiIconBlankFile, .uiIconAddPage {
+.uiIconPublish,
+.uiIconBlankFile,
+.uiIconAddPage {
   background-position: -80px -40px;
 }
-.uiIconViewChange, .uiIconViewDraftChange {
+.uiIconViewChange,
+.uiIconViewDraftChange {
   background-position: -100px -40px;
 }
-.uiIconExportPdf, .uiIconPdfExport, .uiIconExportAsPDF {
+.uiIconExportPdf,
+.uiIconPdfExport,
+.uiIconExportAsPDF {
   background-position: -120px -40px;
 }
 .uiIconUser,
@@ -762,10 +797,12 @@ h6 {
 .uiIconProfile {
   background-position: -140px -40px;
 }
-.uiIconMembership, .uiIconSelectMember {
+.uiIconMembership,
+.uiIconSelectMember {
   background-position: -160px -40px;
 }
-.uiIconGroup, .uiIconAddAny {
+.uiIconGroup,
+.uiIconAddAny {
   background-position: -180px -40px;
 }
 .uiIconFolder {
@@ -784,7 +821,8 @@ h6 {
 .uiIconAddAnyPermission {
   background-position: -60px -60px;
 }
-.uiIconMinus, .uiIconStop {
+.uiIconMinus,
+.uiIconStop {
   background-position: -80px -60px;
 }
 .uiIconPlus,
@@ -801,7 +839,8 @@ h6 {
 .uiIconRemove {
   background-position: -120px -60px;
 }
-.uiIconInformation, .uiIconPageInfo {
+.uiIconInformation,
+.uiIconPageInfo {
   background-position: -140px -60px;
 }
 .uiIconMail {
@@ -834,7 +873,8 @@ h6 {
 .uiIconFlags {
   background-position: -140px -80px;
 }
-.uiIconClock, .uiIconEvent {
+.uiIconClock,
+.uiIconEvent {
   background-position: -160px -80px;
 }
 .uiIconTree {
@@ -843,7 +883,8 @@ h6 {
 .uiIconGeneralDrive {
   background-position: 0px -100px;
 }
-.uiIconForum, .uiIconUIForms {
+.uiIconForum,
+.uiIconUIForms {
   background-position: -20px -100px;
 }
 .uiIconPoll {
@@ -876,10 +917,12 @@ h6 {
 .uiIconArrowUp {
   background-position: -20px -120px;
 }
-.uiIconArrowRight, .uiIconNextArrow {
+.uiIconArrowRight,
+.uiIconNextArrow {
   background-position: -40px -120px;
 }
-.uiIconArrowLeft, .uiIconPrevArrow {
+.uiIconArrowLeft,
+.uiIconPrevArrow {
   background-position: -60px -120px;
 }
 .uiIconTagMini {
@@ -888,7 +931,8 @@ h6 {
 .uiIconUpLevel {
   background-position: -100px -120px;
 }
-.uiIconExpand, .uiIconResize {
+.uiIconExpand,
+.uiIconResize {
   background-position: -120px -120px;
 }
 .uiIconUnlockMedium {
@@ -900,16 +944,20 @@ h6 {
 .uiIconAddCategory {
   background-position: -180px -120px;
 }
-.uiIconArrowDownMini, .uiIconMiniArrowDown {
+.uiIconArrowDownMini,
+.uiIconMiniArrowDown {
   background-position: 0px -140px;
 }
-.uiIconArrowUpMini, .uiIconMiniArrowUp {
+.uiIconArrowUpMini,
+.uiIconMiniArrowUp {
   background-position: -20px -140px;
 }
-.uiIconArrowRightMini, .uiIconMiniArrowRight {
+.uiIconArrowRightMini,
+.uiIconMiniArrowRight {
   background-position: -40px -140px;
 }
-.uiIconArrowLeftMini, .uiIconMiniArrowLeft {
+.uiIconArrowLeftMini,
+.uiIconMiniArrowLeft {
   background-position: -60px -140px;
 }
 .uiIconGoUp {
@@ -1015,13 +1063,16 @@ a:hover [class^="uiIconApp"],
   background-image: url("/eXoResources/skin/images/Icons/AppIcons/uiIconAppGray.png");
   background-repeat: no-repeat;
 }
-.dropdown-menu > li > a:hover > [class^="uiIconApp"], .uiSpaceMenuPortlet .active [class^="uiIconApp"], .uiUserNavigationPortlet .active [class^="uiIconApp"] {
+.dropdown-menu > li > a:hover > [class^="uiIconApp"],
+.uiSpaceMenuPortlet .active [class^="uiIconApp"],
+.uiUserNavigationPortlet .active [class^="uiIconApp"] {
   background-image: url("/eXoResources/skin/images/Icons/AppIcons/uiIconAppWhite.png");
 }
 .uiIconAppprofile {
   background-position: 0 0;
 }
-.uiIconAppactivities, .uiIconAppSpaceActivityStreamPortlet {
+.uiIconAppactivities,
+.uiIconAppSpaceActivityStreamPortlet {
   background-position: -35px 0;
 }
 .uiIconAppconnections {
@@ -1030,7 +1081,8 @@ a:hover [class^="uiIconApp"],
 .uiIconAppwiki {
   background-position: -105px 0;
 }
-.uiIconAppdashboard, .uiIconAppDashboardPortlet {
+.uiIconAppdashboard,
+.uiIconAppDashboardPortlet {
   background-position: -140px 0;
 }
 .uiIconAppNotications {
@@ -1127,7 +1179,8 @@ a:hover [class^="uiIconApp"],
   background-color: #f1f1f1;
   *background-color: #e4e4e4;
 }
-.btn:active, .btn.active {
+.btn:active,
+.btn.active {
   background-color: #d8d8d8 \9;
 }
 .btn:first-child {
@@ -1143,7 +1196,8 @@ a:hover [class^="uiIconApp"],
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff1f1f1', GradientType=0);
 }
-.btn.active, .btn:active {
+.btn.active,
+.btn:active {
   background-color: #e6e6e6;
   background-color: #d9d9d9 \9;
   background-image: none;
@@ -1152,7 +1206,8 @@ a:hover [class^="uiIconApp"],
   -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
   box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
 }
-.btn.disabled, .btn[disabled] {
+.btn.disabled,
+.btn[disabled] {
   cursor: default;
   background-color: #e6e6e6;
   background-image: none;
@@ -1192,7 +1247,8 @@ a:hover [class^="uiIconApp"],
 .btn {
   border-color: #c7c7c7;
 }
-.uiAction .btn:first-child, .btn-primary {
+.uiAction .btn:first-child,
+.btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #567ab6;
@@ -1233,7 +1289,8 @@ a:hover [class^="uiIconApp"],
 .btn-primary.active {
   background-color: #324b70 \9;
 }
-.uiAction .btn:first-child:hover, .btn-primary:hover {
+.uiAction .btn:first-child:hover,
+.btn-primary:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #476ba7;
@@ -1334,7 +1391,8 @@ a:hover [class^="uiIconApp"],
   -moz-border-radius-bottomleft: 3px;
   border-bottom-left-radius: 3px;
 }
-.btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
   -webkit-border-top-right-radius: 3px;
   -moz-border-radius-topright: 3px;
   border-top-right-radius: 3px;
@@ -1351,7 +1409,8 @@ a:hover [class^="uiIconApp"],
   -moz-border-radius-bottomleft: 3px;
   border-bottom-left-radius: 3px;
 }
-.btn-group > .btn.large:last-child, .btn-group > .large.dropdown-toggle {
+.btn-group > .btn.large:last-child,
+.btn-group > .large.dropdown-toggle {
   -webkit-border-top-right-radius: 3px;
   -moz-border-radius-topright: 3px;
   border-top-right-radius: 3px;
@@ -1370,7 +1429,7 @@ a:hover [class^="uiIconApp"],
 }
 /******* Trung nq ****/
 .btn-group.uiDropdownWithIcon .btn .spiter {
-  background: url("../images/split-white.png") no-repeat 0 0;
+  background: url("ButtonGroups/ButtonGroups/../images/split-white.png") no-repeat 0 0;
   display: inline-block;
   height: 27px;
   margin: -3px 5px;
@@ -1384,7 +1443,8 @@ a:hover [class^="uiIconApp"],
   margin: 5px 0 5px -27%;
   left: 50%;
 }
-.btn-group > .btn, .btn-group > .dropdown-menu {
+.btn-group > .btn,
+.btn-group > .dropdown-menu {
   font-size: 13px ;
 }
 form {
@@ -1451,25 +1511,39 @@ input[type="color"]:focus,
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(29,75,159,.6);
   color: #333333;
 }
-.input-mini, .inputMini input[type="text"], .inputMini input[type="password"] {
+.input-mini,
+.inputMini input[type="text"],
+.inputMini input[type="password"] {
   width: 60px;
 }
-.input-small, .inputSmall input[type="text"], .inputSmall input[type="password"] {
+.input-small,
+.inputSmall input[type="text"],
+.inputSmall input[type="password"] {
   width: 90px;
 }
-.input-medium, .inputMedium input[type="text"], .inputMedium input[type="password"] {
+.input-medium,
+.inputMedium input[type="text"],
+.inputMedium input[type="password"] {
   width: 150px;
 }
-.input-large, .inputLarge input[type="text"], .inputLarge input[type="password"] {
+.input-large,
+.inputLarge input[type="text"],
+.inputLarge input[type="password"] {
   width: 210px;
 }
-.input-xlarge, .inputXlarge input[type="text"], .inputXlarge input[type="password"] {
+.input-xlarge,
+.inputXlarge input[type="text"],
+.inputXlarge input[type="password"] {
   width: 270px;
 }
-.input-xxlarge, .inputXxlarge input[type="text"], .inputXxlarge input[type="password"] {
+.input-xxlarge,
+.inputXxlarge input[type="text"],
+.inputXxlarge input[type="password"] {
   width: 350px;
 }
-.input-xxxlarge, .inputXxxlarge input[type="text"], .inputXxxlarge input[type="password"] {
+.input-xxxlarge,
+.inputXxxlarge input[type="text"],
+.inputXxxlarge input[type="password"] {
   width: 530px;
 }
 .form-horizontal .control-group {
@@ -1497,7 +1571,9 @@ input[type="color"]:focus,
 .form-horizontal .control-group .controls .uiRadio {
   margin: 3px 25px 0px 0;
 }
-input, select, .uneditable-input {
+input,
+select,
+.uneditable-input {
   width: 270px;
 }
 textarea {
@@ -1510,7 +1586,8 @@ textarea {
   margin: 0 5px;
   line-height: 20px;
 }
-.uiCheckbox input[type="checkbox"]:checked, .uiCheckbox input[type="checkbox"]:not(:checked) {
+.uiCheckbox input[type="checkbox"]:checked,
+.uiCheckbox input[type="checkbox"]:not(:checked) {
   margin: 4px 0 0;
   /* hack margin-top: 4px to fix problem on chrome in Mac only */
 
@@ -1586,7 +1663,8 @@ textarea[readonly] {
   margin: 0 5px;
   line-height: 20px;
 }
-.uiRadio input[type="radio"]:checked, .uiRadio input[type="radio"]:not(:checked) {
+.uiRadio input[type="radio"]:checked,
+.uiRadio input[type="radio"]:not(:checked) {
   margin: 0;
   opacity: 0;
   padding: 0;
@@ -1660,15 +1738,16 @@ textarea[readonly] {
   /*margin-bottom: -6px;*/
 
   background-color: #F9F9F9;
-  background-image: url(../images/arrow.png), -moz-linear-gradient(top, #ffffff, #f1f1f1);
-  background-image: url(../images/arrow.png), -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f1f1));
-  background-image: url(../images/arrow.png), -webkit-linear-gradient(top, #ffffff, #f1f1f1);
-  background-image: url(../images/arrow.png), -o-linear-gradient(top, #ffffff, #f1f1f1);
-  background-image: url(../images/arrow.png), linear-gradient(to bottom, #ffffff, #f1f1f1);
+  background-image: url(Form/Form/../images/arrow.png), -moz-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: url(Form/Form/../images/arrow.png), -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f1f1));
+  background-image: url(Form/Form/../images/arrow.png), -webkit-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: url(Form/Form/../images/arrow.png), -o-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: url(Form/Form/../images/arrow.png), linear-gradient(to bottom, #ffffff, #f1f1f1);
   background-repeat: no-repeat, repeat-x;
   background-position: right top,0 0;
 }
-.uiSelectbox:hover, .uiSelectbox:focus {
+.uiSelectbox:hover,
+.uiSelectbox:focus {
   background-position: right bottom, 0 0;
 }
 .uiSelectbox select {
@@ -1750,7 +1829,9 @@ textarea[readonly] {
 .controls .removeFile {
   float: none;
 }
-.controls .selectFileFrame, .controls .progressBarFrame, .controls .progressBarFrame {
+.controls .selectFileFrame,
+.controls .progressBarFrame,
+.controls .progressBarFrame {
   margin: 0;
 }
 .controls .selectFileFrame {
@@ -1764,26 +1845,32 @@ textarea[readonly] {
   -moz-box-shadow: 0px 1px 2px -1px rgba(13, 13, 13, 0.2);
   box-shadow: 0px 1px 2px -1px rgba(13, 13, 13, 0.2);
 }
-.uiGrid.table td, .uiGrid.table th {
+.uiGrid.table td,
+.uiGrid.table th {
   font-size: 13px;
   border-left: 1px solid #cfcfcf;
   padding: 8px 18px;
   vertical-align: middle;
 }
-.uiGrid.table td.center, .uiGrid.table th.center {
+.uiGrid.table td.center,
+.uiGrid.table th.center {
   text-align: center;
 }
-.uiGrid.table td.left, .uiGrid.table th.left {
+.uiGrid.table td.left,
+.uiGrid.table th.left {
   text-align: left;
 }
-.uiGrid.table td.right, .uiGrid.table th.right {
+.uiGrid.table td.right,
+.uiGrid.table th.right {
   text-align: right;
 }
-.uiGrid.table td.empty, .uiGrid.table th.empty {
+.uiGrid.table td.empty,
+.uiGrid.table th.empty {
   color: #9a9a9a;
   background-color: #f9f9f9;
 }
-.uiGrid.table td .text, .uiGrid.table th .text {
+.uiGrid.table td .text,
+.uiGrid.table th .text {
   overflow: hidden;
 }
 .uiGrid.table tr th {
@@ -1793,7 +1880,8 @@ textarea[readonly] {
 .uiGrid.table tr td {
   border-top: none;
 }
-.uiGrid.table tr td .actionIcon:active, .uiGrid.table tr td .actionIcon:focus {
+.uiGrid.table tr td .actionIcon:active,
+.uiGrid.table tr td .actionIcon:focus {
   -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15) inset;
   -moz-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15) inset;
@@ -1815,6 +1903,9 @@ textarea[readonly] {
 .table-striped tr:nth-child(even) td {
   background-color: #ffffff;
 }
+.uiGrid.border tbody td {
+  border-bottom: 1px solid #cfcfcf;
+}
 .uiGrid.rounded-corners {
   border-collapse: separate;
   -webkit-box-shadow: 0 1px 2px rgba(13, 13, 13, 0.1);
@@ -1824,7 +1915,8 @@ textarea[readonly] {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.uiGrid.rounded-corners thead:first-child tr:first-child th:first-child, .uiGrid.rounded-corners tbody:first-child tr:first-child td:first-child {
+.uiGrid.rounded-corners thead:first-child tr:first-child th:first-child,
+.uiGrid.rounded-corners tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px;
@@ -1834,22 +1926,28 @@ textarea[readonly] {
   -moz-box-shadow: 0 -1px 1px 0px rgba(13, 13, 13, 0.1);
   box-shadow: 0 -1px 1px 0px rgba(13, 13, 13, 0.1);
 }
-.uiGrid.rounded-corners thead:first-child tr:first-child th:last-child, .uiGrid.rounded-corners tbody:first-child tr:first-child td:last-child {
+.uiGrid.rounded-corners thead:first-child tr:first-child th:last-child,
+.uiGrid.rounded-corners tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
-.uiGrid.rounded-corners thead:last-child tr:last-child th:first-child, .uiGrid.rounded-corners tbody:last-child tr:last-child td:first-child, .uiGrid.rounded-corners tfoot:last-child tr:last-child td:first-child {
+.uiGrid.rounded-corners thead:last-child tr:last-child th:first-child,
+.uiGrid.rounded-corners tbody:last-child tr:last-child td:first-child,
+.uiGrid.rounded-corners tfoot:last-child tr:last-child td:first-child {
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   border-bottom-left-radius: 4px;
 }
-.uiGrid.rounded-corners thead:last-child tr:last-child th:last-child, .uiGrid.rounded-corners tbody:last-child tr:last-child td:last-child, .uiGrid.rounded-corners tfoot:last-child tr:last-child td:last-child {
+.uiGrid.rounded-corners thead:last-child tr:last-child th:last-child,
+.uiGrid.rounded-corners tbody:last-child tr:last-child td:last-child,
+.uiGrid.rounded-corners tfoot:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   border-bottom-right-radius: 4px;
 }
-.uiGrid.rounded-corners thead:first-child tr th:first-child, .uiGrid.rounded-corners tr td:first-child {
+.uiGrid.rounded-corners thead:first-child tr th:first-child,
+.uiGrid.rounded-corners tr td:first-child {
   border-left: 0;
 }
 /*table rounder corners bottom border */.uiGrid.rounded-corners-bottom {
@@ -1866,7 +1964,8 @@ textarea[readonly] {
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:first-child, .uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:first-child {
+.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:first-child,
+.uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px;
@@ -1876,42 +1975,53 @@ textarea[readonly] {
   -moz-box-shadow: 0 -1px 1px 0px rgba(13, 13, 13, 0.1);
   box-shadow: 0 -1px 1px 0px rgba(13, 13, 13, 0.1);
 }
-.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:last-child, .uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:last-child {
+.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:last-child,
+.uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
-.uiGrid.rounded-corners-bottom thead:last-child tr:last-child th:first-child, .uiGrid.rounded-corners-bottom tbody:last-child tr:last-child td:first-child, .uiGrid.rounded-corners-bottom tfoot:last-child tr:last-child td:first-child {
+.uiGrid.rounded-corners-bottom thead:last-child tr:last-child th:first-child,
+.uiGrid.rounded-corners-bottom tbody:last-child tr:last-child td:first-child,
+.uiGrid.rounded-corners-bottom tfoot:last-child tr:last-child td:first-child {
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   border-bottom-left-radius: 4px;
 }
-.uiGrid.rounded-corners-bottom thead:last-child tr:last-child th:last-child, .uiGrid.rounded-corners-bottom tbody:last-child tr:last-child td:last-child, .uiGrid.rounded-corners-bottom tfoot:last-child tr:last-child td:last-child {
+.uiGrid.rounded-corners-bottom thead:last-child tr:last-child th:last-child,
+.uiGrid.rounded-corners-bottom tbody:last-child tr:last-child td:last-child,
+.uiGrid.rounded-corners-bottom tfoot:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   border-bottom-right-radius: 4px;
 }
-.uiGrid.rounded-corners-bottom thead:first-child tr th:first-child, .uiGrid.rounded-corners-bottom tr td:first-child {
+.uiGrid.rounded-corners-bottom thead:first-child tr th:first-child,
+.uiGrid.rounded-corners-bottom tr td:first-child {
   border-left: 0;
 }
-.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:first-child, .uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:first-child {
+.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:first-child,
+.uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 0;
   -moz-border-radius-topleft: 0;
   border-top-left-radius: 0;
 }
-.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:last-child, .uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:last-child {
+.uiGrid.rounded-corners-bottom thead:first-child tr:first-child th:last-child,
+.uiGrid.rounded-corners-bottom tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 0;
   -moz-border-radius-topright: 0;
   border-top-right-radius: 0;
 }
-.uiGrid.rounded-corners-bottom thead:first-child tr th:first-child, .uiGrid.rounded-corners-bottom tr td:first-child {
+.uiGrid.rounded-corners-bottom thead:first-child tr th:first-child,
+.uiGrid.rounded-corners-bottom tr td:first-child {
   border-left: 0;
 }
 /*table clear cell border */
-.uiGrid.no-border-cell tr td, .uiGrid.no-border-cell tr th {
+.uiGrid.no-border-cell tr td,
+.uiGrid.no-border-cell tr th {
   border-left: 0;
 }
-.uiGrid.table-hover tbody tr:hover td, .uiGrid.table-hover tbody tr:hover th {
+.uiGrid.table-hover tbody tr:hover td,
+.uiGrid.table-hover tbody tr:hover th {
   background-color: #e8e8e8;
 }
 .breadcrumb {
@@ -1944,7 +2054,6 @@ textarea[readonly] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 140px;
 }
 .breadcrumb .active > a {
   color: #999999;
@@ -1956,7 +2065,7 @@ textarea[readonly] {
   margin: 0;
 }
 .uiSearchInput input[type="text"] {
-  background: #ffffff url(../images/Search.png) no-repeat right -1px;
+  background: #ffffff url(SearchInput/SearchInput/../images/Search.png) no-repeat right -1px;
   margin: 0;
   padding-right: 24px;
 }
@@ -2110,7 +2219,7 @@ textarea[readonly] {
   -moz-border-radius: 3px;
   border-radius: 3px;
   background: #2f5e92;
-  content: "";
+  content: "&bull;";
 }
 .resize a {
   background-color: #f9f9f9;
@@ -2148,6 +2257,49 @@ textarea[readonly] {
   min-height: 300px;
   cursor: col-resize;
 }
+.border-bottom-dottted {
+  border-bottom: 1px dotted #cfcfcf;
+  padding-bottom: 15px;
+  margin: 0 0 15px 0;
+}
+
+/**********************************************
+	eXo Platform Documentation - Welcome Page 
+***********************************************/
+
+.article-block {
+  margin: 20px 0;
+}
+.article-block .widgetBar {
+  width: 268px;
+}
+.article-block .widgetBar.pull-left + .theContent {
+  margin-left: 298px;
+}
+.article-block .widgetBar.pull-right + .theContent {
+  margin-right: 298px;
+}
+.article-block .theContent h5.border-bottom-dottted.inline-block {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.litstItem {
+  list-style: none;
+  margin-left: 10px;
+}
+.litstItem li,
+.litstItem li a {
+  color: #345f8f;
+  font-family: "Helvetica Neue Bold", Helvetica, Lucida, Arial, sans-serif;
+  font-weight: 600;
+}
+.litstItem li {
+  padding: 5px 0 5px 16px;
+  background: url(../images/icons/list-arrow-right.png) no-repeat 0px 10px;
+}
+.inline-block {
+  display: inline-block;
+}
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2156,7 +2308,8 @@ body {
   line-height: 20px;
   background-color: #ffffff;
 }
-a, a:hover {
+a,
+a:hover {
   color: #2f5e92;
   text-decoration: none;
 }

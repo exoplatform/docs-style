@@ -1,3 +1,5 @@
+/* CSS uses only for the banner of the doc-website */
+
 .clearFix:after {
 	content: ".";
 	display: block;
@@ -10,6 +12,10 @@
 	!display: inline-block;
 	!zoom: 1;
 	!display: block; 
+}
+
+ul, li {
+    list-style-type: none;
 }
 
 .pull-left {

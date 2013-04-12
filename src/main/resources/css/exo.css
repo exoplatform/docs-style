@@ -993,3 +993,276 @@ td {
 	letter-spacing: 0.1em;
 	font-size: 15px;
 }
+
+
+
+/* ADDITION */
+
+.example .title {	
+	text-shadow: 0 1px 1px white; 	 
+	color: #393939;     	 
+	font-size: 11px; 	 
+}
+
+.code {
+    font-size: 12px;  	 
+}
+
+h2 {
+	font-size: 28px;
+	border-bottom: 1px solid #F1F1E6;
+	border-top: none;
+	border-left: 3px solid;
+	padding: 7px;
+}
+
+/********************* Book - content **********************/
+	
+
+.set {
+	margin: 25px;
+}
+
+.book {
+	margin: 25px;
+}
+
+.chapter {
+	margin: 25px;
+}
+
+.section {
+	margin: 25px;
+}
+
+.section .section {
+	margin: 0;
+}
+
+.book .section {
+	margin: 0;
+}
+
+.book .title {
+	margin: 0 0 15px 0;
+}
+
+.book .chapter {
+	padding: 0;
+}
+
+.book .chapter .section {
+	margin: 0;
+}
+
+.chapter .section {
+	margin: 0;
+}
+
+.set .book {
+	padding: 0;
+}
+
+.set .section {
+	margin: 0;
+}
+
+.set .chapter {
+	margin: 0;
+}
+
+
+/* N0te */	
+
+.note {
+    background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
+    margin: 10px 0px !important;
+    padding: 6px 20px 6px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.note .title {
+    font-weight: bold;
+	font-size: 12px !important;
+    margin: 0 0 3px 40px;
+    padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
+	color: #3c4a55;
+}
+
+.section .titlepage .note .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #3c4a55;
+}
+
+.note p a {
+    /*display: block;*/
+    margin: 3px 0 0;
+}
+
+.note p {
+    margin: 0 0 0 40px;
+    padding: 0 0 5px 10px;
+    *padding: 0px 0px 12px 12px;
+}
+
+.note .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px;}
+.note .itemizedlist ul li p { margin:0;padding-left:0; }
+
+/* warning */	
+
+.warning {
+    background: url("../background/warning.png") no-repeat scroll 10px 10px #FFE000;
+    margin: 10px 0px !important;
+    padding: 15px 10px 5px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+.warning .title {
+    font-weight: bold;
+	font-size: 12px !important;
+    margin: 0 0 3px 40px;
+    padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
+}
+
+.section .titlepage .warning .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #393939;
+}
+
+ .warning p a {
+    /*display: block;*/
+    padding: 4px 0;
+}
+
+.warning p {
+   margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+}
+
+.warning .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
+.warning .itemizedlist ul li p { margin:0;padding-left:0; }
+/* Tip*/	
+
+.tip {
+    background: url("../background/tip.png") no-repeat scroll 10px 10px #d5d5e8;
+    margin: 10px 0px !important;
+    padding: 15px 10px 5px 3px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+
+.tip .title {
+    font-weight: bold;
+	font-size: 12px !important;
+    margin: 0 0 3px 40px;
+    padding: 0px 10px 0 10px;
+	padding: 0 10px 0;
+}
+
+.section .titlepage .tip .title a{
+    font-size: 16px;
+	font-weight: bold;
+	color: #393939;
+}
+
+.tip p a {
+    /*display: block;*/
+    padding: 4px 0;
+}
+
+.tip p {
+  margin: 0 0 0 40px;
+    padding: 0 0 5px 12px;
+}
+
+.tip .itemizedlist ul li { background: url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
+.tip .itemizedlist ul li p { margin:0;padding-left:0; }
+
+/* Heading */
+      /* correct the h5 & h6 text color & text size*/
+ h5 {
+	color: #FCB837;
+	font-size: 15px !important;
+ }
+ 
+ h6 {
+	color: #FCB837;
+	font-size: 14px !important;
+ }
+ 
+ /* Table */
+	/* Add space between 2 tables. Correct the text size in table */
+.section table {
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 12px;
+	margin: 10px 0;
+ }
+ 
+ /* Bullet List */
+	/* Add bullet list image*/
+.procedure .listitem {
+    list-style: none outside none;
+	padding-left: 10px;
+}
+
+.listitem {
+	background: url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+    list-style: none outside none;
+	padding-left: 10px;
+}
+
+.chapter ul li{
+	background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+	list-style: none;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #393939;
+	font-weight: normal;
+}
+
+.procedure ul li  p {
+	font-weight: normal;
+}
+
+/* procedure margin & color */
+	/* Fix the margin & text color of procedure */
+ 
+ ol {
+    margin-left: 0;
+    padding-left: 20px;
+}
+ 
+ ol li {
+ font-size:12px;
+ line-height: 10px;
+ }
+.procedure {
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+.procedure ol li {
+	color: #393939;
+	font-size: 12px;
+}
+
+.procedure ol li  p {
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+.procedure ul li  p {
+	font-weight: normal;
+	line-height: 1.3em;
+}
