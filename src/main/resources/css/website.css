@@ -990,7 +990,7 @@ h6 {
   display: inline-block;
   width: 16px;
   height: 16px;
-  *margin-right: .3em;
+  margin-right: .3em;
   line-height: 16px;
   vertical-align: text-top;
   background-image: url("Sprites/Sprites/../images/icons/uiIconsLightGray.png");
@@ -1392,7 +1392,7 @@ a:hover [class^="uiIconApp"],
   display: inline-block;
   width: 35px;
   height: 35px;
-  *margin-right: .3em;
+  margin-right: .3em;
   line-height: 35px;
   vertical-align: middle;
   background-image: url("/eXoResources/skin/images/Icons/AppIcons/uiIconAppGray.png");
@@ -2370,7 +2370,7 @@ textarea[readonly] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 140px;
+  /*max-width: 350px;*/
   float: left;
 }
 .breadcrumb a:hover {
@@ -2599,6 +2599,105 @@ textarea[readonly] {
 }
 
 /**********************************************
+	REST API - Resources and method
+		- use table tag directly 
+***********************************************/
+
+tbody tr:hover td,
+tbody tr:hover th {
+  background-color: #e8e8e8;
+}
+
+table {
+  border: 1px solid #cfcfcf;
+  margin: 0;
+  /*border-top: 1px solid #ececec;*/
+} 
+
+table thead tr:first-child {
+  -webkit-box-shadow: 0px 1px 2px -1px rgba(13, 13, 13, 0.2);
+  -moz-box-shadow: 0px 1px 2px -1px rgba(13, 13, 13, 0.2);
+  box-shadow: 0px 1px 2px -1px rgba(13, 13, 13, 0.2);
+}
+
+table td,
+table th {
+  font-size: 13px;
+  border-left: 1px solid #cfcfcf;
+  padding: 8px 18px;
+  vertical-align: middle;
+}
+
+table td.center,
+table th.center {
+  text-align: center;
+}
+
+table td.left,
+table th.left {
+  text-align: left;
+}
+
+td.right,
+th.right {
+  text-align: right;
+}
+
+table td.empty,
+table th.empty {
+  color: #9a9a9a;
+  background-color: #f9f9f9;
+}
+
+table td .text,
+table th .text {
+  overflow: hidden;
+}
+
+table tr th {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+tbody td {
+  border-bottom: 1px solid #cfcfcf;
+}
+
+table tr td .actionIcon:active,
+table tr td .actionIcon:focus {
+  -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15) inset;
+  border: 1px solid #c7c7c7;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ececec;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+table th {
+  background-color: #f9f9f9;
+}
+
+
+
+/**********************************************
 	eXo Platform Documentation - Welcome Page 
 ***********************************************/
 
@@ -2635,6 +2734,7 @@ textarea[readonly] {
 .inline-block {
   display: inline-block;
 }
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2643,8 +2743,9 @@ body {
   line-height: 20px;
   background-color: #ffffff;
 }
-a,
+
+/*a,
 a:hover {
   color: #2f5e92;
   text-decoration: none;
-}
+}*/
