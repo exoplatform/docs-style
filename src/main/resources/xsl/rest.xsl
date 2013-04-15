@@ -167,7 +167,7 @@
 	<xsl:template name="rest.header">
 		<div class="border-bottom-dottted clearfix">
 			<div class="pull-right">
-				<div id="DisplayModesDropDown" class="btn-group uiDropdownWithIcon">
+				<div id="DisplayModesDropDown" class="dropdown uiDropdownWithIcon">
 
 					<div data-toggle="dropdown" class="btn dropdown-toggle">
 						<span>Jump to</span>
