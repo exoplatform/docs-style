@@ -901,12 +901,16 @@ h1 {
   font-size: 36px;
   color: #333333;
 }
+
+/* Update font-size */
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   color: #333333;
 }
+
+/* Update font-size */
 h3 {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 20px;
   color: #333333;
 }
@@ -2377,9 +2381,14 @@ textarea[readonly] {
   color: #2f5e92;
   text-decoration: none !important;
 }
+
+/* UPDATE BREADCRUMB FOR THE IMAGE SIZE*/
 .breadcrumb .uiIconMiniArrowRight {
   float: left;
-  margin-top: 3px;
+  height: 9px;
+  margin: 3px;
+  padding-bottom: 1px;
+  width: 6px;
 }
 .breadcrumb li {
   vertical-align: middle;
@@ -2693,6 +2702,10 @@ tr:nth-child(even) td {
 
 table th {
   background-color: #f9f9f9;
+}
+
+td:first-child {
+  width: 30%;
 }
 
 
