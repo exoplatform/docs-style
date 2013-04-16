@@ -220,7 +220,7 @@
   
   <!-- FOOTER IN EVERY PAGES -->
   	<div class="UIFooterPageDocument">
-			Copyright ©2012. All rights reserved. eXo Platform SAS
+			Copyright ©2013. All rights reserved. eXo Platform SAS
 	</div>
 	
 	<!-- DISQUS -->
