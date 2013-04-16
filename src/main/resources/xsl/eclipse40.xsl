@@ -11,6 +11,8 @@
                 exclude-result-prefixes="#default">
 
   <xsl:import href="http://docbook.sourceforge.net/release/xsl/1.76.1/eclipse/eclipse3.xsl"/>
+  	<xsl:param name="html.stylesheet" select="'css/exo.css'" />
+	<xsl:param name="html.stylesheet.type" select="'text/css'" />
 
   <xsl:param name="eclipse.plugin.name">eXo Platform Documentation 4.0</xsl:param>
   <xsl:param name="eclipse.plugin.id">PLF40</xsl:param>

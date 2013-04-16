@@ -1,13 +1,15 @@
 @import url(codehighlight.css);
 body {
-	background:transparent url(../background/BannerRepeat.gif) repeat-x top;
-	font-family:Verdana,Arial,Sans-serif;
+	/*background:transparent url(../background/BannerRepeat.gif) repeat-x top;*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:12px;
 	margin:0;
 	padding:0px;
 	text-align:justify;
 	color:#393939;
-	line-height:150%;
+	font-weight: normal;
+  	line-height: 20px;
+  	background-color: #333333;
 }
 
 .UIPageBody {	
@@ -156,19 +158,6 @@ visibility: hidden;
 
 /* ##################### TOC ################### */
 
-h4   {
-	font-size: 17px !important; 
-	color: #FCB837
-}
-
-h3  {
-	font-size: 22px;
-	color: #FCB837;
-	border-top: 1px dashed #E9E9D8;
-	padding-top:10px;
-	margin-top: 10px;
-}
-
 .note h3 {
 font-size: 16px !important;
 color: #3C4A55 !important;
@@ -196,18 +185,33 @@ border:none;
 text-shadow: 0 1px 1px white;
 }
 
+/*
 h2 {
 	font-size: 28px !important;
 	line-height: 24px;
 	color: #FCB837;
 	border-top: 1px solid #f1f1e6;
 	padding-top: 5px;
-}
+}*/
 
 h1 {
 	font-size: 30px;
 	margin:0px;
 }
+
+/*
+h4   {
+	font-size: 17px !important; 
+	color: #FCB837
+}
+
+h3  {
+	font-size: 22px;
+	color: #FCB837;
+	border-top: 1px dashed #E9E9D8;
+	padding-top:10px;
+	margin-top: 10px;
+}*/
 
 .toc .book a {
 	font-size: 20px;
@@ -274,8 +278,6 @@ dt a {
 	color: #005caa !important;
 }
 
-
-/** **/
 
 /** **/
 
@@ -506,6 +508,8 @@ hr {
 
 .book .title {
 	margin: 0 0 15px 0;
+    font-size: 40px;
+    color: #285a92;
 }
 
 .book .titlepage .subtitle a{
@@ -516,19 +520,14 @@ hr {
 	margin: 8px 0px 0px 0px;
 }
 
-.UIFooterPageDocument{
-	color: #63687a;
-	text-align: center;
-	height: 40px;
-	font-size: 12px;
-	font-family:lucida sans,arial,tahoma,verdana,sans-serif;
-}
-/* ======================= Chapter ===========================*/
+/* ======================= Title H* ===========================*/
 
 .chapter .titlepage h2 , .titlepage .title a{
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: bold;
-	color: #FCB837;
+	color: #444444;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 10px;
 }
 
 .chapter .section .titlepage h2 , .section .titlepage .title a{
@@ -538,28 +537,37 @@ hr {
 }
 
 .chapter .section .titlepage h3 a{
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
-	color: #FCB837;
+	color: #444444;border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 10px;
 }
 
 .chapter .section .titlepage h4 a{
-	font-size: 22px;
+	font-size: 24px;
 	font-weight: bold;
-	color: #FCB837;
+	color: #444444;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 10px;
 }
 
 .chapter .section .titlepage h5 a{
-	font-size: 19px;
+	font-size: 18px;
 	font-weight: bold;
-	color: #FCB837;
+	color: #444444;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 10px;
 }
 
 .chapter .section .titlepage h6 a{
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: bold;
-	color: #FCB837;
+	color: #444444;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 10px;
 }
+
+/* ======================= TOC ===========================*/
 
 .chapter .toc dl dd dl{
 margin: 4px 0px 0px 19px;
@@ -579,6 +587,9 @@ margin: 4px 0px 0px 19px;
 	line-height: 20px;
 	color: #31a8d0 !important;
 }
+
+
+/* ======================= Title ===========================*/
 
 .chapter .titlepage .title a {
 	color: #FCB837;
@@ -608,7 +619,7 @@ margin: 4px 0px 0px 19px;
 .chapter .section .titlepage .informaltable table{
 	width: 100%;
 }
-
+/*
 .chapter .section .titlepage .informaltable table th{
 	border: solid 1px #797979;
 	padding: 6px 0px;
@@ -617,7 +628,7 @@ margin: 4px 0px 0px 19px;
 .chapter .section .titlepage .informaltable table td{
 	padding: 6px 0px;
 	border: solid 1px #797979;
-}
+} */
 
 .chapter .section .titlepage .informaltable table td  .mediaobject,.section table  .mediaobject {
 	text-align:center;
@@ -631,17 +642,32 @@ margin: 4px 0px 0px 19px;
   margin-bottom: 30px;
 }
 
+
+/* ======================= Table ===========================*/
+
 table {
-width:100%;
-margin-left:0px;
+	width:100%;
+	margin-left:0px;
+	border: 1px solid #cfcfcf;
+	border-spacing:0px;
 }
 
+
 td {
-	padding: 6px 6px;
-	border: 1px solid #797979;
+	/*padding: 6px 6px;
+	border: 1px solid #797979;*/
 	max-width: 210px;
 	word-wrap: break-word;
 }
+
+/* Add space between 2 tables. Correct the text size in table */
+.section table {
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 12px;
+	margin: 10px 0;
+ }
+ 
 
 .qandaset tr.question td {
 	font-weight: bold;
@@ -862,25 +888,41 @@ td {
 	border: 1px solid #FFDEB0;
 
 }
-.abstract {
+
+/********************* Abstract - Introduction **********************/
+.abstract .book {
 	padding: 10px;
-	background: #eee;
 	-moz-border-radius: 10px;
+	background-color: #f8f8f8;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+	border: 1px solid #cfcfcf;
 }
 
 .abstract .itemizedlist ul li{ 
-	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
-    color: #393939;
-    font-size: 12px;
+	/*background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;*/
+	background: url("../images/icons/list-arrow-right.png") no-repeat scroll left 0px 10px;
     font-weight: normal;
     list-style: none outside none;
     padding-left: 10px;
 }
+
+.abstract .itemizedlist ul li p span{ 
+    font-weight: bold;
+	color:#2F5E92; 
+}
+	
 .abstract a,.abstract a:visisted {
 	color:#16968e;
 }
+
+.abstract .chapter {
+	padding: 0px;
+	border: none;
+	background-color: #ffffff;
+}
+
+/********************* Cite Title **********************/
 
 .prompt span {
 	color:#888;
@@ -1010,9 +1052,6 @@ td {
 
 h2 {
 	font-size: 28px;
-	border-bottom: 1px solid #F1F1E6;
-	border-top: none;
-	border-left: 3px solid;
 	padding: 7px;
 }
 
@@ -1043,10 +1082,6 @@ h2 {
 	margin: 0;
 }
 
-.book .title {
-	margin: 0 0 15px 0;
-}
-
 .book .chapter {
 	padding: 0;
 }
@@ -1075,17 +1110,18 @@ h2 {
 /* N0te */	
 
 .note {
-    background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
+    background: url("../background/note.png") no-repeat  10px 10px #DEE3FA;
     margin: 10px 0px !important;
     padding: 6px 20px 6px 3px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 10px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px;
+	border-color:#2F5E92;
 }
 
 .note .title {
     font-weight: bold;
-	font-size: 12px !important;
+	font-size: 13px !important;
     margin: 0 0 3px 40px;
     padding: 0px 10px 0 10px;
 	padding: 0 10px 0;
@@ -1115,20 +1151,22 @@ h2 {
 /* warning */	
 
 .warning {
-    background: url("../background/warning.png") no-repeat scroll 10px 10px #FFE000;
+    background: url("../background/warning.png") no-repeat scroll 10px 10px #FCF4D4;
     margin: 10px 0px !important;
     padding: 15px 10px 5px 3px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 10px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px;
+	border-color:#EDAD00;
 }
 
 .warning .title {
     font-weight: bold;
-	font-size: 12px !important;
+	font-size: 13px !important;
     margin: 0 0 3px 40px;
     padding: 0px 10px 0 10px;
 	padding: 0 10px 0;
+	color:#2F5E92
 }
 
 .section .titlepage .warning .title a{
@@ -1143,30 +1181,32 @@ h2 {
 }
 
 .warning p {
-   margin: 0 0 0 40px;
-    padding: 0 0 5px 12px;
+   margin: 0 0 0 40px;	
+   padding: 0 0 5px 12px;
 }
 
 .warning .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
 .warning .itemizedlist ul li p { margin:0;padding-left:0; }
-/* Tip*/	
 
+/* Tip*/	
 .tip {
-    background: url("../background/tip.png") no-repeat scroll 10px 10px #d5d5e8;
+    background: url("../background/tip.png") no-repeat scroll 10px 10px #E6FADE;
     margin: 10px 0px !important;
     padding: 15px 10px 5px 3px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 10px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px;
+	border-color:#39C522
 }
 
 
 .tip .title {
     font-weight: bold;
-	font-size: 12px !important;
+	font-size: 13px !important;
     margin: 0 0 3px 40px;
     padding: 0px 10px 0 10px;
 	padding: 0 10px 0;
+	color: #2F5E92;
 }
 
 .section .titlepage .tip .title a{
@@ -1200,15 +1240,7 @@ h2 {
 	font-size: 14px !important;
  }
  
- /* Table */
-	/* Add space between 2 tables. Correct the text size in table */
-.section table {
-	border-collapse: collapse;
-	text-align: left;
-	font-size: 12px;
-	margin: 10px 0;
- }
- 
+
  /* Bullet List */
 	/* Add bullet list image*/
 .procedure .listitem {
