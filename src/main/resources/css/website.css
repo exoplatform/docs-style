@@ -2578,3 +2578,22 @@ a,a:hover {
   text-decoration: none;
 }
 */
+
+
+/**********************************************
+				ADDITION
+***********************************************/
+
+ul.bulletlist li {
+	color: #2F5E92;
+	list-style-type: disc;
+}
+
+
+ul li span {
+	color : #000000;
+}
+
+.litstItem li{
+	list-style-type: none;
+}

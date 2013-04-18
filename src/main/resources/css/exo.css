@@ -2,7 +2,7 @@
 body {
 	/*background:transparent url(../background/BannerRepeat.gif) repeat-x top;*/
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:12px;
+	font-size:13px;
 	margin:0;
 	padding:0px;
 	text-align:justify;
@@ -11,24 +11,6 @@ body {
   	line-height: 20px;
   	background-color: #333333;
 }
-
-.UIPageBody {	
-	width: 921px;
-	margin: auto;
-}
-
-.preface {
-	margin: 25px;
-}
-
-.chapter > .section {
- color: #393939;
- text-decoration: none; 
-}
-
-/*.chapter > .section a {
- color: #393939;
-}*/
 
 /* ClearFix */	
 .ClearFix:after {
@@ -46,10 +28,25 @@ visibility: hidden;
 .ClearFix {display: block;}
 /* End hide from IE-mac */ 
 
-/*.UIWikiBooks body > div {
-	width: 860px;
+
+.UIPageBody {	
+	width: 921px;
 	margin: auto;
-} */
+}
+
+.preface {
+	margin: 25px;
+}
+
+
+/* ######################## Footer ######################## */
+
+.footer{
+	padding: 8px 0px;
+	text-align: right;
+	color: #898989;
+}
+
 
 /* ######################## Navigation ######################## */
 
@@ -134,84 +131,28 @@ visibility: hidden;
  background: url(../background/BackToHomeHover.jpg) top left no-repeat;
 }
 
-/*######################### Banner #############################*/
-
-.Banner {
-	background:transparent url(../background/BannerBG.gif) no-repeat left top;
-	height: 125px;
-       /* padding-top: 125px; */
-}
-
-
-.Banner .VersionInfo{
-	color: #fac943;
-	font-weight: bold;
-	font-size: 24px;
-	padding: 40px 0px 0px 160px;
-}
-
-
-.WikiBooksContainer{
-	padding: 8px 0px;
-	border-bottom: 1px solid #ececec;
-}
 
 /* ##################### TOC ################### */
 
-.note h3 {
-font-size: 16px !important;
-color: #3C4A55 !important;
-margin-top: 4px;
-padding: 0 10px 0 0;
-border:none;
-text-shadow: 0 1px 1px white;
+
+.chapter .toc dl dd dl{
+margin: 4px 0px 0px 19px;
 }
 
-.warning h3 {
-font-size: 16px !important;
-color: #cc0000 !important;
-margin-top: 4px;
-padding: 0 10px 0 0;
-border:none;
-text-shadow: 0 1px 1px white;
+.chapter .toc .section{
+	border-top: none;
+}
+ 
+.chapter .toc .section a {
+	line-height: 20px;
+	color: #005caa !important;
 }
 
-.tip h3 {
-font-size: 16px !important;
-color: #3C4A55 !important;
-margin-top: 4px;
-padding: 0 10px 0 0;
-border:none;
-text-shadow: 0 1px 1px white;
+
+.chapter .toc .section a:hover {
+	line-height: 20px;
+	color: #31a8d0 !important;
 }
-
-/*
-h2 {
-	font-size: 28px !important;
-	line-height: 24px;
-	color: #FCB837;
-	border-top: 1px solid #f1f1e6;
-	padding-top: 5px;
-}*/
-
-h1 {
-	font-size: 30px;
-	margin:0px;
-}
-
-/*
-h4   {
-	font-size: 17px !important; 
-	color: #FCB837
-}
-
-h3  {
-	font-size: 22px;
-	color: #FCB837;
-	border-top: 1px dashed #E9E9D8;
-	padding-top:10px;
-	margin-top: 10px;
-}*/
 
 .toc .book a {
 	font-size: 20px;
@@ -274,59 +215,14 @@ h3  {
   padding-left: 25px;
 }
 **/
-dt a {
-	color: #005caa !important;
-}
 
+/* ##################### UL / LI ################### */
 
-/** **/
-
-.BlueText{
-	color:#314572;
-}
-
-.OrangeText{
-	color:#e54c10;
-}
-
-.GreenText{
-	color:#5384ad;
-}
-
-.DarkGreenText{
-	color:#422ea6;
-}
-
-.GrayText{
-	color: #464646;
-}
-
-.NormalText{
-	font-weight: normal;
-}
-
-.BoldText{
-	font-weight: bold;
-	font-size: 13px;
-}
-
-.italic{
-	font-style: italic;
-	font-weight: normal;
-	font-size: 12px;
-}
-
-.underline{
-	text-decoration:underline;
-	font-weight: normal;
-	font-size: 12px;
-}
 
 .ChildenContent{
 	margin-left: 12px;
 	padding: 4px 0px;
 }
-
 
 ul{
 	padding-left: 24px;
@@ -371,7 +267,7 @@ ol li ol li ol{
 
 
 ul li{
-background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
+	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
 	list-style: none;
 	padding-left: 10px;
 }
@@ -395,12 +291,12 @@ background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
 }
 
 
-.section table {
+/*.section table {
  border-collapse: collapse;
  text-align: left;
-}
+}*/
 
-th{
+/*th{
 	background:#323863;
 	color:RGB(255,208,8);
 	box-shadow:0 1px 1px #A1A1A1;
@@ -408,7 +304,7 @@ th{
 	text-align:center;
 	padding: 6px;
 	border: #797979;
-}
+}*
 
 .ulink, .link{
 	color:#005caa;
@@ -429,7 +325,9 @@ th{
 	margin: 0px 0px 0px 0px;
 }
 
- /********************Code Block*********************/
+
+ /* ##################### CODE BLOCKS ################### */
+ 
 	/*Fix the code block does not display with docbook*/
 pre {
 	background: none repeat scroll 0 0 #F4F4F4;
@@ -475,6 +373,7 @@ pre a span img, pre span img {
     display:block;
     margin:0 0;
 }
+
 .calloutlist table {
 	border-collapse: separate;
 	border: 1px solid #ccc;
@@ -491,26 +390,11 @@ pre a span img, pre span img {
 }
 
 
-.footer{
-	padding: 8px 0px;
-	text-align: right;
-	color: #898989;
-}
 
 hr {
  display: none;
 }
 
-
-.book .titlepage .title a{
-	color: #fbad18;
-}
-
-.book .title {
-	margin: 0 0 15px 0;
-    font-size: 40px;
-    color: #285a92;
-}
 
 .book .titlepage .subtitle a{
 	font-size: 18px;
@@ -520,84 +404,92 @@ hr {
 	margin: 8px 0px 0px 0px;
 }
 
-/* ======================= Title H* ===========================*/
 
-.chapter .titlepage h2 , .titlepage .title a{
+/* ##################### Title H* ################### */
+
+/*.h1{
+	background: url("../background/guide.png") no-repeat scroll left 0px 10px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #285A92;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 20px;
+}*/
+
+
+/*.chapter .titlepage .title h1 , .titlepage .title a{*/
+.book .titlepage h1.title {
+	background: url("../background/guide.png") no-repeat scroll left 0px 10px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #285A92;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 20px;
+}
+
+/*.chapter .titlepage h2 , .titlepage .title a{*/
+.chapter .titlepage h2.title {
 	font-size: 36px;
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 10px;
-}
+	padding-bottom: 20px;
+} 
 
-.chapter .section .titlepage h2 , .section .titlepage .title a{
+/*.section .titlepage h2 , .titlepage .title a{*/
+.section .titlepage h2.title {
 	font-size: 30px;
 	font-weight: bold;
-	color: #FCB837;
+	color: #444444;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 20px;
 }
 
-.chapter .section .titlepage h3 a{
+/*.chapter .section .titlepage h2 , .section .titlepage .title a{
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 1px dotted #cfcfcf;
+	padding-bottom: 20px;
+	color: #444444;
+}*/
+
+/*.section .titlepage h3 , .titlepage .title a{*/
+.section .titlepage h3.title {
 	font-size: 30px;
 	font-weight: bold;
 	color: #444444;border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
-.chapter .section .titlepage h4 a{
+/*.section .titlepage h4 , .titlepage .title a{*/
+.section .titlepage h4.title {
 	font-size: 24px;
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
-.chapter .section .titlepage h5 a{
+/*.section .titlepage h5 , .titlepage .title a{*/
+.section .titlepage h5.title {
 	font-size: 18px;
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
-.chapter .section .titlepage h6 a{
-	font-size: 18px;
+/*.section .titlepage h6 , .titlepage .title a{*/
+.section .titlepage h5.title {
+	font-size: 15px;
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 10px;
-}
-
-/* ======================= TOC ===========================*/
-
-.chapter .toc dl dd dl{
-margin: 4px 0px 0px 19px;
-}
-
-.chapter .toc .section{
-	border-top: none;
-}
- 
-.chapter .toc .section a {
-	line-height: 20px;
-	color: #005caa !important;
+	padding-bottom: 20px;
 }
 
 
-.chapter .toc .section a:hover {
-	line-height: 20px;
-	color: #31a8d0 !important;
-}
-
-
-/* ======================= Title ===========================*/
-
-.chapter .titlepage .title a {
-	color: #FCB837;
-}
-
-.chapter .section .titlepage .title a {
-	color: #FCB837;
-}
+/* ##################### Titles ################### */
 
 .chapter .section .titlepage .itemizedlist ul {
 	padding-left: 13px;
@@ -643,7 +535,8 @@ margin: 4px 0px 0px 19px;
 }
 
 
-/* ======================= Table ===========================*/
+
+/* ##################### Table ################### */
 
 table {
 	width:100%;
@@ -708,6 +601,81 @@ td {
 	font-size: 12px;
 }
 
+.docnav li{
+	background:none!important;
+	padding:0;
+}
+
+
+.chapter ol{
+	padding-left: 0px;
+}
+
+.chapter ol li{
+	font-size: 12px;
+	color: #393939;
+	font-weight: bold;
+}
+.chapter ol li a,.chapter ol li p{
+	font-weight: normal;
+}
+
+.chapter .section a  a{
+	color: red
+}
+
+.code {
+	font-size: 13px;
+	background: none repeat scroll 0 0 #FEE9CC;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 0px 3px;
+	border: 1px solid #FFDEB0;
+
+}
+
+/* ##################### Abstract - Introduction ################### */
+
+.abstract {
+	padding: 10px;
+}
+
+.book .abstract {
+	background-color: #f8f8f8;
+	border: 1px solid #cfcfcf;
+}
+
+/*
+.book .titlepage .abstract .itemizedlist ul li{ 
+	background: url("../background/list-arrow-right.png") no-repeat scroll left 0px 10px;
+    font-weight: normal;
+    list-style: none outside none;
+    padding-left: 10px;
+}*/
+
+/*
+.chapter .abstract  .itemizedlist ul li {
+	background:	background:url("../background/list-arrow-right.png") no-repeat scroll left 7px transparent;
+	list-style:none outside none;
+}*/
+
+.abstract .itemizedlist ul li p span a{ 
+    font-weight: bold;
+	color:#2F5E92; 
+	text-decoration:none;
+}
+	
+.abstract a,.abstract a:visisted {
+	color:#16968e;
+}
+
+.chapter .abstract {
+	padding: 0px;
+	border: none;
+	background-color: #ffffff;
+}
+
 .chapter .section .section .itemizedlist p{
 	font-size: 12px;
 }
@@ -737,196 +705,21 @@ td {
 	color: #393939;
 	font-weight: normal;
 }
-.docnav li{
-	background:none!important;
-	padding:0;
-}
 
-.chapter .itemizedlist ul li ul li{
-	background:	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent;
-	list-style:none outside none;
-}
-
-
-.chapter ol{
-	padding-left: 0px;
-}
-
-.chapter ol li{
+.book ul li{
+	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent;
+	list-style: none;
+	padding-left: 10px;
 	font-size: 12px;
 	color: #393939;
-	font-weight: bold;
-}
-.chapter ol li a,.chapter ol li p{
 	font-weight: normal;
 }
 
-/* Note */	
 
-.note {
-    background: url("../background/note.png") no-repeat  10px 10px #e8e8c1;
-    margin: 10px 0px;
-    padding: 15px 10px 5px 3px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 10px;
-}
-
-.note .title {
-    font-weight: bold;
-	font-size: 16px !important;
-    margin: 0 0 10px 40px;
-    padding: 0px 10px 0 10px;
-	padding: 0 10px 0;
-	color: #3c4a55;
-}
-
-.note .title a{
-    font-size: 16px;
-	font-weight: bold;
-	color: #3c4a55;
-}
-
-.note p a {
-    /*display: block;*/
-    margin: 3px 0 0;
-}
-
-.note p {
-     margin: 0 0 0 40px;
-    padding: 0 0 5px 12px;
-    *padding: 0px 0px 12px 12px;
-}
-
-.note .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px;}
-.note .itemizedlist ul li p { margin:0;padding-left:0; }
-
-/* warning */	
-
-.warning {
-    background: url("../background/warning.png") no-repeat scroll 5px 5px #FFE000;
-    margin: 10px 0px;
-    padding: 15px 10px 5px 3px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 10px;
-}
-
-.warning .title {
-    font-weight: bold;
-    margin: 0 0 10px 40px;
-    padding: 0 10px;
-}
-
-.warning .title a{
-    font-size: 16px;
-	font-weight: bold;
-	color: #393939;
-}
-
-.warning p a {
-    /*display: block;*/
-    padding: 4px 0;
-}
-
-.warning p {
-   margin: 0 0 0 40px;
-    padding: 0 0 5px 12px;
-}
-
-.warning .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px; }
-.warning .itemizedlist ul li p { margin:0;padding-left:0; }
-
-/* Tip*/	
-
-.tip {
-    background: url("../background/tip.png") no-repeat scroll 5px 5px #d5d5e8;
-    margin: 10px 0px;
-    padding: 15px 10px 5px 3px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 10px;
-}
-
-.tip .title {
-    font-weight: bold;
-    margin: 0;
-   margin: 0 0 10px 40px;
-    padding: 0 10px;
-}
-
-.tip .title a{
-    font-size: 16px;
-	font-weight: bold;
-	color: #393939;
-}
-
-.tip p a {
-    /*display: block;*/
-    padding: 4px 0;
-}
-
-.tip p {
-  margin: 0 0 0 40px;
-    padding: 0 0 5px 12px;
-}
-
-.tip .itemizedlist ul li { 	background:url("../background/Arrow.png") no-repeat scroll left 7px transparent; list-style: none; margin-left: 28px; }
-.tip .itemizedlist ul li p { margin:0;padding-left:0; }
-
-.chapter .section a  a{
-	color: red
-}
-
-.code {
-	font-size: 13px;
-	background: none repeat scroll 0 0 #FEE9CC;
-	border-radius: 3px 3px 3px 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	padding: 0px 3px;
-	border: 1px solid #FFDEB0;
-
-}
-
-/********************* Abstract - Introduction **********************/
-.abstract .book {
-	padding: 10px;
-	-moz-border-radius: 10px;
-	background-color: #f8f8f8;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	border: 1px solid #cfcfcf;
-}
-
-.abstract .itemizedlist ul li{ 
-	/*background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;*/
-	background: url("../images/icons/list-arrow-right.png") no-repeat scroll left 0px 10px;
-    font-weight: normal;
-    list-style: none outside none;
-    padding-left: 10px;
-}
-
-.abstract .itemizedlist ul li p span{ 
-    font-weight: bold;
-	color:#2F5E92; 
-}
-	
-.abstract a,.abstract a:visisted {
-	color:#16968e;
-}
-
-.abstract .chapter {
-	padding: 0px;
-	border: none;
-	background-color: #ffffff;
-}
-
-/********************* Cite Title **********************/
+/* ##################### Cite Title ################### */
 
 .prompt span {
 	color:#888;
-	font-family: Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif;
     font-size: 16px;
 }
 
@@ -945,9 +738,10 @@ td {
 	color: #2E398C !important
 }
 
-/* guilabel guibutton */
 
-.guibutton {
+/* ##################### GUI Elements ################### */
+
+/*.guibutton {
 	background: -moz-linear-gradient(#FAFAFA, #EAEAEA) repeat scroll 0 0 transparent;
 	background:	-webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EAEAEA));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#EAEAEA');
@@ -963,16 +757,45 @@ td {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+}*/
+
+.guibutton {
+  padding: 3px 12px;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -o-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff1f1f1', GradientType=0);
+  border-color: #f1f1f1 #f1f1f1 #cbcbcb;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f1f1f1;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #bbbbbb;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  *border: 0;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
 
 .guilabel {	
-    color: #333333;
-    font-family: Tahoma;
-    font-size: 12px;
+    background-color: #f0f0f0;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
     text-shadow: 0 1px 0 #FFFFFF;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 4px;
 }
 
 .highlights {
@@ -983,11 +806,12 @@ td {
 }
 
 .guimenu {	
+  background-color: #f0f0f0;
   font-weight: bold; 
-  color: #333333; 	 
-  letter-spacing: 1px; 	 
-  font-size: 12px; 	 
-  font-family: Tahoma; 
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;	 
+  padding: 4px;
 }
  	
 .guisubmenu { 	 
@@ -1006,6 +830,9 @@ td {
   font-family: Tahoma;
 }
 
+/* ##################### Examples ################### */
+
+
 .example .title {	
   text-shadow: 0 1px 1px white;     	
   color: #393939;     	 
@@ -1016,6 +843,10 @@ td {
   padding-left: 5px; 	 
   border-left: 2px solid #CCCCCC; 	 
  }
+ 
+ 
+ /* ##################### Command and Filename ################### */
+
  
 .command {
 	background: none repeat scroll 0 0 #F8F8F8;
@@ -1030,34 +861,12 @@ td {
 }
 
 .filename { 	 
-	font-family: monospace;
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	font-size: 15px;
+	font-family: courrier;
+	border-bottom: 1px dotted #cfcfcf;
 }
 
-
-
-/* ADDITION */
-
-.example .title {	
-	text-shadow: 0 1px 1px white; 	 
-	color: #393939;     	 
-	font-size: 11px; 	 
-}
-
-.code {
-    font-size: 12px;  	 
-}
-
-h2 {
-	font-size: 28px;
-	padding: 7px;
-}
-
-/********************* Book - content **********************/
-	
-
+ /* ##################### Book and content ################### */
+ 
 .set {
 	margin: 25px;
 }
@@ -1107,10 +916,10 @@ h2 {
 }
 
 
-/* N0te */	
+ /* ##################### NOTE ################### */
 
 .note {
-    background: url("../background/note.png") no-repeat  10px 10px #DEE3FA;
+    background: url("../background/note.png") no-repeat  10px 5px #DEE3FA;
     margin: 10px 0px !important;
     padding: 6px 20px 6px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
@@ -1121,12 +930,15 @@ h2 {
 
 .note .title {
     font-weight: bold;
-	font-size: 13px !important;
-    margin: 0 0 3px 40px;
+    /*margin: 0 0 3px 40px;
     padding: 0px 10px 0 10px;
-	padding: 0 10px 0;
+	padding: 0 10px 0;*/
+	margin: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 0px;
 	color: #3c4a55;
+	font-size:13px;
 }
+
 
 .section .titlepage .note .title a{
     font-size: 16px;
@@ -1148,7 +960,8 @@ h2 {
 .note .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px;}
 .note .itemizedlist ul li p { margin:0;padding-left:0; }
 
-/* warning */	
+
+/* ##################### WARNING ################### */
 
 .warning {
     background: url("../background/warning.png") no-repeat scroll 10px 10px #FCF4D4;
@@ -1188,7 +1001,9 @@ h2 {
 .warning .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
 .warning .itemizedlist ul li p { margin:0;padding-left:0; }
 
-/* Tip*/	
+
+/* ##################### TIP ################### */
+
 .tip {
     background: url("../background/tip.png") no-repeat scroll 10px 10px #E6FADE;
     margin: 10px 0px !important;
@@ -1196,7 +1011,7 @@ h2 {
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px;
-	border-color:#39C522
+	border-color:#39C522;
 }
 
 
@@ -1228,34 +1043,30 @@ h2 {
 .tip .itemizedlist ul li { background: url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
 .tip .itemizedlist ul li p { margin:0;padding-left:0; }
 
-/* Heading */
-      /* correct the h5 & h6 text color & text size*/
- h5 {
-	color: #FCB837;
-	font-size: 15px !important;
- }
- 
- h6 {
-	color: #FCB837;
-	font-size: 14px !important;
- }
- 
 
- /* Bullet List */
-	/* Add bullet list image*/
+/********************* MUST BE CHECKED **********************/
+
+
+/* Add bullet list image*/
 .procedure .listitem {
     list-style: none outside none;
 	padding-left: 10px;
 }
 
+/*
 .listitem {
 	background: url("../background/Arrow.png") no-repeat scroll left 6px transparent;
     list-style: none outside none;
 	padding-left: 10px;
 }
+*/
+
+.chapter .itemizedlist ul li{
+
+}
 
 .chapter ul li{
-	background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+	background:url("../background/list-arrow-right.png") no-repeat scroll left 6px transparent;
 	list-style: none;
 	padding-left: 10px;
 	font-size: 12px;
@@ -1298,3 +1109,96 @@ h2 {
 	font-weight: normal;
 	line-height: 1.3em;
 }
+
+
+/********************* MUST BE CHECKED **********************/
+
+dt a {
+	color: #005caa !important;
+}
+
+.WikiBooksContainer{
+	padding: 8px 0px;
+	border-bottom: 1px solid #ececec;
+}
+
+
+.example .title {	
+	text-shadow: 0 1px 1px white; 	 
+	color: #393939;     	 
+	font-size: 11px; 	 
+}
+
+.code {
+    font-size: 12px;  	 
+}
+
+/*h1 {
+	font-size: 30px;
+	margin:0px;
+}*/
+
+/*
+h4   {
+	font-size: 17px !important; 
+	color: #FCB837
+}
+
+h3  {
+	font-size: 22px;
+	color: #FCB837;
+	border-top: 1px dashed #E9E9D8;
+	padding-top:10px;
+	margin-top: 10px;
+}*/
+
+/* correct the h5 & h6 text color & text size*/
+/*
+ h5 {
+	color: #FCB837;
+	font-size: 15px !important;
+ }
+ 
+ h6 {
+	color: #FCB837;
+	font-size: 14px !important;
+ }
+ */
+ 
+/*
+.note h3 {
+font-size: 16px !important;
+color: #3C4A55 !important;
+margin-top: 4px;
+padding: 0 10px 0 0;
+border:none;
+text-shadow: 0 1px 1px white;
+}
+
+.warning h3 {
+font-size: 16px !important;
+color: #cc0000 !important;
+margin-top: 4px;
+padding: 0 10px 0 0;
+border:none;
+text-shadow: 0 1px 1px white;
+}
+
+.tip h3 {
+font-size: 16px !important;
+color: #3C4A55 !important;
+margin-top: 4px;
+padding: 0 10px 0 0;
+border:none;
+text-shadow: 0 1px 1px white;
+}
+*/
+
+/*
+h2 {
+	font-size: 28px !important;
+	line-height: 24px;
+	color: #FCB837;
+	border-top: 1px solid #f1f1e6;
+	padding-top: 5px;
+}*/

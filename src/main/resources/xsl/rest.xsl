@@ -75,8 +75,8 @@
 			<div class="clearFix topBannerSignin">
 				<div class="pull-right">
 					<div class="btn-group">
-						<a href="#" class="btn btn-darkGray">Sign In</a>
-						<a href="#" class="btn btn-lightBlue">Register</a>
+						<a href="http://community.exoplatform.com/portal/private/classic" class="btn btn-darkGray">Sign In</a>
+						<a href="http://community.exoplatform.com/portal/private/classic/register" class="btn btn-lightBlue">Register</a>
 					</div>
 				</div>
 				<a href="http://www.exoplatform.com" class="logo pull-left"
@@ -95,7 +95,7 @@
 								target="_blank">Forums</a>
 						</li>
 						<li>
-							<a href="#" class="selectedNavigationTab">Documentation</a>
+							<a href="http://docs.exoplatform.com" class="selectedNavigationTab">Documentation</a>
 						</li>
 						<li>
 							<a
@@ -125,7 +125,7 @@
 			<img class="uiIconMiniArrowRight" alt="Home" src="../../background/ListBG.gif"></img>
 		</li>
 		<li class="">
-			<a href="/PLF40/rest-api/">REST API 4.0</a>
+			<a href="/PLF40/rest-api/">REST API Documentation</a>
 		</li>
 		<li>
 			<img class="uiIconMiniArrowRight" alt="Home" src="../../background/ListBG.gif"></img>
