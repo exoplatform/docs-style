@@ -104,7 +104,7 @@
   font-family: lucida sans, arial, tahoma, verdana, sans-serif;
 }
 /***************** Navigation header **********************/
-.docnav {
+/*.docnav {
   list-style: none outside none;
   position: relative;
   text-align: center;
@@ -170,7 +170,7 @@
   background: none;
   border: 0px;
   box-shadow: 0 0px 0px #FFFFFF;
-}
+}*/
 /*********************Breadcrumbs************************/
 /*Align the breadcrumbs to page elements*/
 .help_breadcrumbs {
@@ -216,10 +216,10 @@
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
   border-radius: 14px 14px 14px 14px !important;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.45) !important;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
-  padding: 1px 8px 0 !important;
+  padding: 15px 15px 10px 15px;
   position: relative !important;
   margin: 25px !important;
   width: auto !important;
@@ -272,6 +272,31 @@
 #dsq-sort-by {
   display: none !important;
 }
+
+#global-nav li.active a {
+    color: #285A92;
+    cursor: default;
+}
+
+.avatar{
+	left: 0;
+    position: absolute;
+    top: 16px;
+    transition: left 0.2s linear 0s;
+    border-radius: 4px;
+}
+
+.textaera{
+	 border: 1px solid #CDCDCD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #999999;
+    height: 28px;
+    margin: 10px 14px;
+    padding: 0 10px;
+    width: 200px;
+}
+
 /*global start here*/
 /*============== Status Elements================*/
 .clearfix {
@@ -2460,7 +2485,6 @@ table {
   text-align: center;
   height: 40px;
   font-size: 11px;
-  font-family: lucida sans, arial, tahoma, verdana, sans-serif;
 }
 .btn-lightBlue {
   color: #ffffff;
@@ -2789,6 +2813,72 @@ ul li span {
 .litstItem li {
   list-style-type: none;
 }
+
+
+/*Documentation 4.0 - Style for the page navigation*/
+
+.doc-navigation {
+  border-top: 1px dotted #c7c7c7;
+  border-bottom: 1px dotted #c7c7c7;
+  padding: 15px 0;
+  margin: 15px 0;
+}
+.doc-navigation ul {
+  margin: 0;
+}
+.doc-navigation li {
+  list-style-type: none;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+.doc-navigation li a {
+  background: url(../images/doc-navigation.png) no-repeat 0px 0px;
+  display: inline-block;
+  padding-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  margin-top: 2px;
+  text-decoration = none;
+}
+.doc-navigation .next a {
+  background-position: right 6px;
+  padding: 0 20px 0 0;
+}
+.doc-navigation .next a:hover {
+  background-position: right -86px;
+}
+.doc-navigation .previous a {
+  background-position: 0px -41px;
+}
+.doc-navigation .previous a:hover {
+  background-position: 0px -134px;
+}
+.doc-navigation .up a {
+  background-position: 0px -274px;
+}
+.doc-navigation .up a:hover {
+  background-position: 0px -320px;
+}
+.doc-navigation .home a {
+  background-position: 0px -183px;
+}
+.doc-navigation .home a:hover {
+  background-position: 0px -229px;
+}
+.doc-navigation .doc-navtitle {
+  float: left;
+}
+.doc-navigation .doc-nav {
+  float: right;
+}
+.doc-navigation a {
+  color: #333333;
+}
+.doc-navigation a:hover {
+  text-decoration: none;
+}
 /**********************************************
 	REST API - Resources and method
 		- use table tag directly 
@@ -2889,3 +2979,19 @@ a,a:hover {
   text-decoration: none;
 }
 */
+
+
+/*ADDITION*/
+
+.label {
+    background-color: #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 12px;
+    padding: 2px 4px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: baseline;
+    white-space: nowrap;
+}

@@ -38,6 +38,14 @@ visibility: hidden;
 	margin: 25px;
 }
 
+a {
+	color: #285A92;
+	text-decoration: underline;
+}
+
+a span {
+	color: #285A92;
+}
 
 /* ######################## Footer ######################## */
 
@@ -49,7 +57,7 @@ visibility: hidden;
 
 
 /* ######################## Navigation ######################## */
-
+/*
 .docnav {
  list-style: none outside none;
  position: relative; 
@@ -129,7 +137,7 @@ visibility: hidden;
 
 .docnav li.home a:hover{
  background: url(../background/BackToHomeHover.jpg) top left no-repeat;
-}
+} /*
 
 
 /* ##################### TOC ################### */
@@ -229,9 +237,12 @@ ul{
 	margin-left: 0px;
 }
 
+
+
 ul li ul{
 	padding-left: 0px;
 	margin-left: 0px;
+	
 }
 
 ul li ul li{
@@ -270,6 +281,7 @@ ul li{
 	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
 	list-style: none;
 	padding-left: 10px;
+	line-height: normal;
 }
 
 
@@ -304,7 +316,7 @@ ul li{
 	text-align:center;
 	padding: 6px;
 	border: #797979;
-}*
+}
 
 .ulink, .link{
 	color:#005caa;
@@ -314,7 +326,7 @@ ul li{
 	color:#145BC7;
         text-decoration:underline;
 }
-
+*/
 .TextForm, .programlistingco, .screen {
 	-moz-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px;
@@ -328,7 +340,7 @@ ul li{
 
  /* ##################### CODE BLOCKS ################### */
  
-	/*Fix the code block does not display with docbook*/
+/*Fix the code block does not display with docbook*/
 pre {
 	background: none repeat scroll 0 0 #F4F4F4;
     border: 1px solid #CCCCCC;
@@ -337,6 +349,7 @@ pre {
     padding: 10px;
 	margin: 5px 0px;
 	position: relative;
+	font-size: 11px;
 }
     /*Fix the code block with callout displays incorrectly*/
 .programlistingco {
@@ -412,7 +425,8 @@ hr {
 	font-weight: bold;
 	color: #285A92;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 
@@ -421,14 +435,15 @@ hr {
 }
 
 .book .titlepage h1.title {
-	background: url("../background/guide.png") no-repeat 0px 0px;
+	background: url("../background/guide.png") no-repeat 0px -3px;
 	font-size: 40px;
 	font-weight: bold;
 	color: #285A92;
 	border-bottom: 1px dotted #cfcfcf;
 	padding-bottom: 20px;
-	padding-top: 12px;
+	padding-top: 0px;
     padding-left: 60px;
+    margin-bottom: 25px;
 }
 
 .chapter .titlepage h2.title {
@@ -436,7 +451,8 @@ hr {
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 } 
 
 .section .titlepage h2.title {
@@ -444,7 +460,8 @@ hr {
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 
@@ -452,7 +469,8 @@ hr {
 	font-size: 30px;
 	font-weight: bold;
 	color: #444444;border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .section .titlepage h4.title {
@@ -460,7 +478,8 @@ hr {
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .section .titlepage h5.title {
@@ -468,7 +487,8 @@ hr {
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .section .titlepage h5.title {
@@ -476,14 +496,17 @@ hr {
 	font-weight: bold;
 	color: #444444;
 	border-bottom: 1px dotted #cfcfcf;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 
-/* ##################### Titles ################### */
 
-.chapter .section .titlepage .itemizedlist ul {
-	padding-left: 13px;
+
+/* ##################### Orderlist ################### */
+
+.orderedlist ol li { 
+	line-height: 24px;
 }
 
 .chapter .section .titlepage .orderedlist ol {
@@ -495,13 +518,19 @@ hr {
 	list-style: none;
 }
 
-
 .chapter .section .titlepage .itemizedlist ul li{
 }
 
 .chapter .section .titlepage .informaltable table{
 	width: 100%;
 }
+
+/* ##################### Titles ################### */
+
+.chapter .section .titlepage .itemizedlist ul {
+	padding-left: 13px;
+}
+
 /*
 .chapter .section .titlepage .informaltable table th{
 	border: solid 1px #797979;
@@ -637,24 +666,11 @@ td {
 	border: 1px solid #cfcfcf;
 }
 
-/*
-.book .titlepage .abstract .itemizedlist ul li{ 
-	background: url("../background/list-arrow-right.png") no-repeat scroll left 0px 10px;
-    font-weight: normal;
-    list-style: none outside none;
-    padding-left: 10px;
-}*/
-
-/*
-.chapter .abstract  .itemizedlist ul li {
-	background:	background:url("../background/list-arrow-right.png") no-repeat scroll left 7px transparent;
-	list-style:none outside none;
-}*/
-
 .abstract .itemizedlist ul li p span a{ 
     font-weight: bold;
-	color:#2F5E92; 
-	text-decoration:none;
+	color: #2F5E92; 
+	text-decoration: underline;
+	margin-left: 5px;
 }
 	
 .abstract a,.abstract a:visisted {
@@ -685,23 +701,34 @@ td {
 }
 
 .chapter .section .section .itemizedlist .itemizedlist .itemizedlist .itemizedlist p{
-	font-size: 12Wpx;
+	font-size: 12px;
 }
 
-.chapter ul li{
-	background:url("../background/list-arrow-right.png") no-repeat scroll left 6px transparent;
+.chapter .abstract ul li{
+	background:url("../background/list-arrow-right.png") no-repeat scroll left 4px transparent;
 	list-style: none;
 	padding-left: 10px;
-	font-size: 12px;
 	color: #393939;
 	font-weight: normal;
 }
 
-.book ul li{
-	background:	url("../background/list-arrow-right.png") no-repeat scroll left 7px transparent;
+.book .abstract ul li{
+	background:	url("../background/list-arrow-right.png") no-repeat scroll left 4px transparent;
 	list-style: none;
 	padding-left: 10px;
-	font-size: 12px;
+	color: #393939;
+	font-weight: normal;
+}
+
+.highlights {
+	background: white;
+	margin-bottom: 10px;
+	padding: 0px 5px 1px;
+}
+
+.section .highlights ul li{
+	background:	url("../background/list-arrow-right.png") no-repeat scroll left 4px transparent;
+	list-style: none;
 	color: #393939;
 	font-weight: normal;
 }
@@ -758,33 +785,31 @@ td {
 	border-radius: 3px;
 }*/
 
-.guibutton { 2F5E92
+.guibutton { 
   padding: 3px 12px;
   color: #ffffff;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: #2F5E92;
-  background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f1f1));
-  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1);
-  background-image: -o-linear-gradient(top, #ffffff, #f1f1f1);
-  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #4e73aa;
+  background-image: -moz-linear-gradient(top, #5a85c5, #3c5781);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5a85c5), to(#3c5781));
+  background-image: -webkit-linear-gradient(top, #5a85c5, #3c5781);
+  background-image: -o-linear-gradient(top, #5a85c5, #3c5781);
+  background-image: linear-gradient(to bottom, #5a85c5, #3c5781);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff1f1f1', GradientType=0);
-  border-color: #f1f1f1 #f1f1f1 #cbcbcb;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5a85c5', endColorstr='#ff3c5781', GradientType=0);
+  border-color: #3c5781 #3c5781 #24344d;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f1f1f1;
+  *background-color: #3c5781;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: 1px solid #bbbbbb;
-  line-height: 18px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  *margin-left: .3em;
-  *border: 0;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+   border-color: transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  border: none;
+   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .guilabel {	
@@ -795,13 +820,6 @@ td {
     -moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	padding: 4px;
-}
-
-.highlights {
-	background: white;
-	border-left: 2px dotted #CCCCCC;
-	margin-bottom: 10px;
-	padding: 0px 5px 1px;
 }
 
 .guimenu {	
@@ -924,8 +942,7 @@ td {
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px;
-	border-color: #2F5E92;
-	border: 1px solid;
+	border: 1px solid #2F5E92;
 }
 
 .note .title {
@@ -970,8 +987,7 @@ td {
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px;
-	border-color: #EDAD00;
-	border: 1px solid;
+	border: 1px solid #EDAD00;
 }
 
 .warning .title {
@@ -1012,8 +1028,7 @@ td {
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px;
-	border-color: #39C522;
-	border: 1px solid;
+	border: 1px solid #39C522;
 }
 
 
@@ -1097,12 +1112,12 @@ td {
 
 .procedure ol li  p {
 	font-weight: normal;
-	line-height: 1.3em;
+	line-height: 2em;
 }
 
 .procedure ul li  p {
 	font-weight: normal;
-	line-height: 1.3em;
+	line-height: 2em;
 }
 
 

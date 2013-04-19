@@ -92,154 +92,154 @@
   -->
   
   <xsl:template name="footer.navigation">
-  <xsl:param name="prev" select="/foo"/>
-  <xsl:param name="next" select="/foo"/>
-  <xsl:param name="nav.context"/>
+	<xsl:param name="prev" select="/foo" />
+	<xsl:param name="next" select="/foo" />
+	<xsl:param name="nav.context" />
 
-  <xsl:variable name="home" select="/*[1]"/>
-  <xsl:variable name="up" select="parent::*"/>
+	<xsl:variable name="home" select="/*[1]" />
+	<xsl:variable name="up" select="parent::*" />
 
-  <xsl:variable name="row1" select="count($prev) &gt; 0                                     or count($up) &gt; 0                                     or count($next) &gt; 0"/>
+	<xsl:variable name="row1" select="count($prev) &gt; 0 or count($up) &gt; 0 or count($next) &gt; 0" />
+	<xsl:variable name="row2" select="($prev and $navig.showtitles != 0) or (generate-id($home) != generate-id(.)                                         or $nav.context = 'toc')                                     or ($chunk.tocs.and.lots != 0                                         and $nav.context != 'toc')                                     or ($next and $navig.showtitles != 0)" />
 
-  <xsl:variable name="row2" select="($prev and $navig.showtitles != 0)                                     or (generate-id($home) != generate-id(.)                                         or $nav.context = 'toc')                                     or ($chunk.tocs.and.lots != 0                                         and $nav.context != 'toc')                                     or ($next and $navig.showtitles != 0)"/>
-
-  <xsl:if test="$suppress.navigation = '0' and $suppress.footer.navigation = '0'">
-    
-		<xsl:if test="$row1 or $row2">
-		
-		<!-- 1ST LINE -->
-     <ul class="docnav">
-        <xsl:if test="$row1">
-
-          <!-- PREVIOUS -->
-						<xsl:if test="count($prev)&gt;0">
-							<li class="previous">
-						   <a accesskey="p">
-								  <xsl:attribute name="href">
-								   <xsl:call-template name="href.target">
-								     <xsl:with-param name="object" select="$prev"/>
-								    </xsl:call-template>
-								   </xsl:attribute>
-								   <xsl:call-template name="navig.content">
-								    <xsl:with-param name="direction" select="'prev'"/>
-								   </xsl:call-template>
-						     </a>
-							</li>
-						</xsl:if>
-							
-					<!-- UP -->
-					<xsl:if test="count($up)&gt;0 and generate-id($up) != generate-id($home)">
-						<li class="up">
-                <a accesskey="u">
-                  <xsl:attribute name="href">
-                    <xsl:call-template name="href.target">
-                      <xsl:with-param name="object" select="$up"/>
-                    </xsl:call-template>
-                  </xsl:attribute>
-                  <xsl:call-template name="navig.content">
-                    <xsl:with-param name="direction" select="'up'"/>
-                  </xsl:call-template>
-               </a>
-						</li>
-					</xsl:if>
-					
-					<!-- HOME -->
-					<xsl:if test="$home != .">
-						<li class="home">
-							<xsl:choose>
-                  <xsl:when test="$home != . or $nav.context = 'toc'">
-                    <a accesskey="h">
-                      <xsl:attribute name="href">
-                        <xsl:call-template name="href.target">
-                          <xsl:with-param name="object" select="$home"/>
-                        </xsl:call-template>
-                      </xsl:attribute>
-                      <xsl:call-template name="navig.content">
-                        <xsl:with-param name="direction" select="'home'"/>
-                      </xsl:call-template>
-                    </a>
-                    <xsl:if test="$chunk.tocs.and.lots != 0 and $nav.context != 'toc'">
-                      <xsl:text>&#160;|&#160;</xsl:text>
-                    </xsl:if>
-                  </xsl:when>
-                  <xsl:otherwise>&#160;</xsl:otherwise>
-                </xsl:choose>
-
-                <xsl:if test="$chunk.tocs.and.lots != 0 and $nav.context != 'toc'">
-                  <a accesskey="t">
-                    <xsl:attribute name="href">
-                      <xsl:apply-templates select="/*[1]" mode="recursive-chunk-filename">
-                        <xsl:with-param name="recursive" select="true()"/>
-                      </xsl:apply-templates>
-                      <xsl:text>-toc</xsl:text>
-                      <xsl:value-of select="$html.ext"/>
-                    </xsl:attribute>
-                    <xsl:call-template name="gentext">
-                      <xsl:with-param name="key" select="'nav-toc'"/>
-                    </xsl:call-template>
-                  </a>
-                </xsl:if>
-						</li>
-					</xsl:if>
-					
-					<!-- NEXT -->
-		      <xsl:if test="count($next)&gt;0">
-		      	<li class="next">
-		        	<a accesskey="n">
-		          	<xsl:attribute name="href">
-		            	<xsl:call-template name="href.target">
-		              	<xsl:with-param name="object" select="$next"/>
-		               </xsl:call-template>
-		             </xsl:attribute>
-		             	<xsl:call-template name="navig.content">
-		              	<xsl:with-param name="direction" select="'next'"/>
-		             	</xsl:call-template>
-		          </a>
-         		</li>
-         	</xsl:if>
-         	
-        </xsl:if>
-			</ul>
-			
-			<!-- 2ND LINE -->
-			<ul class="docnavtitle">
-          <xsl:if test="$row2">
-            <li class="titlefooterprev">
-                <xsl:if test="$navig.showtitles != 0">
-                  <xsl:apply-templates select="$prev" mode="object.title.markup"/>
-                </xsl:if>
-            </li>
-              
-            <li class="titlefooternext">
-                <xsl:if test="$navig.showtitles != 0">
-                  <xsl:apply-templates select="$next" mode="object.title.markup"/>
-                </xsl:if>
-            </li>
-          </xsl:if>
-        </ul>
-      </xsl:if>
-  </xsl:if>
-  
-  <!-- FOOTER IN EVERY PAGES -->
-  	<div class="UIFooterPageDocument">
-			Copyright ©2013. All rights reserved. eXo Platform SAS
-	</div>
+	<xsl:if test="$suppress.navigation = '0' and $suppress.footer.navigation = '0'">
 	
+		<div class="doc-navigation clearfix">
+				<ul class="btn-group  doc-navtitle">
+					
+					<!-- PREVIOUS AND NEXT -->
+					<xsl:if test="count($prev)&gt;0">
+						<li class="previous btn">
+							<a>
+								<xsl:attribute name="href">
+							   <xsl:call-template name="href.target">
+							     <xsl:with-param name="object" select="$prev" />
+							    </xsl:call-template>
+							   </xsl:attribute>
+								<xsl:call-template name="navig.content">
+									<xsl:with-param name="direction" select="'prev'" />
+								</xsl:call-template>
+								<xsl:apply-templates select="$prev" mode="object.title.markup" />
+							</a>
+						</li>
+					</xsl:if>
+					<xsl:if test="count($next)&gt;0">
+						<li class="next btn">
+							<a>
+								<xsl:attribute name="href">
+	            					<xsl:call-template name="href.target">
+	              					<xsl:with-param name="object" select="$next" />
+	               					</xsl:call-template>
+	             				</xsl:attribute>
+								<xsl:call-template name="navig.content">
+									<xsl:with-param name="direction" select="'next'" />
+								</xsl:call-template>
+								<xsl:apply-templates select="$next" mode="object.title.markup" />
+							</a>
+						</li>
+					</xsl:if>
+				</ul>
+
+				<!-- UP AND HOME -->
+				<ul class="btn-group doc-nav">		
+					<xsl:if test="count($up)&gt;0 and generate-id($up) != generate-id($home)">
+						<li class="up btn">
+							<a>
+								<xsl:attribute name="href">
+                   					<xsl:call-template name="href.target">
+                     						<xsl:with-param name="object" select="$up" />
+                   					</xsl:call-template>
+                 					</xsl:attribute>
+								<xsl:call-template name="navig.content">
+									<xsl:with-param name="direction" select="'up'" />
+								</xsl:call-template>
+								Up to top
+							</a>
+						</li>
+					</xsl:if>
+					
+						<li class="home btn">	
+							<xsl:choose>
+								<xsl:when test="$home != . or $nav.context = 'toc'">
+									<a>
+										<xsl:attribute name="href">
+                      							<xsl:call-template name="href.target">
+                         							<xsl:with-param name="object" select="$home" />
+                      							</xsl:call-template>
+                    						</xsl:attribute>
+										<xsl:call-template name="navig.content">
+											<xsl:with-param name="direction" select="'home'" />
+										</xsl:call-template>
+										Home
+									</a>
+									<xsl:if test="$chunk.tocs.and.lots != 0 and $nav.context != 'toc'">
+										<xsl:text>&#160;|&#160;</xsl:text>
+									</xsl:if>
+								</xsl:when>
+								<xsl:otherwise>
+									&#160;
+								</xsl:otherwise>
+							</xsl:choose>
+						</li>
+					</ul>
+				</div>
+		</xsl:if>
+
+
+								<!-- xsl:if test="$chunk.tocs.and.lots != 0 and $nav.context != 'toc'">
+									<a accesskey="t">
+										<xsl:attribute name="href">
+                     						<xsl:apply-templates select="/*[1]" mode="recursive-chunk-filename">
+												<xsl:with-param name="recursive" select="true()" />
+                      						</xsl:apply-templates>
+                      						<xsl:text>-toc</xsl:text>
+                      						<xsl:value-of select="$html.ext" />
+                    					</xsl:attribute>
+										<xsl:call-template name="gentext">
+											<xsl:with-param name="key" select="'nav-toc'" />
+										</xsl:call-template>
+									</a>
+						</xsl:if-->
+
+
+			<!-- 2ND LINE -->
+				<!-- ul class="docnavtitle">
+					<xsl:if test="$row2">
+						<li class="titlefooterprev">
+							<xsl:if test="$navig.showtitles != 0">
+								<xsl:apply-templates select="$prev" mode="object.title.markup" />
+							</xsl:if>
+						</li>
+
+						<li class="titlefooternext">
+							<xsl:if test="$navig.showtitles != 0">
+								<xsl:apply-templates select="$next" mode="object.title.markup" />
+							</xsl:if>
+						</li>
+					</xsl:if>
+				</ul -->
+
+	<!-- FOOTER IN EVERY PAGES -->
+	<div class="UIFooterPageDocument">
+		Copyright ©2013. All rights reserved. eXo Platform SAS
+	</div>
+
 	<!-- DISQUS -->
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+		var disqus_shortname = 'docswebsite'; // required: replace example with your forum shortname
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+		dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] ||
+		document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
 
-     <div id="disqus_thread"></div>
-		<script type="text/javascript">
-     		var disqus_shortname = 'docswebsite'; // required: replace example with your forum shortname
-     		/* * * DON'T EDIT BELOW THIS LINE * * */
-     		(function() {
-         		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-         		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-         		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-     		})();
-		</script>
-
-		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
 
 </xsl:template>
 
