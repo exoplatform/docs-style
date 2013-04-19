@@ -117,7 +117,7 @@
    <xsl:param name="programlisting.font" select="'verdana,helvetica,sans-serif'" />
 
    <!-- Make the font for programlisting slightly smaller -->
-   <xsl:param name="programlisting.font.size" select="'70%'" />
+   <xsl:param name="programlisting.font.size" select="'80%'" />
  <xsl:param name="body.font.size" select="'75%'" />
   <xsl:param name="chapter.title.font.size" select="'60%'" /> 
  <xsl:param name="section.title.font.size" select="'60%'" /> 
@@ -1572,7 +1572,7 @@
          border-color="#CCCCCC" font-family="{$programlisting.font}"
          font-size="{$programlisting.font.size}" space-before="12pt" space-after="12pt"
          linefeed-treatment="preserve" white-space-collapse="false"
-         white-space-treatment="preserve" padding-bottom="12pt" padding-top="12pt"
+         white-space-treatment="preserve" padding-bottom="5pt" padding-top="5pt"
          padding-right="12pt" padding-left="12pt" padding="20pt" margin="0">
 
          <xsl:choose>
