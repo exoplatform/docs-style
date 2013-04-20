@@ -535,7 +535,7 @@
   border: 1px solid #cfcfcf;
   background: #ffffff;
   margin: 0 0 20px 0;
-  min-height: 900px;
+  min-height: 550px;
 }
 .uiBox .title {
   background-color: #f0f0f0;
@@ -2879,9 +2879,9 @@ ul.bulletlist li {
   color: #2F5E92;
   list-style-type: disc;
 }
-ul li span {
-  color: #000000;
-}
+/*ul li span {
+  color: #285A92;
+}*/
 .litstItem li {
   list-style-type: none;
 }

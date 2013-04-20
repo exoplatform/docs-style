@@ -322,7 +322,7 @@
 
    <xsl:template name="table.cell.properties"> 
 		<xsl:if test="ancestor::thead or ancestor::tfoot">	
-		  <xsl:attribute name="background-color">#323863</xsl:attribute>	
+		  <xsl:attribute name="background-color">#f0f0f0</xsl:attribute>	
 		  <xsl:attribute name="text-align">center</xsl:attribute>	
 		</xsl:if>
         <xsl:attribute name="border-start-style">solid</xsl:attribute>
@@ -333,10 +333,10 @@
 		<xsl:attribute name="border-end-width">0.1pt</xsl:attribute>
 		<xsl:attribute name="border-top-width">0.1pt</xsl:attribute>
 		<xsl:attribute name="border-bottom-width">0.1pt</xsl:attribute>
-		<xsl:attribute name="border-start-color">#323863</xsl:attribute>
-		<xsl:attribute name="border-end-color">#323863</xsl:attribute>
-		<xsl:attribute name="border-bottom-color">#323863</xsl:attribute>
-		<xsl:attribute name="border-top-color">#323863</xsl:attribute>					
+		<xsl:attribute name="border-start-color">#cfcfcf</xsl:attribute>
+		<xsl:attribute name="border-end-color">#cfcfcf</xsl:attribute>
+		<xsl:attribute name="border-bottom-color">#cfcfcf</xsl:attribute>
+		<xsl:attribute name="border-top-color">#cfcfcf</xsl:attribute>					
    </xsl:template>	
 
 	<xsl:template match="entry//text()">
@@ -348,12 +348,12 @@
    <!-- Only hairlines as frame and cell borders in tables -->
    <xsl:param name="table.frame.border.thickness">0.1pt</xsl:param>
    <xsl:param name="table.cell.border.thickness">0.1pt</xsl:param>
-   <xsl:param name="table.cell.border.color">#323863</xsl:param>
-   <xsl:param name="table.frame.border.color">#323863</xsl:param>
-   <xsl:param name="table.cell.border.right.color">#323863</xsl:param>
-   <xsl:param name="table.cell.border.left.color">#323863</xsl:param>
-   <xsl:param name="table.frame.border.right.color">#323863</xsl:param>
-   <xsl:param name="table.frame.border.left.color">#323863</xsl:param>
+   <xsl:param name="table.cell.border.color">#cfcfcf</xsl:param>
+   <xsl:param name="table.frame.border.color">#cfcfcf</xsl:param>
+   <xsl:param name="table.cell.border.right.color">#cfcfcf</xsl:param>
+   <xsl:param name="table.cell.border.left.color">#cfcfcf</xsl:param>
+   <xsl:param name="table.frame.border.right.color">#cfcfcf</xsl:param>
+   <xsl:param name="table.frame.border.left.color">#cfcfcf</xsl:param>
    <!-- Paper type, no headers on blank pages, no double sided printing -->
    <xsl:param name="paper.type" select="'A4'" />
    <xsl:param name="double.sided">1</xsl:param>
@@ -380,7 +380,7 @@
    <!-- No intendation of Titles -->
    <xsl:param name="body.start.indent">0pt</xsl:param>
 
-   <xsl:param name="title.color">#FCB837</xsl:param>
+   <xsl:param name="title.color">#285A92</xsl:param>
    <xsl:param name="chapter.title.color" select="$title.color" />
    <xsl:param name="section.title.color" select="$title.color" />
    <!-- Define properties for section title1 -->
@@ -391,7 +391,7 @@
 		<xsl:value-of select="$body.font.master * 1.6" />
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
-    <xsl:attribute name="border-bottom">0.5pt dashed #FCB837</xsl:attribute>
+    <xsl:attribute name="border-bottom">0.5pt dashed #285A92</xsl:attribute>
     <xsl:attribute name="padding-top">6pt</xsl:attribute>
     <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
    </xsl:attribute-set>
@@ -521,7 +521,7 @@
       <xsl:attribute name="font-family">
 		<xsl:value-of select="$title.fontset" />
 	</xsl:attribute>
-      <xsl:attribute name="color">#FCB837</xsl:attribute>
+      <xsl:attribute name="color">#285A92</xsl:attribute>
       <xsl:attribute name="font-size">12pt</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
    </xsl:attribute-set>
@@ -542,8 +542,8 @@
       <!-- highlight this entry? -->
       <xsl:if test="ancestor::thead or ancestor::tfoot">
          <xsl:attribute name="font-weight">bold</xsl:attribute>
-         <xsl:attribute name="background-color">#323863</xsl:attribute>
-         <xsl:attribute name="color">#FCB837</xsl:attribute>
+         <xsl:attribute name="background-color">#F0F0F0</xsl:attribute>
+         <xsl:attribute name="color">#393939</xsl:attribute>
 		 <xsl:attribute name="padding-top">2pt</xsl:attribute>
 		 <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
 		 <xsl:attribute name="padding-left">4pt</xsl:attribute>
@@ -948,7 +948,7 @@
             <xsl:variable name="text1">
                <xsl:value-of select="concat(substring($text, 0), '')"  />
             </xsl:variable>
-            <fo:inline keep-together.within-line="always" font-weight="bold" color="#FCB837" font-size="9pt">
+            <fo:inline keep-together.within-line="always" font-weight="bold" color="#285A92" font-size="9pt">
                <xsl:value-of select="$text1" />
             </fo:inline>
          </xsl:when>
@@ -957,7 +957,7 @@
             <xsl:variable name="text">
                <xsl:call-template name="component.title.nomarkup" />
             </xsl:variable>
-            <fo:inline keep-together.within-line="always" font-weight="bold" color="#FCB837" font-size="9pt">
+            <fo:inline keep-together.within-line="always" font-weight="bold" color="#285A92" font-size="9pt">
                <xsl:choose>
                   <xsl:when test="string-length($text) &gt; '33'">
                      <xsl:value-of
@@ -970,14 +970,14 @@
             </fo:inline>
          </xsl:when>
          <xsl:when test="($sequence='odd' and $position='right')">
-            <fo:inline keep-together.within-line="always" color="#FCB837" font-size="9pt">
+            <fo:inline keep-together.within-line="always" color="#285A92" font-size="9pt">
                <fo:retrieve-marker retrieve-class-name="section.head.marker"
                   retrieve-position="first-including-carryover"
                   retrieve-boundary="page-sequence" />
             </fo:inline>
          </xsl:when>
          <xsl:when test="($position='right')">
-            <fo:inline keep-together.within-line="always" color="#FCB837" font-size="9pt" font-style="italic">
+            <fo:inline keep-together.within-line="always" color="#285A92" font-size="9pt" font-style="italic">
              eXo Platform 3.5
             </fo:inline>
          </xsl:when>
@@ -997,7 +997,7 @@
       <xsl:if test="$header.rule != 0">
          <xsl:attribute name="border-bottom-width">1pt</xsl:attribute>
          <xsl:attribute name="border-bottom-style">solid</xsl:attribute>
-         <xsl:attribute name="border-bottom-color">#FCB837</xsl:attribute>
+         <xsl:attribute name="border-bottom-color">#285A92</xsl:attribute>
       </xsl:if>
    </xsl:template>
 
@@ -1014,7 +1014,7 @@
       <xsl:if test="$footer.rule != 0">
          <xsl:attribute name="border-top-width">0.5pt</xsl:attribute>
          <xsl:attribute name="border-top-style">solid</xsl:attribute>
-         <xsl:attribute name="border-top-color">#FCB837</xsl:attribute>
+         <xsl:attribute name="border-top-color">#285A92</xsl:attribute>
       </xsl:if>
    </xsl:template>
 
@@ -1732,7 +1732,7 @@
    <xsl:template match="abstract">
   <xsl:variable name="keep.together">
   </xsl:variable>
-  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt" margin="0pt">
+  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" padding="20pt" margin="0pt" border="1px solid #cfcfcf">
     <xsl:if test="$keep.together != ''">
       <xsl:attribute name="keep-together.within-column"><xsl:value-of
                       select="$keep.together"/></xsl:attribute>
@@ -1745,7 +1745,7 @@
   <xsl:template match="abstract" mode="titlepage.mode">
     <xsl:variable name="keep.together">
     </xsl:variable>
-    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#EEEEEE" padding="20pt" margin="0pt">
+    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" padding="20pt" margin="0pt" border="1px solid #cfcfcf">
       <xsl:if test="$keep.together != ''">
         <xsl:attribute name="keep-together.within-column">
           <xsl:value-of

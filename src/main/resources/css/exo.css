@@ -47,99 +47,6 @@ a span {
 	color: #285A92;
 }
 
-/* ######################## Footer ######################## */
-
-.footer{
-	padding: 8px 0px;
-	text-align: right;
-	color: #898989;
-}
-
-
-/* ######################## Navigation ######################## */
-/*
-.docnav {
- list-style: none outside none;
- position: relative; 
- text-align: center;
- padding: 23px 0px;
- margin-bottom: 0;
- width: 100%;
-}
-
-.docnav li {
- list-style: none outside none;
- display: inline;
-}
-
-.docnav li.previous, .docnav li.next {
- position:absolute;
- top:1.6em;
-}
-
-.docnav li:before {content:" ";}
-
-.docnav li.previous {
- left:0px;
- text-align:left;
-}
-
-.docnav li.previous a {
- background:url(../background/PriviousIcon.gif) top left no-repeat;
- width: 34px;
- padding: 4px 2px 20px 2px;
- display: block;
-}
-
-.docnav li.previous a:hover{
- background: url(../background/PriviousIconHover.jpg) top left no-repeat;
-}
-
-.docnav li.next {
-    right:0px;
-    text-align:right;
-}
-
-.docnav li.next a {
- background:url(../background/NextIcon.gif) top right no-repeat;
- width: 34px;
- padding: 4px 2px 20px 2px;
- display: block; 
-}
-
-.docnav li.next a:hover{
- background: url(../background/NextIconHover.jpg) top right no-repeat;
-}
-
-.docnav li.up, .docnav li.home {
- margin:0.5em;
-}
-
-.docnav li.up a {
- background:url(../background/BackToTop.gif) top left no-repeat;
- width: 34px;
- height: 24px;
- padding: 4px 10px;
- display: inline-block; 
-}
-
-.docnav li.up a:hover{
- background: url(../background/BackToTopHover.jpg) top left no-repeat;
-}
-
-.docnav li.home a {
- background:url(../background/BackToHome.gif) top left no-repeat;
- width: 34px;
- height: 24px;
- padding: 4px 10px;
- display: inline-block; 
-}
-
-.docnav li.home a:hover{
- background: url(../background/BackToHomeHover.jpg) top left no-repeat;
-} /*
-
-
 /* ##################### TOC ################### */
 
 
@@ -237,7 +144,9 @@ ul{
 	margin-left: 0px;
 }
 
-
+ul li span{
+	color: #285A92;
+}
 
 ul li ul{
 	padding-left: 0px;

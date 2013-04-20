@@ -217,6 +217,40 @@
 		</xsl:if>
 	</xsl:template>
 
+
+	<xsl:template name="user.footer.content">
+		<xsl:if test="self::section">
+					<div xmlns="" class="UIFooterPageDocument">
+						Copyright 2013. All rights reserved. eXo Platform SAS
+					</div><script xmlns="" src="http://www.google-analytics.com/ga.js" type="text/javascript"/><script xmlns="" type="text/javascript">
+						var pageTracker = _gat._getTracker("UA-1292368-24");
+						pageTracker._initData();
+						pageTracker._trackPageview();
+					</script><script xmlns="" src="http://lfov.net/webrecorder/js/listen.js" type="text/Javascript"/>
+					<script xmlns="" type="text/Javascript">
+						_lf_cid = "LF_df197061";
+						_lf_remora();
+					</script>
+			
+			<!-- DISQUS -->
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'docswebsite'; // required: replace example with your forum shortname
+				/* * * DON'T EDIT BELOW THIS LINE * * */
+				(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+				dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] ||
+				document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+		
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+		</xsl:if>
+	</xsl:template>
+		
 	<!-- ****************** FROM html-common.xsl ****************** -->
 
 	<!-- Remove the numbers in front of each table & example http://www.sagehill.net/docbookxsl/PrintTableStyles.html#TablesUnnumbered -->
@@ -303,20 +337,4 @@
 
 	<!--xsl:template match="section[@role = 'NotInToc']" mode="toc" / -->
 
-	<!-- STYLE FOR THE REST GENERATION -->
-	<!-- <xsl:template match="title"> -->
-	<!-- <div class="article-block"> -->
-	<!-- <h5><xsl:apply-templates/></h5> -->
-	<!-- </div> -->
-	<!-- </xsl:template> -->
-
-	<!-- <xsl:template match="para"> -->
-	<!-- <p><xsl:apply-templates/></p> -->
-	<!-- </xsl:template> -->
-
-	<!-- <xsl:template match="table"> -->
-	<!-- <table class="uiGrid table border table-hover table-striped"> -->
-	<!-- <xsl:apply-templates/> -->
-	<!-- </table> -->
-	<!-- </xsl:template> -->
 </xsl:stylesheet>
