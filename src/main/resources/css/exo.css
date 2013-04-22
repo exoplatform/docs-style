@@ -193,6 +193,9 @@ ul li{
 	line-height: normal;
 }
 
+ul li p span.guilabel {
+	color : #393939;
+}
 
 .section ul li {
 	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
@@ -212,30 +215,6 @@ ul li{
 }
 
 
-/*.section table {
- border-collapse: collapse;
- text-align: left;
-}*/
-
-/*th{
-	background:#323863;
-	color:RGB(255,208,8);
-	box-shadow:0 1px 1px #A1A1A1;
-	font-size:14px;
-	text-align:center;
-	padding: 6px;
-	border: #797979;
-}
-
-.ulink, .link{
-	color:#005caa;
-}
-
-.ulink:hover, .link:hover{
-	color:#145BC7;
-        text-decoration:underline;
-}
-*/
 .TextForm, .programlistingco, .screen {
 	-moz-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px;
@@ -440,17 +419,6 @@ hr {
 	padding-left: 13px;
 }
 
-/*
-.chapter .section .titlepage .informaltable table th{
-	border: solid 1px #797979;
-	padding: 6px 0px;
-}
-
-.chapter .section .titlepage .informaltable table td{
-	padding: 6px 0px;
-	border: solid 1px #797979;
-} */
-
 .chapter .section .titlepage .informaltable table td  .mediaobject,.section table  .mediaobject {
 	text-align:center;
 }
@@ -646,8 +614,13 @@ td {
 /* ##################### Cite Title ################### */
 
 .prompt span {
-	color:#888;
+	color:#444444;
     font-size: 16px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #FFFFFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .citetitle span {
@@ -675,24 +648,6 @@ td {
 
 
 /* ##################### GUI Elements ################### */
-
-/*.guibutton {
-	background: -moz-linear-gradient(#FAFAFA, #EAEAEA) repeat scroll 0 0 transparent;
-	background:	-webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EAEAEA));
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#EAEAEA');
-	border-color: #D4D4D4 #D4D4D4 #BCBCBC;
-	border-style: solid;
-	border-width: 1px;
-	text-align: center;
-	text-shadow: 0 1px 0 #FFFFFF;
-	font-weight: bold;
-	font-size: 12px;
-	color: #333333;
-	padding: 1px 5px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}*/
 
 .guibutton { 
   padding: 3px 12px;
@@ -901,11 +856,10 @@ td {
 
 .warning .title {
     font-weight: bold;
-	font-size: 13px !important;
-    margin: 0 0 3px 40px;
-    padding: 0px 10px 0 10px;
-	padding: 0 10px 0;
-	color:#2F5E92
+	margin: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 0px;
+	color: #3c4a55;
+	font-size:13px;
 }
 
 .section .titlepage .warning .title a{
@@ -931,7 +885,7 @@ td {
 /* ##################### TIP ################### */
 
 .tip {
-    background: url("../background/tip.png") no-repeat scroll 10px 10px #E6FADE;
+    background: url("../background/tip.png") no-repeat scroll 10px 5px #E6FADE;
     margin: 10px 0px !important;
     padding: 15px 10px 5px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
@@ -943,11 +897,10 @@ td {
 
 .tip .title {
     font-weight: bold;
-	font-size: 13px !important;
-    margin: 0 0 3px 40px;
-    padding: 0px 10px 0 10px;
-	padding: 0 10px 0;
-	color: #2F5E92;
+	margin: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 0px;
+	color: #3c4a55;
+	font-size:13px;
 }
 
 .section .titlepage .tip .title a{
@@ -991,7 +944,9 @@ td {
 
 }
 
-
+.procedure ol li {
+	font-weight: normal;
+}
 
 .procedure ul li  p {
 	font-weight: normal;
@@ -1048,76 +1003,23 @@ dt a {
 	font-size: 11px; 	 
 }
 
-.code {
-    font-size: 12px;  	 
+p code.prompt span {
+    font-size: 16px;
+    border-top: 1px dotted #cfcfcf;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #FFFFFF;
+    color : #444444;
 }
 
-/*h1 {
-	font-size: 30px;
-	margin:0px;
-}*/
-
-/*
-h4   {
-	font-size: 17px !important; 
-	color: #FCB837
+code.prompt {
+	background-color: #FFFFFF;
+	border-top: 1px dotted #cfcfcf;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #444444;
+    /*padding: 2px 4px;*/
 }
 
-h3  {
-	font-size: 22px;
-	color: #FCB837;
-	border-top: 1px dashed #E9E9D8;
-	padding-top:10px;
-	margin-top: 10px;
-}*/
-
-/* correct the h5 & h6 text color & text size*/
-/*
- h5 {
-	color: #FCB837;
-	font-size: 15px !important;
- }
- 
- h6 {
-	color: #FCB837;
-	font-size: 14px !important;
- }
- */
- 
-/*
-.note h3 {
-font-size: 16px !important;
-color: #3C4A55 !important;
-margin-top: 4px;
-padding: 0 10px 0 0;
-border:none;
-text-shadow: 0 1px 1px white;
-}
-
-.warning h3 {
-font-size: 16px !important;
-color: #cc0000 !important;
-margin-top: 4px;
-padding: 0 10px 0 0;
-border:none;
-text-shadow: 0 1px 1px white;
-}
-
-.tip h3 {
-font-size: 16px !important;
-color: #3C4A55 !important;
-margin-top: 4px;
-padding: 0 10px 0 0;
-border:none;
-text-shadow: 0 1px 1px white;
-}
-*/
-
-/*
-h2 {
-	font-size: 28px !important;
-	line-height: 24px;
-	color: #FCB837;
-	border-top: 1px solid #f1f1e6;
-	padding-top: 5px;
-}*/
