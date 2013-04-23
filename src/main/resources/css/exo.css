@@ -47,6 +47,10 @@ a span {
 	color: #285A92;
 }
 
+p {
+	margin: 0 0 10px;
+}
+
 /* ##################### TOC ################### */
 
 
@@ -76,18 +80,18 @@ margin: 4px 0px 0px 19px;
 }
 
 .toc .chapter a {
-        color:#005caa;
+    color:#005caa;
 }
 
 .toc .chapter a:hover {
-        color:#145BC7;
-        text-decoration:underline;
+    color:#145BC7;
+    text-decoration:underline;
 }
 
 .toc a {
 	font-size: 12px;
-        /*font-weight: bold;*/
-        text-decoration: none;
+    /*font-weight: bold;*/
+    text-decoration: none;
 	color:#393939;       
 }
 
@@ -145,7 +149,7 @@ ul{
 }
 
 ul li span{
-	color: #285A92;
+	/*color: #285A92;*/
 }
 
 ul li ul{
@@ -522,12 +526,12 @@ td {
 }
 
 .code {
-	font-size: 13px;
+	font-size: 12px;
 	background: none repeat scroll 0 0 #FEE9CC;
 	border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	padding: 0px 3px;
+	padding: 0px 0px;
 	border: 1px solid #FFDEB0;
 
 }
@@ -608,6 +612,7 @@ td {
 	list-style: none;
 	color: #393939;
 	font-weight: normal;
+	padding-left: 10px;
 }
 
 
@@ -615,12 +620,31 @@ td {
 
 .prompt span {
 	color:#444444;
-    font-size: 16px;
+    font-size: 18px;
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
     background-color: #FFFFFF;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p code.prompt {
+    font-size: 10px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #FFFFFF;
+    color : #444444;
+}
+
+code.prompt {
+	background-color: #FFFFFF;
+	border-top: 1px dotted #cfcfcf;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #444444;
+    /*padding: 2px 4px;*/
 }
 
 .citetitle span {
@@ -845,9 +869,9 @@ td {
 /* ##################### WARNING ################### */
 
 .warning {
-    background: url("../background/warning.png") no-repeat scroll 10px 10px #FCF4D4;
+    background: url("../background/warning.png") no-repeat scroll 10px 5px #FCF4D4;
     margin: 10px 0px !important;
-    padding: 15px 10px 5px 3px;
+    padding: 6px 20px 6px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px;
@@ -885,9 +909,9 @@ td {
 /* ##################### TIP ################### */
 
 .tip {
-    background: url("../background/tip.png") no-repeat scroll 10px 5px #E6FADE;
+    background: url("../background/tip.png") no-repeat scroll 16px 8px #E6FADE;
     margin: 10px 0px !important;
-    padding: 15px 10px 5px 3px;
+    padding: 6px 20px 6px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px;
@@ -923,7 +947,7 @@ td {
 .tip .itemizedlist ul li p { margin:0;padding-left:0; }
 
 
-/********************* MUST BE CHECKED **********************/
+/********************* OTHERS **********************/
 
 
 /* Add bullet list image*/
@@ -932,6 +956,14 @@ td {
 	padding-left: 10px;
 }
 
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 /*
 .listitem {
 	background: url("../background/Arrow.png") no-repeat scroll left 6px transparent;
@@ -985,8 +1017,6 @@ td {
 }
 
 
-/********************* MUST BE CHECKED **********************/
-
 dt a {
 	color: #005caa !important;
 }
@@ -1001,25 +1031,5 @@ dt a {
 	text-shadow: 0 1px 1px white; 	 
 	color: #393939;     	 
 	font-size: 11px; 	 
-}
-
-p code.prompt span {
-    font-size: 16px;
-    border-top: 1px dotted #cfcfcf;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    background-color: #FFFFFF;
-    color : #444444;
-}
-
-code.prompt {
-	background-color: #FFFFFF;
-	border-top: 1px dotted #cfcfcf;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    color: #444444;
-    /*padding: 2px 4px;*/
 }
 
