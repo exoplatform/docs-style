@@ -2875,11 +2875,11 @@ table {
 /**********************************************
     ADDITION
 ***********************************************/
-ul.bulletlist li {
+/*ul.bulletlist li {
   color: #2F5E92;
   list-style-type: disc;
 }
-/*ul li span {
+ul li span {
   color: #285A92;
 }*/
 .litstItem li {
@@ -3014,3 +3014,7 @@ a,a:hover {
 .item a{
 	color: #285A92;
 } 
+
+a {
+	color: #345F8F;
+}
