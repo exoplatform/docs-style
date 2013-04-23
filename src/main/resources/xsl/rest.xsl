@@ -79,7 +79,7 @@
 						<a href="http://community.exoplatform.com/portal/private/classic/register" class="btn btn-lightBlue">Register</a>
 					</div>
 				</div>
-				<a href="http://www.exoplatform.com" class="logo pull-left"
+				<a href="http://community.exoplatform.com/" class="logo pull-left"
 					target="_blank">
 					<img alt="Home" src="../../background/Logo.png"></img>
 				</a>
