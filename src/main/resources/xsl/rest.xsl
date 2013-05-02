@@ -99,7 +99,7 @@
 						</li>
 						<li>
 							<a
-								href="http://learn.exoplatform.com/Community-eXo-Platform-35-Download-English.html"
+								href="http://learn.exoplatform.com/Downloading-eXo-Platform-Community-Edition-En2.html"
 								target="_blank">Downloads</a>
 						</li>
 						<li>
