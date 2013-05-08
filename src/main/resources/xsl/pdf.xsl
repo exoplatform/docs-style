@@ -978,7 +978,7 @@
          </xsl:when>
          <xsl:when test="($position='right')">
             <fo:inline keep-together.within-line="always" color="#285A92" font-size="9pt" font-style="italic">
-             eXo Platform 3.5
+             eXo Platform 4.0
             </fo:inline>
          </xsl:when>
       </xsl:choose>

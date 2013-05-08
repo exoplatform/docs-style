@@ -49,6 +49,7 @@ a span {
 
 p {
 	margin: 0 0 10px;
+	line-height: 25px;
 }
 
 /* ##################### TOC ################### */
@@ -191,9 +192,9 @@ ol li ol li ol{
 
 
 ul li{
-	background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
+	/*background:	url("../background/Arrow.png") no-repeat scroll left 7px transparent
 	list-style: none;
-	padding-left: 10px;
+	padding-left: 10px;*/
 	line-height: normal;
 }
 
@@ -202,22 +203,21 @@ ul li p span.guilabel {
 }
 
 .section ul li {
-	background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
-    color: #393939;    
-    font-weight: normal;
+	/*background: url("../background/Arrow.png") no-repeat scroll left 7px transparent;
     list-style: none outside none;
-	padding-left:10px;
+    padding-left:10px; */
+    font-weight: normal;
+    color: #393939; 
 }
 
 .preface ul li {
-	background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+	/*background:url("../background/Arrow.png") no-repeat scroll left 6px transparent;
+	padding-left:10px;
+	list-style: none outside none; */
     color: #393939;
     font-size: 12px;
-    font-weight: normal;
-    list-style: none outside none;
-	padding-left:10px;
+    font-weight: normal;	
 }
-
 
 .TextForm, .programlistingco, .screen {
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -468,7 +468,11 @@ td {
 	padding: 0 0.5em;
 	margin: 0;
 	vertical-align: top;
-	background: #dce3e1;
+	background: #F0F0F0;
+}
+
+.qandaset tr td:first-child {
+	width: 0;
 }
 
 .answer {
@@ -586,7 +590,7 @@ td {
 }
 
 .chapter .abstract ul li{
-	background:url("../background/list-arrow-right.png") no-repeat scroll left 4px transparent;
+	background:url("../background/list-arrow-right.png") no-repeat scroll left 10px transparent;
 	list-style: none;
 	padding-left: 10px;
 	color: #393939;
@@ -594,7 +598,7 @@ td {
 }
 
 .book .abstract ul li{
-	background:	url("../background/list-arrow-right.png") no-repeat scroll left 4px transparent;
+	background:	url("../background/list-arrow-right.png") no-repeat scroll left 10px transparent;
 	list-style: none;
 	padding-left: 10px;
 	color: #393939;
@@ -608,11 +612,11 @@ td {
 }
 
 .section .highlights ul li{
-	background:	url("../background/list-arrow-right.png") no-repeat scroll left 4px transparent;
+	background:	url("../background/list-arrow-right.png") no-repeat scroll left 10px transparent;
 	list-style: none;
 	color: #393939;
 	font-weight: normal;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 
@@ -864,8 +868,16 @@ code.prompt {
     *padding: 0px 0px 12px 12px;
 }
 
-.note .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px;}
-.note .itemizedlist ul li p { margin:0;padding-left:0; }
+.note .itemizedlist ul li { 
+	/*url("../background/Arrow.png") no-repeat scroll left 6px transparent; */
+	/*list-style: none; */
+	margin-left: 45px;
+}
+
+.note .itemizedlist ul li p { 
+	margin:0;
+	padding-left:0; 
+}
 
 
 /* ##################### WARNING ################### */
@@ -904,8 +916,16 @@ code.prompt {
    padding: 0 0 5px 12px;
 }
 
-.warning .itemizedlist ul li { url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
-.warning .itemizedlist ul li p { margin:0;padding-left:0; }
+.warning .itemizedlist ul li { 
+	/*url("../background/Arrow.png") no-repeat scroll left 6px transparent; 
+	list-style: none; */
+	margin-left: 45px; 
+}
+
+.warning .itemizedlist ul li p { 
+	margin:0;
+	padding-left:0; 
+}
 
 
 /* ##################### TIP ################### */
@@ -945,8 +965,15 @@ code.prompt {
     padding: 0 0 5px 12px;
 }
 
-.tip .itemizedlist ul li { background: url("../background/Arrow.png") no-repeat scroll left 6px transparent; list-style: none; margin-left: 28px; }
-.tip .itemizedlist ul li p { margin:0;padding-left:0; }
+.tip .itemizedlist ul li { 
+	/*background: url("../background/Arrow.png") no-repeat scroll left 6px transparent; 
+	list-style: none; */
+	margin-left: 45px; 
+}
+.tip .itemizedlist ul li p { 
+	margin:0;
+	padding-left:0; 
+}
 
 
 /********************* OTHERS **********************/
