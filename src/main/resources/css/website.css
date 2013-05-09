@@ -2819,6 +2819,7 @@ table {
 .article-block .widgetBar {
   width: 300px;
   min-height: 200px;
+  margin-left: 10px;
 }
 .article-block .widgetBar.pull-left + .theContent {
   margin-left: 298px;
