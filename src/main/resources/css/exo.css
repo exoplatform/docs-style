@@ -981,8 +981,8 @@ code.prompt {
 
 /* Add bullet list image*/
 .procedure .listitem {
-    list-style: none outside none;
-	padding-left: 10px;
+    list-style: disc outside none;
+	/*padding-left: 10px;*/
 }
 
 img {

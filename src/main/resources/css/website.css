@@ -2991,7 +2991,7 @@ a,a:hover {
 
 /*ADDITION*/
 .theContent p.arrow{
-	background:url("../background/list-arrow-right.png") no-repeat scroll left 6px transparent;
+	background:url("../background/list-arrow-right.png") no-repeat scroll left 10px transparent;
 	list-style: none;
 	padding-left: 15px;
 	color: #393939;
