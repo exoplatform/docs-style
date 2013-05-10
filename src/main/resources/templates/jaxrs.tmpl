@@ -2,30 +2,28 @@ ${@Path.doc()}
 
 || Resource || Description ||
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-| [${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} |
+| [${verb.name} <#if @Path.attribute("value")??>${@Path.attribute("value")}/</#if><#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")?replace("//", "/")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} <#if verb.doc("flat:return") != ""> {example}Returns ${verb.doc("bloc:return")}{example}</#if> |
 </#list>
 
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-h1. ${verb.name} <#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")} </#if>{anchor:id=${verb.doc("flat:anchor")}}
+h1. ${verb.name} <#if verb.sibling("@Path")??>${@Path.attribute("value")}/${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")?replace("//", "/")} </#if>{anchor:id=${verb.doc("flat:anchor")}}
 
 ${verb.doc()}
 
-<#if verb.sibling("@Path")??>
 *URL*:
 
 {code}
-http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${verb.sibling("@Path").attribute("flat:value")}
+http://{domain_name}/{rest_context_name}/private/<#if @Path.attribute("value")??>${@Path.attribute("value")}/</#if><#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")}</#if>
 {code}
 
 <#if verb.doc("flat:LevelAPI") != "">
 *Level API*: ${verb.doc("bloc:LevelAPI")}
-</#if>
+</#if>	
 
 <#if @Path.doc("bloc:LevelAPI") != "">
 *Level API*: ${@Path.doc("bloc:LevelAPI")}
 </#if>
 
-</#if>
 <#if verb.sibling("@Produces")??>
 
 *Supported Format*: ${verb.sibling("@Produces").attribute("flat:value")}
@@ -44,7 +42,7 @@ http://{domain_name}/{rest_context_name}/private/${@Path.attribute("value")}${ve
 </#list>
 
 </#if>
-* *Optional (query paramters)*: <#if verb.children("@QueryParam")?size = 0>No</#if>
+* *Optional (query parameters)*: <#if verb.children("@QueryParam")?size = 0>No</#if>
 <#if verb.children("@QueryParam")?size != 0>
 || Parameter || Description ||
 <#list verb.children("@QueryParam") as param>

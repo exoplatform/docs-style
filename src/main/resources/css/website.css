@@ -2895,6 +2895,11 @@ tbody tr:hover td,
 tbody tr:hover th {
   background-color: #e8e8e8;
 }
+
+.chapter table tr td:first-child {
+ width: 45%;
+}
+
 table {
   border: 1px solid #cfcfcf;
   margin: 0;
