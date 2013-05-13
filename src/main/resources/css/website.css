@@ -2898,14 +2898,14 @@ tbody tr:hover th {
 
 .chapter table tr td:first-child {
  	width: 45%;
- 	padding-top: 0px;
+ 	/*padding-top: 0px;*/
 }
 
-.chapter  table td, table th {
+/*.chapter  table td, table th {
 	padding-left: 18px;
  	padding-top: 10px;
  	padding-bottom: 0px;
-}
+}*/
 
 .informalexample p {
 	padding-top:0px;
@@ -2913,7 +2913,7 @@ tbody tr:hover th {
 
 table {
   border: 1px solid #cfcfcf;
-  margin: 0;
+  margin-bottom: 10px;
   /*border-top: 1px solid #ececec;*/
 
 }

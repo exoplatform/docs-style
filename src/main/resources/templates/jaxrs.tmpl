@@ -2,7 +2,7 @@ ${@Path.doc()}
 
 || Resource || Description ||
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-| [${verb.name} <#if @Path.attribute("value")??>${@Path.attribute("value")}/</#if><#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")?replace("//", "/")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} <#if verb.doc("flat:return") != ""> {example}Returns ${verb.doc("bloc:return")}{example}</#if> |
+| [${verb.name} <#if @Path.attribute("value")??>${@Path.attribute("value")}/</#if><#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")?replace("//", "/")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} |
 </#list>
 
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
@@ -24,12 +24,15 @@ http://{domain_name}/{rest_context_name}/private/<#if @Path.attribute("value")??
 *Level API*: ${@Path.doc("bloc:LevelAPI")}
 </#if>
 
-<#if verb.sibling("@Produces")??>
+<#if verb.doc("flat:format") != "">
+*Supported Format*: ${verb.doc("bloc:format")}
+</#if>	
 
+<#if verb.sibling("@Produces")??>
 *Supported Format*: ${verb.sibling("@Produces").attribute("flat:value")}
 </#if>
-<#if verb.doc("flat:authentication") != "">
 
+<#if verb.doc("flat:authentication") != "">
 *Requires Authentication*: true
 </#if>
 
@@ -51,8 +54,10 @@ http://{domain_name}/{rest_context_name}/private/<#if @Path.attribute("value")??
 </#if>
 
 <#if verb.doc("flat:request") != "">
-*Request*:
+*Request example*:
+{code}
 ${verb.doc("bloc:request")}
+{code}
 </#if>
 
 <#if verb.doc("flat:response") != "">

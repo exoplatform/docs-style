@@ -235,7 +235,7 @@
 			<!-- DISQUS -->
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
-				var disqus_shortname = 'docswebsite'; // required: replace example with your forum shortname
+				var disqus_shortname = 'docswebsite'; /* required: replace example with your forum shortname */
 				/* * * DON'T EDIT BELOW THIS LINE * * */
 				(function() {
 				var dsq = document.createElement('script'); dsq.type = 'text/javascript';
