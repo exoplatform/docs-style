@@ -2897,7 +2897,18 @@ tbody tr:hover th {
 }
 
 .chapter table tr td:first-child {
- width: 45%;
+ 	width: 45%;
+ 	padding-top: 0px;
+}
+
+.chapter  table td, table th {
+	padding-left: 18px;
+ 	padding-top: 10px;
+ 	padding-bottom: 0px;
+}
+
+.informalexample p {
+	padding-top:0px;
 }
 
 table {
