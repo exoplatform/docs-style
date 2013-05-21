@@ -2,11 +2,11 @@ ${@Path.doc()}
 
 || Resource || Description ||
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-| [${verb.name} <#if @Path.attribute("value")??>${@Path.attribute("value")}/</#if><#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")?replace("//", "/")}</#if>|#${verb.doc("flat:anchor")}] | ${verb.doc()} |
+| [{noformat}${verb.name} <#if @Path.attribute("value")??>${@Path.attribute("value")}/</#if><#if verb.sibling("@Path")??>${verb.sibling("@Path").attribute("flat:value")?replace("//", "/")}</#if>{noformat}|#${verb.doc("flat:anchor")}] | ${verb.doc()} |
 </#list>
 
 <#list @Path.children("@GET", "@POST", "@PUT", "@DELETE") as verb>
-h1. ${verb.name} <#if verb.sibling("@Path")??>${@Path.attribute("value")}/${verb.sibling("@Path").attribute("flat:value")?replace("{", "{{{{")?replace("}", "}}}}")?replace("//", "/")} </#if>{anchor:id=${verb.doc("flat:anchor")}}
+h1. {noformat}${verb.name} <#if verb.sibling("@Path")??>${@Path.attribute("value")}/${verb.sibling("@Path").attribute("flat:value")?replace("//", "/")} </#if>{noformat} {anchor:id=${verb.doc("flat:anchor")}}
 
 ${verb.doc()}
 
@@ -62,7 +62,9 @@ ${verb.doc("bloc:request")}
 
 <#if verb.doc("flat:response") != "">
 *Response*:
+{code}
 ${verb.doc("bloc:response")}
+{code}
 </#if>
 
 </#list>

@@ -3035,3 +3035,7 @@ a,a:hover {
 a {
 	color: #345F8F;
 }
+
+pre {
+    font-size: 12px;
+}
