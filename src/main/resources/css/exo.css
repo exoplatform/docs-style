@@ -69,13 +69,13 @@ margin: 4px 0px 0px 19px;
  
 .chapter .toc .section a {
 	line-height: 20px;
-	color: #005caa !important;
+	color: #2F5E92 !important;
 }
 
 
 .chapter .toc .section a:hover {
 	line-height: 20px;
-	color: #31a8d0 !important;
+	color: #2F5E92 !important;
 }
 
 .toc .book a {
@@ -85,11 +85,11 @@ margin: 4px 0px 0px 19px;
 }
 
 .toc .chapter a {
-    color:#005caa;
+    color:#2F5E92;
 }
 
 .toc .chapter a:hover {
-    color:#145BC7;
+    color:#2F5E92;
     text-decoration:underline;
 }
 
@@ -102,11 +102,11 @@ margin: 4px 0px 0px 19px;
 
 
 .toc .section a {
-  color:#005caa;
+  color:#2F5E92;
  }
 
 .toc .section a:hover {
-  color:#145BC7;
+  color:#2F5E92;
   text-decoration:underline;
 }
 
