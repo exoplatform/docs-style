@@ -2772,6 +2772,10 @@ table {
   background: #2f5e92;
   content: "";
 }
+.mainContent .homepage {
+  border: none;
+  box-shadow: none;
+}
 .resize a {
   background-color: #f9f9f9;
   background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1);
@@ -3038,4 +3042,8 @@ a {
 
 pre {
     font-size: 12px;
+}
+
+iframe {
+	display: block;
 }

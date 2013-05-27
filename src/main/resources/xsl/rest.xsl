@@ -69,50 +69,8 @@
 		part nop
 	</xsl:param>
 
-
 	<xsl:template name="banner">
-		<div class="uiHeaderPageDocument">
-			<div class="clearFix topBannerSignin">
-				<div class="pull-right">
-					<div class="btn-group">
-						<a href="http://community.exoplatform.com/portal/private/classic" class="btn btn-darkGray">Sign In</a>
-						<a href="http://community.exoplatform.com/portal/private/classic/register" class="btn btn-lightBlue">Register</a>
-					</div>
-				</div>
-				<a href="http://community.exoplatform.com/" class="logo pull-left"
-					target="_blank">
-					<img alt="Home" src="../../background/Logo.png"></img>
-				</a>
-
-				<div class="menu">
-					<ul class="navigationTop clearFix">
-						<li>
-							<a href="http://community.exoplatform.org/portal/public/classic/home"
-								target="_blank">Home</a>
-						</li>
-						<li>
-							<a href="http://community.exoplatform.org/portal/public/classic/forum"
-								target="_blank">Forums</a>
-						</li>
-						<li>
-							<a href="http://docs.exoplatform.com" class="selectedNavigationTab">Documentation</a>
-						</li>
-						<li>
-							<a
-								href="http://learn.exoplatform.com/Downloading-eXo-Platform-Community-Edition-En2.html"
-								target="_blank">Downloads</a>
-						</li>
-						<li>
-							<a href="http://forge.exoplatform.org/" target="_blank">Forge</a>
-						</li>
-						<li>
-							<a href="http://www.exoplatform.com/company/en/Content-types/Plugins"
-								target="_blank">Plugins</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<iframe src="../../banner/banner.html" frameborder="0" scrolling="no" width="100%" height="50px">&#160;</iframe>
 	</xsl:template>
 
 	<xsl:template name="breadcrumbs">
@@ -177,22 +135,22 @@
 					<ul role="menu" class="dropdown-menu">
 						<li>
 							<a
-								href="javascript:ajaxGet('/PLF40/portal/intranet/home?portal:componentId=34a391b5-82ad-4b86-9bea-90388c4def3b&amp;interactionstate=JBPNS_rO0ABXdkAAJvcAAAAAEADENoYW5nZU9wdGlvbgAIb2JqZWN0SWQAAAABAA5BTExfQUNUSVZJVElFUwALdWljb21wb25lbnQAAAABABREaXNwbGF5TW9kZXNEcm9wRG93bgAHX19FT0ZfXw**&amp;portal:type=action&amp;ajaxRequest=true')"
+								href="javascript:ajaxGet('/PLF40/portal/intranet/home')"
 								class="OptionItem">All Activities</a>
 						</li>
 						<li>
 							<a
-								href="javascript:ajaxGet('/PLF40/rest-api/calendar:componentId=34a391b5-82ad-4b86-9bea-90388c4def3b&amp;interactionstate=JBPNS_rO0ABXdeAAJvcAAAAAEADENoYW5nZU9wdGlvbgAIb2JqZWN0SWQAAAABAAhNWV9TUEFDRQALdWljb21wb25lbnQAAAABABREaXNwbGF5TW9kZXNEcm9wRG93bgAHX19FT0ZfXw**&amp;portal:type=action&amp;ajaxRequest=true')"
+								href="javascript:ajaxGet('/PLF40/rest-api/calendar')"
 								class="OptionItem">My Spaces</a>
 						</li>
 						<li>
 							<a
-								href="javascript:ajaxGet('/PLF40/rest-api/calendar:componentId=34a391b5-82ad-4b86-9bea-90388c4def3b&amp;interactionstate=JBPNS_rO0ABXdhAAJvcAAAAAEADENoYW5nZU9wdGlvbgAIb2JqZWN0SWQAAAABAAtDT05ORUNUSU9OUwALdWljb21wb25lbnQAAAABABREaXNwbGF5TW9kZXNEcm9wRG93bgAHX19FT0ZfXw**&amp;portal:type=action&amp;ajaxRequest=true')"
+								href="javascript:ajaxGet('/PLF40/rest-api/calendar')"
 								class="OptionItem">Connections</a>
 						</li>
 						<li>
 							<a
-								href="javascript:ajaxGet('/PLF40/rest-api/calendar:componentId=34a391b5-82ad-4b86-9bea-90388c4def3b&amp;interactionstate=JBPNS_rO0ABXdjAAJvcAAAAAEADENoYW5nZU9wdGlvbgAIb2JqZWN0SWQAAAABAA1NWV9BQ1RJVklUSUVTAAt1aWNvbXBvbmVudAAAAAEAFERpc3BsYXlNb2Rlc0Ryb3BEb3duAAdfX0VPRl9f&amp;portal:type=action&amp;ajaxRequest=true')"
+								href="javascript:ajaxGet('/PLF40/rest-api/calendar')"
 								class="OptionItem">My Activities</a>
 						</li>
 					</ul>

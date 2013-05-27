@@ -35,7 +35,7 @@ visibility: hidden;
 }
 
 .preface {
-	margin: 25px;
+	margin: 10px 25px;
 }
 
 a {
@@ -338,9 +338,9 @@ hr {
 	border-bottom: 1px dotted #cfcfcf;
 	padding-bottom: 20px;
 	padding-top: 0px;
-        padding-left: 60px;
-        margin-bottom: 25px;
-        margin-top: -25px;
+	padding-left: 60px;
+	margin-bottom: 25px;
+	margin-top: -5px;
 }
 
 .chapter .titlepage h2.title {
@@ -784,19 +784,19 @@ code.prompt {
  /* ##################### Book and content ################### */
  
 .set {
-	margin: 25px;
+	margin: 10px 25px;
 }
 
 .book {
-	margin: 25px;
+	margin: 10px 25px;
 }
 
 .chapter {
-	margin: 25px;
+	margin: 10px 25px;
 }
 
 .section {
-	margin: 25px;
+	margin: 10px 25px;
 }
 
 .section .section {
