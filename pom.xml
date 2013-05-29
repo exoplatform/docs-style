@@ -54,10 +54,6 @@
       <artifactId>chromattic.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.chromattic</groupId>
-      <artifactId>chromattic.core</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.wikbook</groupId>
       <artifactId>wikbook.template.core</artifactId>
       <version>${version.wikbook.plugin}</version>
