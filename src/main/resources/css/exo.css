@@ -784,19 +784,19 @@ code.prompt {
  /* ##################### Book and content ################### */
  
 .set {
-	margin: 10px 25px;
+	margin: 10px 17px;
 }
 
 .book {
-	margin: 10px 25px;
+	margin: 10px 17px;
 }
 
 .chapter {
-	margin: 10px 25px;
+	margin: 10px 17px;
 }
 
 .section {
-	margin: 10px 25px;
+	margin: 10px 17px;
 }
 
 .section .section {
