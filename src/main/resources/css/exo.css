@@ -159,7 +159,7 @@ ul li span{
 
 ul li ul{
 	padding-left: 0px;
-	margin-left: 0px;
+	margin-left: 20px;
 	
 }
 
@@ -168,7 +168,7 @@ ul li ul li{
 }
 
 ul li ul li ul{
-	padding-left: 16px;
+	padding-left: 30px;
 }
 
 ol{
@@ -251,7 +251,7 @@ pre {
 .programlistingco {
 	background: none;
     border: 0px;
-    padding: 0px;
+    padding: 0 0 10px;
 }
 
 /* Images */
