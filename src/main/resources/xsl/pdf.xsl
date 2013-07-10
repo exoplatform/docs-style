@@ -46,12 +46,19 @@
 
    <xsl:param name="line-height" select="1.5" />
 
+	<!-- Callout -->
+	<xsl:param name="callout.list.table" select="'1'"/>
+	
    <!-- Admonitions -->
    <xsl:param name="admon.graphics" select="1"/>
    <xsl:param name="admon.graphics.extension" select="'.png'"/>
    <xsl:template match="*" mode="admon.graphic.width">
-  <xsl:param name="node" select="."/>
-  <xsl:text>24pt</xsl:text>
+  	<xsl:param name="node" select="."/>
+ 	<xsl:text>24pt</xsl:text>
+   </xsl:template>
+	 <xsl:template match="tip" mode="admon.graphic.width">
+  	<xsl:param name="node" select="."/>
+ 	<xsl:text>16pt</xsl:text>
    </xsl:template>
 
    <xsl:attribute-set name="admonition.title.properties">
@@ -87,11 +94,11 @@
         </xsl:attribute>
       <xsl:attribute name="background-color">
       <xsl:choose>
-    <xsl:when test="self::note">#E8E8C1</xsl:when>
-    <xsl:when test="self::caution">#E3A835</xsl:when>
+    <xsl:when test="self::note">#DEE3FA</xsl:when>
+    <xsl:when test="self::caution">#DEE3FA</xsl:when>
     <xsl:when test="self::important">#4A5D75</xsl:when>
-    <xsl:when test="self::warning">#FFE000</xsl:when>
-    <xsl:when test="self::tip">#D5D5E8</xsl:when>
+    <xsl:when test="self::warning">#FCF4D4</xsl:when>
+    <xsl:when test="self::tip">#E6FADE</xsl:when>
     <xsl:otherwise>#404040</xsl:otherwise>
       </xsl:choose>
         </xsl:attribute>
@@ -105,8 +112,8 @@
       <xsl:attribute name="padding-bottom">12pt</xsl:attribute>
       <xsl:attribute name="padding-top">12pt</xsl:attribute>
       <xsl:attribute name="padding-right">12pt</xsl:attribute>
-      <xsl:attribute name="padding-left">12pt</xsl:attribute>
-      <xsl:attribute name="padding">20pt</xsl:attribute>
+      <xsl:attribute name="padding-left">8pt</xsl:attribute>
+      <xsl:attribute name="padding">12pt</xsl:attribute>
       <xsl:attribute name="margin">0pt</xsl:attribute>
       <xsl:attribute name="margin-left">
     <xsl:value-of select="$title.margin.left" />
@@ -128,7 +135,7 @@
 
    <!-- Now, set enable scalefit for large images -->
    <xsl:param name="graphicsize.extension" select="'1'" />
-   <xsl:param name="default.image.width">17.4cm</xsl:param>
+   <!--xsl:param name="default.image.width">17.4cm</xsl:param-->
 
    <xsl:attribute-set name="xref.properties">
       <xsl:attribute name="font-style">normal</xsl:attribute>

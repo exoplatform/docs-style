@@ -256,6 +256,11 @@ pre {
 
 /* Images */
 
+tr td .mediaobject img {
+	text-align: center;
+}
+
+
 pre img {
     display:block;
     margin:2em 0;
