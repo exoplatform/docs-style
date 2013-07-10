@@ -172,7 +172,7 @@ ul li ul li ul{
 }
 
 ol{
-	padding-left: 24px;
+	padding-left: 30px;
 	margin-left: 0px;
 }
 
@@ -518,7 +518,7 @@ td {
 
 
 .chapter ol{
-	padding-left: 0px;
+	padding-left: 30px;
 }
 
 .chapter ol li{
