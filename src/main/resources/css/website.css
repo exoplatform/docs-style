@@ -2490,34 +2490,37 @@ table {
   padding: 0;
   margin: 0 0 0 1px;
   list-style: none outside none;
+  margin-left: 5px;
 }
 .uiHeaderPageDocument {
   background: url("../background/bg-header.png") repeat left top;
   height: 50px;
   border-bottom: 1px solid #2d2d2d;
   box-shadow: 0 2px 4px rgba(13, 13, 13, 0.42);
+  box-shadow: 0 2px 4px 0 rgba(13, 13, 13, 0.42);
 }
 .uiHeaderPageDocument .logo {
   background: url("../background/Logo.png") no-repeat left top;
   width: 178px;
   height: 30px;
   display: block;
-  margin: 8px 0px 0px 10px;
+  margin: 11px 0px 0px 10px;
 }
 .uiHeaderPageDocument .menu .navigationTop {
   background: none;
   border-radius: 0;
   height: 36px;
-  padding: 15px 0 0 235px;
+  padding: 15px 0 0 205px;
   margin: 0;
 }
 .uiHeaderPageDocument .menu .navigationTop a {
   color: #fff;
   line-height: 20px;
-  padding: 6px 10px;
-  font-family: 'HelveticaNeue', lucida sans, arial, tahoma, verdana, sans-serif;
+  padding: 6px 11px;
+  /*font-family: 'HelveticaNeue', lucida sans, arial, tahoma, verdana, sans-serif;*/
   font-size: 14px;
   text-decoration: none;
+  text-transform: capitalize;
 }
 .uiHeaderPageDocument .menu .navigationTop li + li a {
   background: url("../background/split-icon.png") no-repeat center left;
@@ -2536,12 +2539,14 @@ table {
   -webkit-box-shadow: 0 0 0 transparent;
   -moz-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
-  border: none;
-  font-size: 12px;
+  /*border: none;*/
+  font-size: 13px;
+  font-weight: bold;
   font-family: 'HelveticaNeue Medium', HelveticaNeue, arial;
 }
 .uiHeaderPageDocument .btn-group a {
   text-decoration: none;
+  border-color: #232C30 !important;
 }
 .uiHeaderPageDocument .menu .navigationTop .linkDoc30 {
   color: #ffffff;
@@ -2560,12 +2565,12 @@ table {
 .btn-lightBlue {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #4e73aa;
-  background-image: -moz-linear-gradient(top, #5a85c5, #3c5781);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5a85c5), to(#3c5781));
-  background-image: -webkit-linear-gradient(top, #5a85c5, #3c5781);
-  background-image: -o-linear-gradient(top, #5a85c5, #3c5781);
-  background-image: linear-gradient(to bottom, #5a85c5, #3c5781);
+  background-color: #567AB6;
+  background-image: -moz-linear-gradient(top, #638ACD, #426393);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#638ACD), to(#426393));
+  background-image: -webkit-linear-gradient(top, #638ACD, #426393);
+  background-image: -o-linear-gradient(top, #638ACD, #426393);
+  background-image: linear-gradient(to bottom, #638ACD, #426393);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5a85c5', endColorstr='#ff3c5781', GradientType=0);
   border-color: #3c5781 #3c5781 #24344d;
@@ -2630,12 +2635,12 @@ table {
   background-color: #292e34 \9;
 }
 .btn-darkGray:hover {
-  background-color: #697582;
-  background-image: -moz-linear-gradient(top, #697582, #697582);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#697582), to(#697582));
-  background-image: -webkit-linear-gradient(top, #697582, #697582);
-  background-image: -o-linear-gradient(top, #697582, #697582);
-  background-image: linear-gradient(to bottom, #697582, #697582);
+  background-color: #49535E;
+  background-image: -moz-linear-gradient(top, #4F5B66, #3F4851);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4F5B66), to(#3F4851));
+  background-image: -webkit-linear-gradient(top, #4F5B66, #3F4851);
+  background-image: -o-linear-gradient(top, #4F5B66, #3F4851);
+  background-image: linear-gradient(to bottom, #4F5B66, #3F4851);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff697582', endColorstr='#ff697582', GradientType=0);
 }
