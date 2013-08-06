@@ -402,8 +402,14 @@ hr {
 	margin-bottom: 25px;
 }
 
-
-
+.section .simplesect .titlepage .title {
+	font-size: 17px;
+	font-weight: bold;
+	color: #444444;
+	border-bottom: 1px none;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
 
 /* ##################### Orderlist ################### */
 
