@@ -462,6 +462,31 @@ table {
 	border-spacing:0px;
 }
 
+table .table-contents {
+	width:100%;
+	margin-left:0px;
+	border: 0px;
+	border-spacing:0px;
+}
+
+table.overview {
+	width:100%;
+	border: 0px;
+	background-color: #FFFFFF;
+	margin-left: -10px;
+}
+
+.overview {
+	border: 0px;
+	width:30%;
+	background-color: #FFFFFF;
+}
+
+.img-overview {
+	margin: 0px;
+	width: 60%;
+	margin-left: 100px;
+}
 
 td {
 	/*padding: 6px 6px;
