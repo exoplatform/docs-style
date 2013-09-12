@@ -478,14 +478,15 @@ table.overview {
 
 .overview {
 	border: 0px;
-	width:30%;
+	width:35%;
 	background-color: #FFFFFF;
 }
 
 .img-overview {
 	margin: 0px;
-	width: 60%;
-	margin-left: 100px;
+	width: 75%;
+	margin-left: 50px;
+	margin-top: -25px;
 }
 
 td {
