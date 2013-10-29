@@ -14,8 +14,8 @@
   	<xsl:param name="html.stylesheet" select="'css/exo.css'" />
 	<xsl:param name="html.stylesheet.type" select="'text/css'" />
 
-  <xsl:param name="eclipse.plugin.name">eXo Platform Documentation 4.0</xsl:param>
-  <xsl:param name="eclipse.plugin.id">PLF40</xsl:param>
+  <xsl:param name="eclipse.plugin.name">eXo Platform Documentation 4.1</xsl:param>
+  <xsl:param name="eclipse.plugin.id">PLF41</xsl:param>
   <xsl:param name="eclipse.plugin.provider">eXo Platform</xsl:param>
   
   <!-- Table of content Depth & Numbering -->
