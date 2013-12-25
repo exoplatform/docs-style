@@ -79,45 +79,47 @@
       <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
 
    </xsl:attribute-set>
-
+   
    <xsl:attribute-set name="graphical.admonition.properties">
+	<xsl:attribute name="color">
+		<xsl:choose>
+			<xsl:when test="self::note">#3C4A55</xsl:when>
+			<xsl:when test="self::warning">#4C5253</xsl:when>
+			<xsl:when test="self::tip">#4C5253</xsl:when>
+			<xsl:otherwise>white</xsl:otherwise>
+		</xsl:choose>
+	</xsl:attribute>
+	<xsl:attribute name="background-color">
+		<xsl:choose>
+			<xsl:when test="self::note">#DEE3FA</xsl:when>
+			<xsl:when test="self::warning">#FCF4D4</xsl:when>
+			<xsl:when test="self::tip">#E6FADE</xsl:when>
+			<xsl:otherwise>#404040</xsl:otherwise>
+		</xsl:choose>
+	</xsl:attribute>
+	<xsl:attribute name="border">
+	  <xsl:choose>
+		<xsl:when test="self::note">1px solid #2F5E92</xsl:when>
+		<xsl:when test="self::tip">1px solid #39C522</xsl:when>
+		<xsl:when test="self::warning">1px solid #EDAD00</xsl:when>
+	  </xsl:choose>
+	</xsl:attribute>
 
-      <xsl:attribute name="color">
-  <xsl:choose>
-    <xsl:when test="self::note">#4C5253</xsl:when>
-    <xsl:when test="self::caution">#4C5253</xsl:when>
-    <xsl:when test="self::important">#4C5253</xsl:when>
-    <xsl:when test="self::warning">#4C5253</xsl:when>
-    <xsl:when test="self::tip">#4C5253</xsl:when>
-    <xsl:otherwise>white</xsl:otherwise>
-  </xsl:choose>
-        </xsl:attribute>
-      <xsl:attribute name="background-color">
-      <xsl:choose>
-    <xsl:when test="self::note">#DEE3FA</xsl:when>
-    <xsl:when test="self::caution">#DEE3FA</xsl:when>
-    <xsl:when test="self::important">#4A5D75</xsl:when>
-    <xsl:when test="self::warning">#FCF4D4</xsl:when>
-    <xsl:when test="self::tip">#E6FADE</xsl:when>
-    <xsl:otherwise>#404040</xsl:otherwise>
-      </xsl:choose>
-        </xsl:attribute>
-
-      <xsl:attribute name="space-before.optimum">1em</xsl:attribute>
-      <xsl:attribute name="space-before.minimum">0.8em</xsl:attribute>
-      <xsl:attribute name="space-before.maximum">1.2em</xsl:attribute>
-      <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
-      <xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
-      <xsl:attribute name="space-after.maximum">1em</xsl:attribute>
-      <xsl:attribute name="padding-bottom">12pt</xsl:attribute>
-      <xsl:attribute name="padding-top">12pt</xsl:attribute>
-      <xsl:attribute name="padding-right">12pt</xsl:attribute>
-      <xsl:attribute name="padding-left">8pt</xsl:attribute>
-      <xsl:attribute name="padding">12pt</xsl:attribute>
-      <xsl:attribute name="margin">0pt</xsl:attribute>
-      <xsl:attribute name="margin-left">
-    <xsl:value-of select="$title.margin.left" />
-  </xsl:attribute>
+	<xsl:attribute name="space-before.optimum">1em</xsl:attribute>
+	<xsl:attribute name="space-before.minimum">0.8em</xsl:attribute>
+	<xsl:attribute name="space-before.maximum">1.2em</xsl:attribute>
+	<xsl:attribute name="space-after.optimum">1em</xsl:attribute>
+	<xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
+	<xsl:attribute name="space-after.maximum">1em</xsl:attribute>
+	<xsl:attribute name="padding-bottom">12pt</xsl:attribute>
+	<xsl:attribute name="padding-top">12pt</xsl:attribute>
+	<xsl:attribute name="padding-right">12pt</xsl:attribute>
+	<xsl:attribute name="padding-left">8pt</xsl:attribute>
+	<xsl:attribute name="padding">12pt</xsl:attribute>
+	<xsl:attribute name="margin">0pt</xsl:attribute>
+	<xsl:attribute name="margin-left">
+		<xsl:value-of select="$title.margin.left" />
+	</xsl:attribute>
    </xsl:attribute-set>
 
    <!-- Font style for programlisting -->
@@ -165,7 +167,6 @@
       <xsl:attribute name="wrap-option">wrap</xsl:attribute>
       <xsl:attribute name="hyphenation-character">&#x25BA;</xsl:attribute>
    </xsl:attribute-set>
-
    <xsl:param name="shade.verbatim" select="1" />
    <xsl:attribute-set name="shade.verbatim.style">
       <xsl:attribute name="wrap-option">wrap</xsl:attribute>
