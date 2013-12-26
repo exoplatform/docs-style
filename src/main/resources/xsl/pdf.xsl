@@ -132,6 +132,9 @@
  <xsl:param name="section.title.font.size" select="'60%'" /> 
   <xsl:param name="title.font.size" select="'60%'" /> 
 
+  <!-- Autolabel levels of sections, same as html -->
+  <xsl:param name="section.autolabel.max.depth">4</xsl:param>
+  
    <!-- Make the section depth in the TOC 2, same as html -->
    <xsl:param name="toc.section.depth">2</xsl:param>
 
@@ -388,7 +391,7 @@
    <!-- No intendation of Titles -->
    <xsl:param name="body.start.indent">0pt</xsl:param>
 
-   <xsl:param name="title.color">#285A92</xsl:param>
+   <xsl:param name="title.color">#444444</xsl:param>
    <xsl:param name="chapter.title.color" select="$title.color" />
    <xsl:param name="section.title.color" select="$title.color" />
    <!-- Define properties for section title1 -->
@@ -466,10 +469,9 @@
       <xsl:attribute name="font-family">
 		<xsl:value-of select="$title.fontset" />
 	</xsl:attribute>
-      <xsl:attribute name="color"><xsl:value-of select="$titlepage.color" />
-      </xsl:attribute>
+      <xsl:attribute name="color">#285A92</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
-      <xsl:attribute name="font-size">12pt</xsl:attribute>
+      <xsl:attribute name="font-size">40px</xsl:attribute>
       <xsl:attribute name="text-align">center</xsl:attribute>
    </xsl:attribute-set>
 
