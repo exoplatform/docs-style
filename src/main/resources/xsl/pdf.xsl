@@ -1775,7 +1775,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline color="#888888" font-family="Lucida Sans,Tahoma,Verdana,Arial,Helvetica,sans-serif" font-size="9pt">
+  <fo:inline color="#444444" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="11pt">
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
