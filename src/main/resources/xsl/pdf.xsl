@@ -476,8 +476,6 @@
 	</xsl:attribute>
       <xsl:attribute name="color">#285A92</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
-      <xsl:attribute name="font-size">40px</xsl:attribute>
-      <xsl:attribute name="text-align">center</xsl:attribute>
    </xsl:attribute-set>
 
    <xsl:attribute-set name="component.title.properties">
@@ -2020,5 +2018,38 @@
 	<fo:inline font-size="16px" letter-spacing="0.1pt" font-family="verdana,helvetica,sans-serif" font-weight="bold">      
 		<xsl:copy-of select="$content"/>
 	</fo:inline> 	 
+</xsl:template>
+<xsl:template match="title" mode="book.titlepage.recto.auto.mode">
+<fo:block keep-with-next.within-column="always"
+            hyphenate="false">
+ <fo:table table-layout="fixed" padding-bottom="5pt">
+      <fo:table-column column-number="1" column-width="8%"/>
+      <fo:table-column column-number="2" column-width="92%"/>
+      <fo:table-body>
+        <fo:table-row>
+			<fo:table-cell>
+			<fo:block>
+              <fo:external-graphic 
+                padding-left="1pt"
+                width="27px" content-width="scale-to-fit"
+                src="http://docs.exoplatform.com/public/content/org.exoplatform.doc.style/background/guide.png"/>
+            </fo:block>
+			</fo:table-cell>
+			<fo:table-cell>
+            <fo:block xsl:use-attribute-sets="book.titlepage.recto.style"
+						text-align="left"
+						font-size="25px"
+						font-weight="bold" 
+						font-family="{$title.font.family}">
+				<xsl:call-template name="division.title">
+				  <xsl:with-param name="node" select="ancestor-or-self::book[1]"/>
+				</xsl:call-template>
+            </fo:block>
+          </fo:table-cell>
+        </fo:table-row>
+      </fo:table-body>
+    </fo:table>
+  </fo:block>
+  <fo:block border-bottom="0.5pt dotted #CFCFCF"/>
 </xsl:template>
 </xsl:stylesheet>
