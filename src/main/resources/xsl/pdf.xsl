@@ -218,6 +218,11 @@
       <xsl:attribute name="color">#393939</xsl:attribute>	  
 	  <xsl:attribute name="border-left">1pt solid #CCCCCC</xsl:attribute>
 	  <xsl:attribute name="padding-left">2pt</xsl:attribute>    	
+	</xsl:attribute-set>
+	<!--properties of link: color and underline-->
+	<xsl:attribute-set name="xref.properties">
+      <xsl:attribute name="color">#285A92</xsl:attribute>
+	  <xsl:attribute name="text-decoration">underline</xsl:attribute>
 	</xsl:attribute-set> 
    
 <!-- Set the vertical spacing around the various verbatim-type elements (programlisting, literallayout) -->
@@ -2015,8 +2020,5 @@
 	<fo:inline font-size="16px" letter-spacing="0.1pt" font-family="verdana,helvetica,sans-serif" font-weight="bold">      
 		<xsl:copy-of select="$content"/>
 	</fo:inline> 	 
-</xsl:template> 
-
+</xsl:template>
 </xsl:stylesheet>
-
-
