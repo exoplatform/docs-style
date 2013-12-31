@@ -1455,7 +1455,37 @@
          <xsl:call-template name="book.titlepage.separator" />
       </fo:block>
    </xsl:template>
-
+   
+   <!--Define style of listitems-->
+   <xsl:template match="abstract/itemizedlist/listitem | abstract/itemizedlist//itemizedlist/listitem | highlights/itemizedlist/listitem | highlights/itemizedlist//itemizedlist/listitem">
+        <fo:list-item margin-top="0.1cm">
+            <fo:list-item-label end-indent="label-end()">
+				<fo:block>
+					<fo:external-graphic src="http://docs.exoplatform.com/public/content/org.exoplatform.doc.style/background/list-arrow-right.png" width="5px" content-width="scale-to-fit"/>
+				</fo:block>
+            </fo:list-item-label>
+            <fo:list-item-body start-indent="body-start()">
+                <fo:block>
+                    <xsl:apply-templates />
+                </fo:block>
+            </fo:list-item-body>
+        </fo:list-item>
+    </xsl:template>
+	<xsl:template name="itemizedlist.label.markup">
+		<xsl:param name="itemsymbol" select="'disc'"/>
+		<xsl:choose>
+				<xsl:when test="$itemsymbol='disc'">&#x2022;</xsl:when>
+				<xsl:otherwise>&#x2022;</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<xsl:attribute-set name="itemizedlist.label.properties">
+		<xsl:attribute name="font-size">
+			<xsl:value-of select="$body.font.master * 1.2" />
+			<xsl:text>pt</xsl:text>
+		</xsl:attribute>
+		<xsl:attribute name="margin-top">0.08cm
+		</xsl:attribute>
+	</xsl:attribute-set>
    <!--
       From: fo/qandaset.xsl
       Reason: Id in list-item-label causes fop crash
