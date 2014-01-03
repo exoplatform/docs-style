@@ -1933,7 +1933,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline padding-right="2pt" color="#383838" font-size="9pt" letter-spacing="1pt">      
+  <fo:inline background-color="#F0F0F0" padding-top="2px" padding-bottom="2px" color="#383838" font-size="9pt">      
     <xsl:copy-of select="$content"/>
   </fo:inline>
 </xsl:template> 
