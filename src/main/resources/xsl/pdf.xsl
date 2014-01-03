@@ -399,19 +399,17 @@
    <xsl:param name="title.color">#444444</xsl:param>
    <xsl:param name="chapter.title.color" select="$title.color" />
    <xsl:param name="section.title.color" select="$title.color" />
-   <!-- Define properties for section title1 -->
+   <!-- Define properties for section2 -->
    <xsl:attribute-set name="section.title.level1.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
+	  <xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
       <xsl:attribute name="font-size">
 		<xsl:value-of select="$body.font.master * 1.6" />
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
-    <xsl:attribute name="padding-top">6pt</xsl:attribute>
-    <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
-	<xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
    </xsl:attribute-set>
-
+    <!-- Define properties for section3 -->
    <xsl:attribute-set name="section.title.level2.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
@@ -420,6 +418,7 @@
 		<xsl:value-of select="$body.font.master * 1.4" />
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
+	<!-- Define properties for section4 -->
    </xsl:attribute-set>
    <xsl:attribute-set name="section.title.level3.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
@@ -430,6 +429,7 @@
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
    </xsl:attribute-set>
+   <!-- Define properties for section5 -->
    <xsl:attribute-set name="section.title.level4.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
@@ -439,6 +439,7 @@
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
    </xsl:attribute-set>
+   <!-- Define properties for section6 -->
    <xsl:attribute-set name="section.title.level5.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
@@ -447,6 +448,7 @@
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
    </xsl:attribute-set>
+   <!-- Define properties for section7 -->
    <xsl:attribute-set name="section.title.level6.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
@@ -510,7 +512,7 @@
       <xsl:attribute name="start-indent"><xsl:value-of select="$title.margin.left" />
       </xsl:attribute>
    </xsl:attribute-set>
-
+   <!---Define properties of chapters, including title, background color, font-size, border, etc-->
    <xsl:attribute-set name="chapter.titlepage.recto.style">
       <xsl:attribute name="color"><xsl:value-of select="$chapter.title.color" />
       </xsl:attribute>
@@ -528,9 +530,7 @@
 	</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
       <xsl:attribute name="text-align">left</xsl:attribute>
-      <!--xsl:attribute name="wrap-option">no-wrap</xsl:attribute-->
-      <xsl:attribute name="padding-left">1em</xsl:attribute>
-      <xsl:attribute name="padding-right">1em</xsl:attribute>
+	  <xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
    </xsl:attribute-set>
 
    <xsl:attribute-set name="preface.titlepage.recto.style">
@@ -1774,24 +1774,11 @@
          </xsl:call-template>
       </xsl:if>
    </xsl:template>
-   
-   <xsl:template match="abstract">
-  <xsl:variable name="keep.together">
-  </xsl:variable>
-  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" padding="20pt" margin="0pt" border="1px solid #cfcfcf">
-    <xsl:if test="$keep.together != ''">
-      <xsl:attribute name="keep-together.within-column"><xsl:value-of
-                      select="$keep.together"/></xsl:attribute>
-    </xsl:if>
-    <xsl:call-template name="anchor"/>
-    <xsl:apply-templates/>
-  </fo:block>
-</xsl:template>
-
+   <!--Define style of abstract in book-->
   <xsl:template match="abstract" mode="titlepage.mode">
     <xsl:variable name="keep.together">
     </xsl:variable>
-    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" padding="20pt" margin="0pt" border="1px solid #cfcfcf">
+    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" padding="10px" border="0.5px solid #cfcfcf">
       <xsl:if test="$keep.together != ''">
         <xsl:attribute name="keep-together.within-column">
           <xsl:value-of
@@ -1802,6 +1789,21 @@
       <xsl:apply-templates/>
     </fo:block>
   </xsl:template>
+  
+   <!--Define style of abstract in chapters-->
+   <xsl:template match="abstract">
+	  <xsl:variable name="keep.together">
+	  </xsl:variable>
+	  <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="white" padding-top="5px">
+		<xsl:if test="$keep.together != ''">
+		  <xsl:attribute name="keep-together.within-column"><xsl:value-of
+						  select="$keep.together"/></xsl:attribute>
+		</xsl:if>
+		<xsl:call-template name="anchor"/>
+		<xsl:apply-templates/>
+	  </fo:block>
+   </xsl:template>
+
 
 <xsl:template match="prompt">
   <xsl:param name="content">
