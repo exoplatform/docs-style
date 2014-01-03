@@ -2049,7 +2049,7 @@
 			</xsl:with-param> 	 
 		</xsl:call-template>
 	</xsl:param>
-	<fo:inline font-size="16px" letter-spacing="0.1pt" font-family="verdana,helvetica,sans-serif" font-weight="bold">      
+	<fo:inline color="#DD1144" background-color="#F7F7F9" font-size="12px" letter-spacing="0.1pt" font-family="Monaco,Menlo,Consolas,Courier New,monospace" border-bottom="0.8px dotted #CFCFCF">      
 		<xsl:copy-of select="$content"/>
 	</fo:inline> 	 
 </xsl:template>
