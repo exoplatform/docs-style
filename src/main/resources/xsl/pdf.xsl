@@ -1824,14 +1824,15 @@
 
 <xsl:template match="citetitle">
   <xsl:param name="content">
-    <xsl:call-template name="simple.xlink">
+    <xsl:call-template name="inline.monoseq">
       <xsl:with-param name="content">
         <xsl:apply-templates/>
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline color="#0C46BC" font-style="normal" font-size="9pt">
-    <xsl:call-template name="anchor"/>
+	<fo:inline background-color="#444444" color="#FFFFFF" font-style="normal" font-size="8pt"
+			padding-top="0.4em" padding-bottom="0.4em" font-family="$title.fontset">
+	<xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
         <xsl:choose>
@@ -1843,7 +1844,6 @@
     <xsl:copy-of select="$content"/>
   </fo:inline>
 </xsl:template>
-
 
 <xsl:template match="code">
   <xsl:param name="content">
@@ -1866,7 +1866,6 @@
     <xsl:copy-of select="$content"/>
   </fo:inline>
 </xsl:template>
-
 
 <xsl:template match="screen">    
   <xsl:variable name="keep.together">
