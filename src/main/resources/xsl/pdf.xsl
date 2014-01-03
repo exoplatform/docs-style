@@ -407,14 +407,15 @@
 		<xsl:value-of select="$body.font.master * 1.6" />
 		<xsl:text>pt</xsl:text>
 	</xsl:attribute>
-    <xsl:attribute name="border-bottom">0.5pt dashed #285A92</xsl:attribute>
     <xsl:attribute name="padding-top">6pt</xsl:attribute>
     <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
+	<xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
    </xsl:attribute-set>
 
    <xsl:attribute-set name="section.title.level2.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
+	  <xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
       <xsl:attribute name="font-size">
 		<xsl:value-of select="$body.font.master * 1.4" />
 		<xsl:text>pt</xsl:text>
@@ -423,6 +424,7 @@
    <xsl:attribute-set name="section.title.level3.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
+	  <xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
       <xsl:attribute name="font-size">
 		<xsl:value-of select="$body.font.master * 1.3" />
 		<xsl:text>pt</xsl:text>
@@ -431,6 +433,7 @@
    <xsl:attribute-set name="section.title.level4.properties">
       <xsl:attribute name="color"><xsl:value-of select="$section.title.color" />
       </xsl:attribute>
+	  <xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
       <xsl:attribute name="font-size">
 		<xsl:value-of select="$body.font.master * 1.2" />
 		<xsl:text>pt</xsl:text>
@@ -1972,7 +1975,7 @@
 <xsl:template match="highlights">
  <xsl:variable name="keep.together">
  </xsl:variable>
- <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="white" padding="0px 5px 7px" border-left="1.5px dotted #CCCCCC" margin-bottom="10px">
+ <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="white" padding="0px 5px 1px" margin-bottom="10px">
 	<xsl:if test="$keep.together != ''">
 		<xsl:attribute name="keep-together.within-column"><xsl:value-of select="$keep.together"/></xsl:attribute>
     </xsl:if>
