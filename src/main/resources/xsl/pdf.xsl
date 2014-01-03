@@ -1858,7 +1858,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline background-color="#FEE9CC" font-size="12pt">
+  <fo:inline background-color="#FEE9CC" color="#DD1144" font-size="12pt" border-bottom="0.5pt solid #FFDEB0" border-top="0.5pt solid #FFDEB0" border-start-style="green">
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
@@ -1869,7 +1869,7 @@
       </xsl:attribute>
     </xsl:if>
     <xsl:copy-of select="$content"/>
-  </fo:inline>
+ </fo:inline>
 </xsl:template>
 
 <xsl:template match="screen">    
