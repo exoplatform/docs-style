@@ -53,42 +53,24 @@
    <xsl:param name="admon.graphics" select="1"/>
    <xsl:param name="admon.graphics.extension" select="'.png'"/>
    <xsl:template match="*" mode="admon.graphic.width">
-  	<xsl:param name="node" select="."/>
- 	<xsl:text>24pt</xsl:text>
+        <xsl:param name="node" select="."/>
+        <xsl:text>16px</xsl:text>
    </xsl:template>
-	 <xsl:template match="tip" mode="admon.graphic.width">
-  	<xsl:param name="node" select="."/>
- 	<xsl:text>16pt</xsl:text>
+   <xsl:template match="tip" mode="admon.graphic.width">
+        <xsl:param name="node" select="."/>
+        <xsl:text>10px</xsl:text>
    </xsl:template>
 
    <xsl:attribute-set name="admonition.title.properties">
       <xsl:attribute name="font-size">10pt</xsl:attribute>
-      <xsl:attribute name="color">
-  <xsl:choose>
-    <xsl:when test="self::note">#4C5253</xsl:when>
-    <xsl:when test="self::caution">#4C5253</xsl:when>
-    <xsl:when test="self::important">#4C5253</xsl:when>
-    <xsl:when test="self::warning">#4C5253</xsl:when>
-    <xsl:when test="self::tip">#4C5253</xsl:when>
-    <xsl:otherwise>white</xsl:otherwise>
-  </xsl:choose>
-        </xsl:attribute>
-
+      <xsl:attribute name="color">#4C5253</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
       <xsl:attribute name="hyphenate">false</xsl:attribute>
       <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
-
    </xsl:attribute-set>
    
    <xsl:attribute-set name="graphical.admonition.properties">
-	<xsl:attribute name="color">
-		<xsl:choose>
-			<xsl:when test="self::note">#3C4A55</xsl:when>
-			<xsl:when test="self::warning">#4C5253</xsl:when>
-			<xsl:when test="self::tip">#4C5253</xsl:when>
-			<xsl:otherwise>white</xsl:otherwise>
-		</xsl:choose>
-	</xsl:attribute>
+	<xsl:attribute name="color">#3C4A55</xsl:attribute>
 	<xsl:attribute name="background-color">
 		<xsl:choose>
 			<xsl:when test="self::note">#DEE3FA</xsl:when>
@@ -111,15 +93,11 @@
 	<xsl:attribute name="space-after.optimum">1em</xsl:attribute>
 	<xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
 	<xsl:attribute name="space-after.maximum">1em</xsl:attribute>
-	<xsl:attribute name="padding-bottom">12pt</xsl:attribute>
-	<xsl:attribute name="padding-top">12pt</xsl:attribute>
-	<xsl:attribute name="padding-right">12pt</xsl:attribute>
-	<xsl:attribute name="padding-left">8pt</xsl:attribute>
-	<xsl:attribute name="padding">12pt</xsl:attribute>
-	<xsl:attribute name="margin">0pt</xsl:attribute>
-	<xsl:attribute name="margin-left">
+	<xsl:attribute name="padding">5px 2px 5px 5px</xsl:attribute>
+	<xsl:attribute name="margin">5px 0</xsl:attribute>
+	<!--xsl:attribute name="margin-left">
 		<xsl:value-of select="$title.margin.left" />
-	</xsl:attribute>
+	</xsl:attribute-->
    </xsl:attribute-set>
 
    <!-- Font style for programlisting -->
@@ -481,6 +459,7 @@
 	</xsl:attribute>
       <xsl:attribute name="color">#285A92</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
+	  <xsl:attribute name="padding-bottom">4px</xsl:attribute>
    </xsl:attribute-set>
 
    <xsl:attribute-set name="component.title.properties">
@@ -1221,13 +1200,13 @@
    </xsl:template>
 	
 	<!--Style for Copyright -->
-	<xsl:template match="copyright" mode="book.titlepage.recto.auto.mode">
+	<!--xsl:template match="copyright" mode="book.titlepage.recto.auto.mode">
 		<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
 		xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center"
 		font-size="9pt" space-before="10pt" font-style="italic" font-family="{$title.fontset}">
 		<xsl:apply-templates select="." mode="book.titlepage.recto.mode" />
 		</fo:block>
-	</xsl:template>
+	</xsl:template-->
 
    <xsl:template match="issuenum" mode="book.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -1321,12 +1300,12 @@
          </xsl:when>
       </xsl:choose>
 
-      <xsl:apply-templates mode="book.titlepage.recto.auto.mode"
-         select="bookinfo/issuenum" />
-      <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/issuenum" />
-      <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="issuenum" />
+      <!--xsl:apply-templates mode="book.titlepage.recto.auto.mode"
+         select="bookinfo/issuenum" /-->
+      <!--xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="info/issuenum" /-->
+      <!--xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="issuenum" /-->
 
-      <xsl:choose>
+      <!--xsl:choose>
          <xsl:when test="bookinfo/subtitle">
             <xsl:apply-templates mode="book.titlepage.recto.auto.mode"
                select="bookinfo/subtitle" />
@@ -1338,39 +1317,39 @@
          <xsl:when test="subtitle">
             <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="subtitle" />
          </xsl:when>
-      </xsl:choose>
-	  <xsl:choose>
+      </xsl:choose-->
+	  <!--xsl:choose>
 		<xsl:when test="bookinfo/copyright">
 		  <xsl:apply-templates mode="book.titlepage.recto.auto.mode" select="bookinfo/copyright" />
 		</xsl:when>
-	  </xsl:choose>
-      <fo:block xsl:use-attribute-sets="book.titlepage.recto.style" font-size="14pt"
+	  </xsl:choose-->
+      <!--fo:block xsl:use-attribute-sets="book.titlepage.recto.style" font-size="14pt"
          space-before="15.552pt">
          <xsl:apply-templates mode="book.titlepage.recto.auto.mode"
             select="bookinfo/releaseinfo" />
-      </fo:block>
+      </fo:block-->
 
-      <fo:block text-align="center" space-before="15.552pt">
+      <!--fo:block text-align="center" space-before="15.552pt">
          <xsl:call-template name="person.name.list">
             <xsl:with-param name="person.list"
                select="bookinfo/authorgroup/author|bookinfo/authorgroup/corpauthor" />
             <xsl:with-param name="person.type" select="'author'" />
          </xsl:call-template>
-      </fo:block>
+      </fo:block-->
 
-      <fo:block text-align="center" space-before="15.552pt">
+      <!--fo:block text-align="center" space-before="15.552pt">
          <xsl:call-template name="person.name.list">
             <xsl:with-param name="person.list" select="bookinfo/authorgroup/editor" />
             <xsl:with-param name="person.type" select="'editor'" />
          </xsl:call-template>
-      </fo:block>
+      </fo:block-->
 
-      <fo:block text-align="center" space-before="15.552pt">
+      <!--fo:block text-align="center" space-before="15.552pt">
          <xsl:call-template name="person.name.list">
             <xsl:with-param name="person.list" select="bookinfo/authorgroup/othercredit" />
             <xsl:with-param name="person.type" select="'othercredit'" />
          </xsl:call-template>
-      </fo:block>
+      </fo:block-->
 
    </xsl:template>
 
@@ -1778,7 +1757,7 @@
   <xsl:template match="abstract" mode="titlepage.mode">
     <xsl:variable name="keep.together">
     </xsl:variable>
-    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" padding="10px" border="0.5px solid #cfcfcf">
+    <fo:block xsl:use-attribute-sets="normal.para.spacing" background-color="#f8f8f8" border="0.5px solid #cfcfcf" padding="5px">
       <xsl:if test="$keep.together != ''">
         <xsl:attribute name="keep-together.within-column">
           <xsl:value-of
@@ -1813,7 +1792,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline color="#444444" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="11pt">
+  <fo:inline color="#444444" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10pt">
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
@@ -1910,7 +1889,7 @@
   </fo:inline>
 </xsl:template>
  
-<!-- template for guibutton & guilabel -->
+<!-- Define style of guibutton-->
 
 <xsl:template match="guibutton">
   <xsl:param name="content">
@@ -1925,6 +1904,8 @@
   </fo:inline>
 </xsl:template> 
  
+<!-- Define style of guilabel-->
+
 <xsl:template match="guilabel">
   <xsl:param name="content">
     <xsl:call-template name="inline.boldseq">
@@ -1933,7 +1914,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline background-color="#F0F0F0" padding-top="2px" padding-bottom="2px" color="#383838" font-size="9pt">      
+  <fo:inline background-color="#F0F0F0" padding-top="2px" padding-bottom="2px" color="#393939" font-size="9pt">      
     <xsl:copy-of select="$content"/>
   </fo:inline>
 </xsl:template> 
