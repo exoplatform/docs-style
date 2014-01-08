@@ -1899,8 +1899,8 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline background-color="#e8e6e6" padding-right="2pt" color="#383838" font-size="9pt">      
-    <xsl:copy-of select="$content"/>
+  <fo:inline color="#FFFFFF" background-color="#4E73AA" background-image="linear-gradient(to bottom, #5A85C5, #3C5781)" padding-top="2px" padding-bottom="2px" font-family="Helvetica Neue, Helvetica,Lucida,Arial,sans-serif" font-size="9pt">
+	<xsl:copy-of select="$content"/>
   </fo:inline>
 </xsl:template> 
  
