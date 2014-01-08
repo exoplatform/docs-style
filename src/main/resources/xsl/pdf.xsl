@@ -527,7 +527,6 @@
       <xsl:attribute name="text-align">center</xsl:attribute>
    </xsl:attribute-set>
 
-
    <!--
       From: fo/table.xsl
       Reason: Table Header format
@@ -589,12 +588,12 @@
       Reason: Remove font size and weight overrides
       Version:1.72
    -->
-   <xsl:template match="title" mode="chapter.titlepage.recto.auto.mode">
+   <!--xsl:template match="title" mode="chapter.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
          xsl:use-attribute-sets="chapter.titlepage.recto.style">
          <xsl:value-of select="." />
       </fo:block>
-   </xsl:template>
+   </xsl:template-->
 
    <!--
       From: fo/titlepage.templates.xsl
@@ -1917,9 +1916,7 @@
   <fo:inline background-color="#F0F0F0" padding-top="2px" padding-bottom="2px" color="#393939" font-size="9pt">      
     <xsl:copy-of select="$content"/>
   </fo:inline>
-</xsl:template> 
-
-
+</xsl:template>
 <!--
   From: fo/table.xsl
   Reason: Remove Table Heading
@@ -2033,6 +2030,20 @@
 	<fo:inline color="#DD1144" background-color="#F7F7F9" font-size="12px" letter-spacing="0.1pt" font-family="Monaco,Menlo,Consolas,Courier New,monospace" border-bottom="0.8px dotted #CFCFCF">      
 		<xsl:copy-of select="$content"/>
 	</fo:inline> 	 
+</xsl:template>
+<!--Define style of simplesect title-->
+<xsl:template match="title" mode="simplesect.titlepage.recto.auto.mode">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.boldseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+	<fo:block border-bottom="1px none" color="#444444" font-size="$body.font.master * 1pt" font-weight="bold" 
+			  padding-bottom="2.8px" padding-top="1.2px">
+			  <xsl:copy-of select="$content"/>
+	</fo:block>
 </xsl:template>
 <xsl:template match="title" mode="book.titlepage.recto.auto.mode">
 <fo:block keep-with-next.within-column="always"
