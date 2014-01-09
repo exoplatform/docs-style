@@ -493,23 +493,13 @@
    </xsl:attribute-set>
    <!---Define properties of chapters, including title, background color, font-size, border, etc-->
    <xsl:attribute-set name="chapter.titlepage.recto.style">
-      <xsl:attribute name="color"><xsl:value-of select="$chapter.title.color" />
+      <xsl:attribute name="color"><xsl:value-of select="$title.color"/>
       </xsl:attribute>
-      <xsl:attribute name="background-color">white</xsl:attribute>
-      <xsl:attribute name="font-size">
-		<xsl:choose>
-			<xsl:when test="$l10n.gentext.language = 'ja-JP'">
-				<xsl:value-of select="$body.font.master * 1.7" />
-				<xsl:text>pt</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>24pt</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:attribute>
+      <xsl:attribute name="font-size">30px</xsl:attribute>
       <xsl:attribute name="font-weight">bold</xsl:attribute>
       <xsl:attribute name="text-align">left</xsl:attribute>
 	  <xsl:attribute name="border-bottom">1px dotted #CFCFCF</xsl:attribute>
+	  <xsl:attribute name="padding-bottom">5px</xsl:attribute>
    </xsl:attribute-set>
 
    <xsl:attribute-set name="preface.titlepage.recto.style">
