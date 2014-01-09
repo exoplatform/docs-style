@@ -1836,7 +1836,7 @@
       </xsl:with-param>
     </xsl:call-template>
   </xsl:param>
-  <fo:inline background-color="#FEE9CC" color="#DD1144" font-size="12pt" border-bottom="0.5pt solid #FFDEB0" border-top="0.5pt solid #FFDEB0" border-start-style="green">
+  <fo:inline background-color="#FEE9CC" color="#DD1144" font-size="12pt" border-bottom="0.5pt solid #FFDEB0" border-top="0.5pt solid #FFDEB0">
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
@@ -2079,5 +2079,28 @@
     </fo:table>
   </fo:block>
   <fo:block border-bottom="0.5pt dotted #CFCFCF"/>
+</xsl:template>
+<xsl:template match="parameter">
+  <xsl:param name="content">
+    <xsl:call-template name="inline.monoseq">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <fo:inline background-color="#F7F7F9" color="#DD1144" 
+			 font-size="12pt" font-style="italic"
+			 border-bottom="0.5pt solid #E1E1E8" border-top="0.5pt solid #E1E1E8">
+    <xsl:call-template name="anchor"/>
+    <xsl:if test="@dir">
+      <xsl:attribute name="direction">
+        <xsl:choose>
+          <xsl:when test="@dir = 'ltr' or @dir = 'lro'">ltr</xsl:when>
+          <xsl:otherwise>rtl</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:copy-of select="$content"/>
+ </fo:inline>
 </xsl:template>
 </xsl:stylesheet>
