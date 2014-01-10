@@ -1442,16 +1442,44 @@
             </fo:list-item-body>
         </fo:list-item>
     </xsl:template>
-	<xsl:template name="itemizedlist.label.markup">
-		<xsl:param name="itemsymbol" select="'disc'"/>
-		<xsl:choose>
-				<xsl:when test="$itemsymbol='disc'">&#x2022;</xsl:when>
-				<xsl:otherwise>&#x2022;</xsl:otherwise>
-		</xsl:choose>
+	<xsl:template match="section/itemizedlist//itemizedlist/listitem|simplesect/itemizedlist//itemizedlist/listitem">
+	  <xsl:variable name="id">
+	  <xsl:call-template name="object.id"/></xsl:variable>
+	  <xsl:variable name="itemsymbol">
+		<xsl:call-template name="list.itemsymbol">
+		  <xsl:with-param name="node" select="parent::itemizedlist"/>
+		</xsl:call-template>
+	  </xsl:variable>
+	  <xsl:variable name="item.contents">
+		<fo:list-item-label end-indent="label-end()">
+		  <fo:block font-size="7.5pt" font-weight="bold">
+			<xsl:choose>
+			  <xsl:when test="$itemsymbol='circle'">o</xsl:when>
+			  <xsl:otherwise>o</xsl:otherwise>
+			</xsl:choose>
+		  </fo:block>
+		</fo:list-item-label>
+		<fo:list-item-body start-indent="body-start()">
+		  <xsl:apply-templates/> 
+		</fo:list-item-body>
+	  </xsl:variable>
+	  <xsl:choose>
+		<xsl:when test="parent::*/@spacing = 'compact'">
+		  <fo:list-item id="{$id}" 
+			  xsl:use-attribute-sets="compact.list.item.spacing">
+			<xsl:copy-of select="$item.contents"/>
+		  </fo:list-item>
+		</xsl:when>
+		<xsl:otherwise>
+		  <fo:list-item id="{$id}" xsl:use-attribute-sets="list.item.spacing">
+			<xsl:copy-of select="$item.contents"/>
+		  </fo:list-item>
+		</xsl:otherwise>
+	  </xsl:choose>
 	</xsl:template>
 	<xsl:attribute-set name="itemizedlist.label.properties">
 		<xsl:attribute name="font-size">
-			<xsl:value-of select="$body.font.master * 1.2" />
+			<xsl:value-of select="$body.font.master * 1.23" />
 			<xsl:text>pt</xsl:text>
 		</xsl:attribute>
 		<xsl:attribute name="margin-top">0.08cm
@@ -1804,7 +1832,7 @@
     </xsl:call-template>
   </xsl:param>
 	<fo:inline background-color="#444444" color="#FFFFFF" font-style="normal" font-size="8pt"
-			padding-top="0.4em" padding-bottom="0.4em" font-family="$title.fontset">
+			   padding-top="0.4em" padding-bottom="0.4em" font-family="$title.fontset">
 	<xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
