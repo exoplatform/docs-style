@@ -303,51 +303,6 @@
 		<xsl:attribute name="space-before.minimum">0.40em</xsl:attribute>
 		<xsl:attribute name="space-before.maximum">0.40em</xsl:attribute>
 	</xsl:attribute-set>
-
-   <!-- Some padding inside tables -->
-   <xsl:attribute-set name="table.cell.padding">
-      <xsl:attribute name="padding-left">4pt</xsl:attribute>
-      <xsl:attribute name="padding-right">4pt</xsl:attribute>
-      <xsl:attribute name="padding-top">2pt</xsl:attribute>
-      <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
-   </xsl:attribute-set>
-   
-   <!-- TABLE FORMAT / fix: wikbook version 0.9.41 causes missing table borders /--> 
-
-   <xsl:template name="table.cell.properties"> 
-		<xsl:if test="ancestor::thead or ancestor::tfoot">	
-		  <xsl:attribute name="background-color">#f0f0f0</xsl:attribute>	
-		  <xsl:attribute name="text-align">center</xsl:attribute>	
-		</xsl:if>
-        <xsl:attribute name="border-start-style">solid</xsl:attribute>
-        <xsl:attribute name="border-end-style">solid</xsl:attribute>
-        <xsl:attribute name="border-top-style">solid</xsl:attribute>
-		<xsl:attribute name="border-bottom-style">solid</xsl:attribute>
-		<xsl:attribute name="border-start-width">0.1pt</xsl:attribute>
-		<xsl:attribute name="border-end-width">0.1pt</xsl:attribute>
-		<xsl:attribute name="border-top-width">0.1pt</xsl:attribute>
-		<xsl:attribute name="border-bottom-width">0.1pt</xsl:attribute>
-		<xsl:attribute name="border-start-color">#cfcfcf</xsl:attribute>
-		<xsl:attribute name="border-end-color">#cfcfcf</xsl:attribute>
-		<xsl:attribute name="border-bottom-color">#cfcfcf</xsl:attribute>
-		<xsl:attribute name="border-top-color">#cfcfcf</xsl:attribute>					
-   </xsl:template>	
-
-	<xsl:template match="entry//text()">
-		<xsl:call-template name="hyphenate-url">
-			<xsl:with-param name="url" select="."/>
-		</xsl:call-template>
-	</xsl:template>
-	
-   <!-- Only hairlines as frame and cell borders in tables -->
-   <xsl:param name="table.frame.border.thickness">0.1pt</xsl:param>
-   <xsl:param name="table.cell.border.thickness">0.1pt</xsl:param>
-   <xsl:param name="table.cell.border.color">#cfcfcf</xsl:param>
-   <xsl:param name="table.frame.border.color">#cfcfcf</xsl:param>
-   <xsl:param name="table.cell.border.right.color">#cfcfcf</xsl:param>
-   <xsl:param name="table.cell.border.left.color">#cfcfcf</xsl:param>
-   <xsl:param name="table.frame.border.right.color">#cfcfcf</xsl:param>
-   <xsl:param name="table.frame.border.left.color">#cfcfcf</xsl:param>
    <!-- Paper type, no headers on blank pages, no double sided printing -->
    <xsl:param name="paper.type" select="'A4'" />
    <xsl:param name="double.sided">1</xsl:param>
@@ -517,47 +472,44 @@
       <xsl:attribute name="text-align">center</xsl:attribute>
    </xsl:attribute-set>
 
-   <!--
-      From: fo/table.xsl
-      Reason: Table Header format
-      Version:1.72
-   -->
-   <xsl:template name="table.cell.block.properties">
-      <!-- highlight this entry? -->
-      <xsl:if test="ancestor::thead or ancestor::tfoot">
-         <xsl:attribute name="font-weight">bold</xsl:attribute>
-         <xsl:attribute name="background-color">#F0F0F0</xsl:attribute>
-         <xsl:attribute name="color">#393939</xsl:attribute>
-		 <xsl:attribute name="padding-top">2pt</xsl:attribute>
-		 <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
-		 <xsl:attribute name="padding-left">4pt</xsl:attribute>
-		 <xsl:attribute name="padding-right">4pt</xsl:attribute>	
-      </xsl:if>
+   <!--Defines alternate color for table rows-->
+   <xsl:template name="table.row.properties">
+	  <xsl:variable name="rownum">
+		<xsl:number from="tgroup" count="row"/>
+	  </xsl:variable>
+	  <xsl:choose>
+		<xsl:when test="$rownum mod 2 = 0">
+			<xsl:attribute name="background-color">#FFFFFF</xsl:attribute>
+		</xsl:when>
+		<xsl:when test="$rownum mod 2 = 1">
+			<xsl:attribute name="background-color">#F9F9F9</xsl:attribute>
+		</xsl:when>
+	 </xsl:choose>
+	</xsl:template>
+    <!--Defines padding inside tables -->
+   <xsl:attribute-set name="table.cell.padding">
+      <xsl:attribute name="padding-left">4pt</xsl:attribute>
+      <xsl:attribute name="padding-right">4pt</xsl:attribute>
+      <xsl:attribute name="padding-top">2pt</xsl:attribute>
+      <xsl:attribute name="padding-bottom">2pt</xsl:attribute>
+   </xsl:attribute-set>
+   
+   <!--Defines text alignment of header titles and table borders--> 
+
+   <xsl:template name="table.cell.properties"> 
+		<xsl:if test="ancestor::thead or ancestor::tfoot">	
+		  <xsl:attribute name="background-color">#F0F0F0</xsl:attribute>	
+		  <xsl:attribute name="text-align">left</xsl:attribute>
+		</xsl:if>
+        <xsl:attribute name="border-style">solid</xsl:attribute>
+		<xsl:attribute name="border-width">0.75px</xsl:attribute>
+		<xsl:attribute name="border-color">#CFCFCF</xsl:attribute>          		
    </xsl:template>
+
    <!-- Hide URL -->
    <xsl:param name="ulink.show" select="0"/>
-   <!--
-      From: fo/table.xsl
-      Reason: Table Header format
-      Version:1.72
-   -->
-   <!-- customize this template to add row properties -->
-   <xsl:template name="table.row.properties">
-      <xsl:variable name="bgcolor">
-         <xsl:call-template name="dbfo-attribute">
-            <xsl:with-param name="pis" select="processing-instruction('dbfo')" />
-            <xsl:with-param name="attribute" select="'bgcolor'" />
-         </xsl:call-template>
-      </xsl:variable>
-      <xsl:if test="$bgcolor != ''">
-         <xsl:attribute name="background-color">
-      <xsl:value-of select="$bgcolor" />
-    </xsl:attribute>
-      </xsl:if>
-      <xsl:if test="ancestor::thead or ancestor::tfoot">
-         <xsl:attribute name="background-color">#323863</xsl:attribute>
-      </xsl:if>
-   </xsl:template>
+   
+  
 
    <!--
       From: fo/titlepage.templates.xsl
@@ -1169,7 +1121,7 @@
       </fo:table>
       </xsl:template> -->
 
-   <xsl:template match="title" mode="book.titlepage.recto.auto.mode">
+   <!--xsl:template match="title" mode="book.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
          xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center"
          font-size="20pt" space-before="18.6624pt" font-weight="bold"
@@ -1178,15 +1130,15 @@
             <xsl:with-param name="node" select="ancestor-or-self::book[1]" />
          </xsl:call-template>
       </fo:block>
-   </xsl:template>
+   </xsl:template-->
 
-   <xsl:template match="subtitle" mode="book.titlepage.recto.auto.mode">
+   <!--xsl:template match="subtitle" mode="book.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
          xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center"
          font-size="17pt" space-before="10pt" font-style="italic" font-family="{$title.fontset}">
          <xsl:apply-templates select="." mode="book.titlepage.recto.mode" />
       </fo:block>
-   </xsl:template>
+   </xsl:template-->
 	
 	<!--Style for Copyright -->
 	<!--xsl:template match="copyright" mode="book.titlepage.recto.auto.mode">
@@ -1197,22 +1149,22 @@
 		</fo:block>
 	</xsl:template-->
 
-   <xsl:template match="issuenum" mode="book.titlepage.recto.auto.mode">
+   <!--xsl:template match="issuenum" mode="book.titlepage.recto.auto.mode">
       <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format"
          xsl:use-attribute-sets="book.titlepage.recto.style" text-align="center"
          font-size="16pt" space-before="15.552pt" font-family="{$title.fontset}">
          <xsl:apply-templates select="." mode="book.titlepage.recto.mode" />
       </fo:block>
-   </xsl:template>
+   </xsl:template-->
 
-   <xsl:template match="author" mode="book.titlepage.recto.auto.mode">
+   <!--xsl:template match="author" mode="book.titlepage.recto.auto.mode">
       <fo:block xsl:use-attribute-sets="book.titlepage.recto.style" font-size="14pt"
          space-before="15.552pt">
          <xsl:call-template name="person.name">
             <xsl:with-param name="node" select="." />
          </xsl:call-template>
       </fo:block>
-   </xsl:template>
+   </xsl:template-->
 
    <!-- <xsl:template name="book.titlepage.recto">
       <xsl:choose>
