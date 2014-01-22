@@ -221,7 +221,7 @@
 
 	<!-- FOOTER IN EVERY PAGES -->
 	<div class="UIFooterPageDocument">
-		Copyright ©2013. All rights reserved. eXo Platform SAS
+		Copyright <span id="currentYear"></span>. All rights reserved. eXo Platform SAS
 	</div>
 
 	<!-- DISQUS -->
@@ -237,7 +237,9 @@
 		document.getElementsByTagName('body')[0]).appendChild(dsq);
 		})();
 	</script>
-
+	<script type="text/javascript">
+		document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+	</script>
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
 

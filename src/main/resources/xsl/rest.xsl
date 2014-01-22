@@ -179,7 +179,7 @@
 	<xsl:template name="user.footer.content">
 		<xsl:if test="self::section">
 					<div xmlns="" class="UIFooterPageDocument">
-						Copyright 2013. All rights reserved. eXo Platform SAS
+						Copyright 2014. All rights reserved. eXo Platform SAS
 					</div><script xmlns="" src="http://www.google-analytics.com/ga.js" type="text/javascript"/><script xmlns="" type="text/javascript">
 						var pageTracker = _gat._getTracker("UA-1292368-24");
 						pageTracker._initData();
