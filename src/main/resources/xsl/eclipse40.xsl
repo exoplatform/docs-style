@@ -221,7 +221,7 @@
 
 	<!-- FOOTER IN EVERY PAGES -->
 	<div class="UIFooterPageDocument">
-		Copyright <span id="currentYear"></span>. All rights reserved. eXo Platform SAS
+		Copyright ©<span id="currentYear"></span>. All rights reserved. eXo Platform SAS
 	</div>
 
 	<!-- DISQUS -->
