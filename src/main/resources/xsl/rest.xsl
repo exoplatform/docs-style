@@ -77,13 +77,13 @@
 	<xsl:param name="this.node" select="." />
 	<ul class="breadcrumb">
 		<li class="">
-			<a href="/">eXo Platform Documentation</a>
+			<a href="/docs/">eXo Platform Documentation</a>
 		</li>
 		<li>
 			<img class="uiIconMiniArrowRight" alt="Home" src="../../background/ListBG.gif"></img>
 		</li>
 		<li class="">
-			<a href="/PLF40/rest-api/">REST API Documentation</a>
+			<a href="../">REST API Documentation</a>
 		</li>
 		<li>
 			<img class="uiIconMiniArrowRight" alt="Home" src="../../background/ListBG.gif"></img>
