@@ -10,7 +10,7 @@
   <groupId>org.exoplatform.doc</groupId>
   <artifactId>doc-style</artifactId>
   <packaging>jar</packaging>
-  <version>4.3.x-SNAPSHOT</version>
+  <version>4.3.x-RC-SNAPSHOT</version>
   <name>eXo Platform documentation common style</name>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/docs-style.git</connection>
@@ -30,7 +30,7 @@
     <!-- **************************************** -->
     <!-- Dependencies versions                    -->
     <!-- **************************************** -->
-    <org.exoplatform.depmgt.version>11-SNAPSHOT</org.exoplatform.depmgt.version>
+    <org.exoplatform.depmgt.version>11-RC-SNAPSHOT</org.exoplatform.depmgt.version>
   </properties>
   <dependencyManagement>
     <dependencies>
