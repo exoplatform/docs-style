@@ -10,13 +10,13 @@
   <groupId>org.exoplatform.doc</groupId>
   <artifactId>doc-style</artifactId>
   <packaging>jar</packaging>
-  <version>4.4.0-M01</version>
+  <version>4.4.x-SNAPSHOT</version>
   <name>eXo Platform documentation common style</name>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/docs-style.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/docs-style.git</developerConnection>
     <url>https://github.com/exoplatform/docs-style</url>
-    <tag>4.4.0-M01</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <!-- **************************************** -->
