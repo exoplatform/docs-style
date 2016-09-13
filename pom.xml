@@ -11,7 +11,7 @@
   <artifactId>doc-style</artifactId>
   <packaging>jar</packaging>
   <version>4.4.x-SNAPSHOT</version>
-  <name>eXo Platform documentation common style</name>
+  <name>eXo PLF:: Platform documentation common style</name>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/docs-style.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/docs-style.git</developerConnection>
@@ -22,7 +22,7 @@
     <!-- **************************************** -->
     <!-- Jenkins Settings                         -->
     <!-- **************************************** -->
-    <jenkins.job.name>doc-style-master-ci</jenkins.job.name>
+    <jenkins.job.name>doc-style-develop-ci</jenkins.job.name>
     <!-- **************************************** -->
     <!-- Jira Settings                            -->
     <!-- **************************************** -->
