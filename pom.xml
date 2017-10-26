@@ -10,13 +10,13 @@
   <groupId>org.exoplatform.doc</groupId>
   <artifactId>doc-style</artifactId>
   <packaging>jar</packaging>
-  <version>5.0.x-SNAPSHOT</version>
+  <version>5.0.0-M28</version>
   <name>eXo PLF:: Platform documentation common style</name>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/docs-style.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/docs-style.git</developerConnection>
     <url>https://github.com/exoplatform/docs-style</url>
-    <tag>HEAD</tag>
+    <tag>5.0.0-M28</tag>
   </scm>
   <properties>
     <!-- **************************************** -->
