@@ -30,7 +30,7 @@
     <!-- **************************************** -->
     <!-- Dependencies versions                    -->
     <!-- **************************************** -->
-    <org.exoplatform.depmgt.version>13-SNAPSHOT</org.exoplatform.depmgt.version>
+    <org.exoplatform.depmgt.version>13-RC07</org.exoplatform.depmgt.version>
   </properties>
   <dependencyManagement>
     <dependencies>
