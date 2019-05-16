@@ -10,7 +10,7 @@
   <groupId>org.exoplatform.doc</groupId>
   <artifactId>doc-style</artifactId>
   <packaging>jar</packaging>
-  <version>5.2.1</version>
+  <version>5.2.x-acc222-SNAPSHOT</version>
   <name>eXo PLF:: Platform documentation common style</name>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/docs-style.git</connection>
